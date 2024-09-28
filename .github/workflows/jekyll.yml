@@ -124,6 +124,13 @@ jobs:
             git log -1 --format='%H' > last_build.txt
           fi
 
+      - name: -- Commit and Push last build info
+        run: |
+          git config --global user.name "${{ github.actor }}"
+          git add last_build.txt
+          git commit -m "Update last_build.txt with commit ${{ github.sha }}"
+          git push          
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
