@@ -1,0 +1,115 @@
+---
+layout: layout-page
+title: tag
+permalink: /tag
+---
+
+<section class="layout-page-wrap tag-page-wrap">
+  <div class="page-title-wrap">
+    <h2 class="page-title">Tags</h2>
+  </div>
+  
+  <div class="page-content-wrap">
+
+    {% assign tags = site.data.tags %}
+    <p class="page-content-count">
+      {{ tags | size }} Tags
+    </p>
+
+    <ul class="page-tag-list">
+    {% for tag in tags %}
+      <li>
+        <a href="#;" data-url="{{ tag[0] | slugify }}" class="tag-link">
+          {{ tag[0]}} <span>{{ tag[1].docs.size }}</span>
+        </a>
+      </li>
+    {% endfor %}
+    </ul>
+
+    {% for tag in tags %}
+    <div class="tag-list-container none" id="{{ tag[0] | slugify }}Container">
+      <ul>
+      {% for item in tag[1].docs %}
+        <li>
+          <article class="post-item-wrap tag-item-wrap">
+            <a href="{{ item.url | relative_url }}">
+              <h3 class="title">{{ item.title }}</h3>
+              <span class="desc">
+                {{ item.summary | default: item.description | truncate: 100 }}
+              </span>
+            </a>
+            <time datetime="{{ item.modified_time }}" class="date">
+              {{ item.modified_time }}
+            </time>
+          </article>
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+
+</div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  
+  const tagLinks = document.querySelectorAll('.tag-link');
+  tagLinks.forEach((el) => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      const newUrl = el.getAttribute('data-url');
+      window.location.hash = newUrl;
+      addStyle(newUrl);
+      showTagList(newUrl);
+      scrollToList(newUrl);
+    });
+
+  });
+
+  function addStyle(tagId) {
+    tagLinks.forEach(link => {
+      link.classList.remove('on');
+    });
+
+    const el = document.querySelector(`[data-url=${tagId}]`);
+    el.classList.add('on');
+  }
+
+  function showTagList(tagId) {
+    if(!tagId) return;
+
+    tagId = tagId.replace('#', '');
+
+    const tagContainers= document.querySelectorAll('.tag-list-container');
+
+    tagContainers.forEach(el => {
+      if(el.id === tagId+'Container') {
+        el.classList.remove('none');
+      } else {
+        el.classList.add('none');
+      }
+    });
+
+    addStyle(tagId);
+  }
+
+  function scrollToList(tagId) {
+    const element = document.getElementById(`${tagId}Container`);
+    if(element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }
+
+  window.addEventListener('hashchange', () => {
+    showTagList(location.hash);
+    scrollToList(location.hash.replace('#', ''));
+  });
+
+  if(window.location.hash) {
+    showTagList(location.hash);
+    scrollToList(location.hash.replace('#', ''));
+  }
+
+});
+</script>

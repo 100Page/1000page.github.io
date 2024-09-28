@@ -1,0 +1,16 @@
+{% include head.html %}
+
+<body>
+
+{% include header.html %}
+
+<div class="common-wrap common-layout-wrap">
+{{ content }}
+</div>
+
+{% include footer.html %}
+
+{{ script_content | strip_newlines | safe }}
+
+</body>
+</html>
