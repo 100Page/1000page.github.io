@@ -129,7 +129,7 @@ jobs:
           git config --global user.name "${{ github.actor }}"
           git add last_build.txt
           git commit -m "Update last_build.txt with commit ${{ github.sha }}"
-          git push          
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/underpage/underpage.github.io.git HEAD:${{ github.ref }}    
 
   deploy:
     needs: build
