@@ -1,0 +1,136 @@
+name: Build and Deploy
+
+on:
+  schedule:
+    - cron: '0 17 * * *'
+  workflow_dispatch:
+    inputs:
+      force_build:
+        required: true
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    outputs:
+      build_required: ${{ steps.set_build_required.outputs.build_required }}
+    steps:
+      - name: -- Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: -- Check last build
+        id: check_last_build
+        run: |
+          if [ -f last_build.txt ]; then
+            last_build_commit=$(cat last_build.txt)
+            last_build_time=$(git log -1 --format='%ai' $last_build_commit)
+            echo "last_build_commit=$last_build_commit" >> $GITHUB_ENV
+            echo "last_build_time=$last_build_time" >> $GITHUB_ENV
+          else
+            echo "last_build_commit=none" >> $GITHUB_ENV
+            echo "last_build_time=none" >> $GITHUB_ENV
+          fi
+
+      - name: -- Check build in last 24 hours
+        id: check_manual_build
+        run: |
+          manual_build=$(git log --since="24 hours ago" --grep="\[Force Build\]" --format='%H')
+          if [ -n "$manual_build" ]; then
+            echo "manual_build_exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "manual_build_exists=false" >> $GITHUB_OUTPUT
+          fi
+            
+      - name: -- Check commits in last 24 hours
+        id: check_commits
+        run: |
+          commits=$(git log --since="24 hours ago" --format='%H')
+          if [ -n "$commits" ]; then
+            echo "commits_exist=true" >> $GITHUB_OUTPUT
+          else
+            echo "commits_exist=false" >> $GITHUB_OUTPUT
+          fi
+          
+      - name: -- Set build required
+        id: set_build_required
+        run: |
+          if [ "${{ github.event.inputs.force_build }}" = "true" ]; then
+            echo "build_required=true" >> $GITHUB_OUTPUT
+            echo "[Force Build]" >> $GITHUB_STEP_SUMMARY
+          elif [ "${{ steps.check_manual_build.outputs.manual_build_exists }}" = "true" ]; then
+            echo "build_required=false" >> $GITHUB_OUTPUT
+            echo "Manual build already performed in the last 24 hours. Skipping build." >> $GITHUB_STEP_SUMMARY
+          elif [ "${{ steps.check_commits.outputs.commits_exist }}" = "true" ] && [ "${{ steps.check_manual_build.outputs.manual_build_exists }}" = "false" ]; then
+            echo "build_required=true" >> $GITHUB_OUTPUT
+            echo "New commits detected. Proceeding with build." >> $GITHUB_STEP_SUMMARY
+          else
+            echo "build_required=false" >> $GITHUB_OUTPUT
+            echo "No new commits and no manual build request. Skipping build." >> $GITHUB_STEP_SUMMARY
+          fi
+
+
+
+  build:
+    needs: check
+    if: ${{ needs.check.outputs.build_required == 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: -- Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: -- Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3.4'
+          bundler-cache: true
+          rubygems: latest
+          bundler: latest
+
+      - name: -- Jekyll cache
+        uses: actions/cache@v4
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-jekyll-${{ hashFiles('Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-jekyll-
+
+      - name: -- Install dependencies
+        run: |
+          bundle config set --local deployment 'true'
+          bundle install --jobs 4 --retry 3
+
+      - name: -- Jekyll build
+        run: |
+          JEKYLL_ENV=production bundle exec jekyll build
+     
+      - name: -- Upload
+        uses: actions/upload-pages-artifact@v3
+
+      - name: -- Save last build commit
+        run: |
+          if [ "${{ github.event.inputs.force_build }}" = "true" ]; then
+            echo "${{ github.sha }} [Force Build]" > last_build.txt
+          else
+            git log -1 --format='%H' > last_build.txt
+          fi
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: -- Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
