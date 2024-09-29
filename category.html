@@ -45,11 +45,18 @@ permalink: /category
 document.addEventListener('DOMContentLoaded', () => {
 
   function scrollToList(tagId) {
+    
+    const wrapElement = document.querySelectorAll('.page-category-wrap.on');
+    if(wrapElement.length > 0) {
+      wrapElement.forEach(el => el.classList.remove('on'));
+    }
+
     const element = document.getElementById(tagId);
     if(element) {
       element.classList.add('on');
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
+
   }
 
   window.addEventListener('hashchange', () => {
