@@ -29,14 +29,14 @@ permalink: /index
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-
+  
   const $postList = document.getElementById('indexPostList');
   const $itemsArray = Array.from($postList.getElementsByTagName('li'));
-
   const $pagination = document.getElementById('indexPagination');
 
   const itemsPerPage = 10;
   let $pageCount = Math.ceil($itemsArray.length / itemsPerPage);
+  let currentPage = 1;
 
   function sortItems() {
     $itemsArray.sort((a, b) => {
@@ -50,31 +50,19 @@ document.addEventListener('DOMContentLoaded', () => {
   function showPage(page) {
     if($itemsArray.length === 0) return;
 
+    currentPage = page;
     sortItems();
 
-    const startIndex = (page - 1) * itemsPerPage;
+    const startIndex = (currentPage - 1) * itemsPerPage;
     const endIndex = startIndex + itemsPerPage;
     $itemsArray.forEach((item, i) => {
       item.style.display = (i >= startIndex && i < endIndex) ? 'block' : 'none';
     });
 
-    location.hash = `page/${page}`;
-    setupPagination(page);
+    location.hash = `page/${currentPage}`;
+    setupPaginationBtn();
 
     $postList.classList.remove('none');
-  }
-
-  function setupPagination(currentPage) {
-    const buttons = $pagination.getElementsByTagName('button');
-    Array.from(buttons).forEach((button, i) => {
-      button.classList.toggle('on', (parseInt(button.dataset.page, 10) === currentPage));
-    });
-
-    const prevBtn = $pagination.querySelector('.prev-btn');
-    const nextBtn = $pagination.querySelector('.next-btn');
-
-    if(prevBtn) prevBtn.classList.toggle('none', (currentPage === 1));
-    if(nextBtn) nextBtn.classList.toggle('none', (currentPage === $pageCount));
   }
 
   function setupPaginationBtn() {
@@ -86,36 +74,84 @@ document.addEventListener('DOMContentLoaded', () => {
     prevBtn.textContent = 'prev';
     prevBtn.classList.add('prev-btn');
     prevBtn.addEventListener('click', () => {
-      const currentPage = getPageFromURL();
       if(currentPage > 1) {
         showPage(currentPage - 1);
       }
     });
     $pagination.appendChild(prevBtn);
 
-    for(let i = 1; i <= $pageCount; i++) {
-      const btn = document.createElement('button');
-      btn.textContent = i;
-      btn.dataset.page = i;
-      btn.addEventListener('click', () => {
-        showPage(i);
-      });
+    const maxVisiblePages = 10;
+    const halfMaxVisiblePages = Math.floor(maxVisiblePages / 2);
+
+    let startPage = Math.max(1, currentPage - halfMaxVisiblePages);
+    let endPage = Math.min($pageCount, startPage + maxVisiblePages - 1);
+
+    if(endPage - startPage + 1 < maxVisiblePages) {
+      startPage = Math.max(1, endPage - maxVisiblePages + 1);
+    }
+
+    if(startPage > 1) {
+      const firstBtn = createPageButton(1);
+      $pagination.appendChild(firstBtn);
+      if(startPage > 2) {
+        const ellipsis = document.createElement('span');
+        ellipsis.style.padding = '0 3px';
+        ellipsis.textContent = '...';
+        $pagination.appendChild(ellipsis);
+      }
+    }
+
+    for(let i = startPage; i <= endPage; i++) {
+      const btn = createPageButton(i);
       $pagination.appendChild(btn);
+    }
+
+    if(endPage < $pageCount) {
+      if(endPage < $pageCount - 1) {
+        const ellipsis = document.createElement('span');
+        ellipsis.style.padding = '0 3px';
+        ellipsis.textContent = '...';
+        $pagination.appendChild(ellipsis);
+      }
+      const lastBtn = createPageButton($pageCount);
+      $pagination.appendChild(lastBtn);
     }
 
     const nextBtn = document.createElement('button');
     nextBtn.textContent = 'next';
     nextBtn.classList.add('next-btn');
     nextBtn.addEventListener('click', () => {
-      const currentPage = getPageFromURL();
       if(currentPage < $pageCount) {
         showPage(currentPage + 1);
       }
     });
     $pagination.appendChild(nextBtn);
 
-    const initialPage = getPageFromURL();
-    setupPagination(initialPage);
+    updatePaginationButtons();
+  }
+
+  function updatePaginationButtons() {
+    const buttons = $pagination.getElementsByTagName('button');
+    Array.from(buttons).forEach((button) => {
+      if(button.classList.contains('prev-btn') || button.classList.contains('next-btn')) return;
+      button.classList.toggle('on', (parseInt(button.dataset.page, 10) === currentPage));
+    });
+
+    const prevBtn = $pagination.querySelector('.prev-btn');
+    const nextBtn = $pagination.querySelector('.next-btn');
+
+    if(prevBtn) prevBtn.classList.toggle('none', (currentPage === 1));
+    if(nextBtn) nextBtn.classList.toggle('none', (currentPage === $pageCount));
+  }
+
+  function createPageButton(pageNum) {
+    const btn = document.createElement('button');
+    btn.textContent = pageNum;
+    btn.dataset.page = pageNum;
+    btn.addEventListener('click', () => {
+      showPage(pageNum);
+    });
+    return btn;
   }
 
   function getPageFromURL() {
@@ -124,19 +160,21 @@ document.addEventListener('DOMContentLoaded', () => {
     return match ? parseInt(match[1], 10) : 1;
   }
   
-  function calculatepageCount() {
+  function calculatePageCount() {
     $pageCount = Math.ceil($itemsArray.length / itemsPerPage);
   }
 
-  setupPaginationBtn();
+  function init() {
+    calculatePageCount();
+    currentPage = getPageFromURL();
+    showPage(currentPage);
+  }
 
-  const initialPage = getPageFromURL();
-  calculatepageCount();
-  showPage(initialPage);
+  init();
 
   window.addEventListener('hashchange', () => {
-    const page = getPageFromURL();
-    showPage(page);
+    currentPage = getPageFromURL();
+    showPage(currentPage);
   });
 
 });
