@@ -67,9 +67,9 @@ module Jekyll
       items.sort_by do |item|
         [
           item['post_cnt'] ? 0 : 1,
+          item['filename'] == 'index' ? 0 : 1,
           item['order'] ? 0 : 1,
           item['order'] || item['folder'] || item['filename'] || '',
-          item['filename'] == 'index' ? 0 : 1,
           item['filename'] || '',
         ]
       end

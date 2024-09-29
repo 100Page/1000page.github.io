@@ -9,6 +9,7 @@ exclude:
   - Gemfile.lock
   - README.md
   - _doc.rb
+  - _setorder.rb
   - _order.*
 
 include:
