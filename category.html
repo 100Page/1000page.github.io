@@ -15,7 +15,7 @@ permalink: /category
 
   <div class="page-content-wrap">
 
-    <span class="category-link-wrap none">
+    <span class="category-link-wrap">
       {% assign main_categories = sorted_items | map: "folder" | uniq %}
       {% for category in main_categories %}
         {% assign folder = category | split: '=>' | first | strip %}
@@ -44,19 +44,21 @@ permalink: /category
 <script>
 document.addEventListener('DOMContentLoaded', () => {
 
-//         <button class="toggle-button" aria-label="목록 표시/숨기기"></button>
-  const toggleButtons = document.querySelectorAll('.toggle-button');
+  function scrollToList(tagId) {
+    const element = document.getElementById(tagId);
+    if(element) {
+      element.classList.add('on');
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 
-  toggleButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      const ul = button.closest('h3').nextElementSibling;
-      if (ul.style.display === 'none' || ul.style.display === '') {
-        ul.style.display = 'block'; 
-      } else {
-        ul.style.display = 'none';
-      }
-    });
+  window.addEventListener('hashchange', () => {
+    scrollToList(location.hash.replace('#', ''));
   });
+
+  if(window.location.hash) {
+    scrollToList(location.hash.replace('#', ''));
+  }
 
 });
 </script>
