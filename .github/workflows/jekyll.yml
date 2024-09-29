@@ -26,30 +26,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: -- Check last build
-        id: check_last_build
-        run: |
-          if [ -f last_build.txt ]; then
-            last_build_commit=$(cat last_build.txt)
-            last_build_time=$(git log -1 --format='%ai' $last_build_commit)
-            echo "last_build_commit=$last_build_commit" >> $GITHUB_ENV
-            echo "last_build_time=$last_build_time" >> $GITHUB_ENV
-          else
-            echo "last_build_commit=none" >> $GITHUB_ENV
-            echo "last_build_time=none" >> $GITHUB_ENV
-          fi
-
-      - name: -- Check build in last 24 hours
-        id: check_manual_build
-        run: |
-          manual_build=$(git log --since="24 hours ago" --grep="\[Force Build\]" --format='%H')
-          if [ -n "$manual_build" ]; then
-            echo "manual_build_exists=true" >> $GITHUB_OUTPUT
-          else
-            echo "manual_build_exists=false" >> $GITHUB_OUTPUT
-          fi
-            
-      - name: -- Check commits in last 24 hours
+      - name: -- Check commits
         id: check_commits
         run: |
           commits=$(git log --since="24 hours ago" --format='%H')
@@ -64,16 +41,12 @@ jobs:
         run: |
           if [ "${{ github.event.inputs.force_build }}" = "true" ]; then
             echo "build_required=true" >> $GITHUB_OUTPUT
-            echo "[Force Build]" >> $GITHUB_STEP_SUMMARY
-          elif [ "${{ steps.check_manual_build.outputs.manual_build_exists }}" = "true" ]; then
-            echo "build_required=false" >> $GITHUB_OUTPUT
-            echo "Manual build already performed in the last 24 hours. Skipping build." >> $GITHUB_STEP_SUMMARY
-          elif [ "${{ steps.check_commits.outputs.commits_exist }}" = "true" ] && [ "${{ steps.check_manual_build.outputs.manual_build_exists }}" = "false" ]; then
+
+          elif [ "${{ steps.check_commits.outputs.commits_exist }}" = "true" ]; then
             echo "build_required=true" >> $GITHUB_OUTPUT
-            echo "New commits detected. Proceeding with build." >> $GITHUB_STEP_SUMMARY
+
           else
             echo "build_required=false" >> $GITHUB_OUTPUT
-            echo "No new commits and no manual build request. Skipping build." >> $GITHUB_STEP_SUMMARY
           fi
 
 
@@ -115,21 +88,6 @@ jobs:
      
       - name: -- Upload
         uses: actions/upload-pages-artifact@v3
-
-      - name: -- Save last build commit
-        run: |
-          if [ "${{ github.event.inputs.force_build }}" = "true" ]; then
-            echo "${{ github.sha }} [Force Build]" > last_build.txt
-          else
-            git log -1 --format='%H' > last_build.txt
-          fi
-
-      - name: -- Commit and Push last build info
-        run: |
-          git config --global user.name "${{ github.actor }}"
-          git add last_build.txt
-          git commit -m "Update last_build.txt with commit ${{ github.sha }}"
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/underpage/underpage.github.io.git HEAD:${{ github.ref }}    
 
   deploy:
     needs: build
