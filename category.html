@@ -44,13 +44,17 @@ permalink: /category
 <script>
 document.addEventListener('DOMContentLoaded', () => {
 
-  function scrollToList(tagId) {
-    
+  function removeListCss() {
+
     const wrapElement = document.querySelectorAll('.page-category-wrap.on');
     if(wrapElement.length > 0) {
       wrapElement.forEach(el => el.classList.remove('on'));
     }
 
+  }
+  
+  function scrollToList(tagId) {
+    
     const element = document.getElementById(tagId);
     if(element) {
       element.classList.add('on');
@@ -59,7 +63,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   }
 
+  const handleScroll =  Util.debounce(() => {
+    if(window.scrollY === 0) {
+      removeListCss();
+    }
+  }, 200);
+
+  window.addEventListener('scroll', handleScroll);
+
   window.addEventListener('hashchange', () => {
+    removeListCss();
     scrollToList(location.hash.replace('#', ''));
   });
 

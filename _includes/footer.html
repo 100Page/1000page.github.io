@@ -14,17 +14,6 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-  function debounce(fn, delay) {
-    let timeoutId;
-    return function(...args) {
-      if(timeoutId) {
-        clearTimeout(timeoutId);
-      }
-      timeoutId = setTimeout(() => {
-        fn.apply(this, args);
-      }, delay);
-    };
-  }
 
   function handleScroll() {
     if(window.scrollY > 100) {
@@ -52,7 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
     history.pushState('', document.title, window.location.pathname + window.location.search);
   });
 
-  const debouncedHandleScroll = debounce(handleScroll, 100); 
+  const debouncedHandleScroll = Util.debounce(handleScroll, 100); 
   window.addEventListener('scroll', debouncedHandleScroll);
+  
 });
 </script>
