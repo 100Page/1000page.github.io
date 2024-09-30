@@ -7,7 +7,7 @@ tags:
 - cloud
 - aws
 created_time: 2024-09-29 15:59
-modified_time: 2024-09-29 20:02
+modified_time: 2024-09-30 21:03
 ---
 
 # AWS
@@ -18,11 +18,7 @@ Amazon Web Services
 - [AWS 용어](./aws-terminology.md)
 - [AWS 서비스](./aws-service/index.md) 
 - [AWS 아키텍처](./aws-architecture.md)
-- [AWS 패턴](./aws-patterns.md)
-- [AWS CLI](./aws-cli.md)
-
-
-**특징**
-- 확장성 : 필요에 따라 리소스 확장 및 축소
-- 효율성 : 사용한 만큼만 비용을 지불
-- 유연성 : 다양한 운영체제, 언어, 프레임워크 등 지원
+- [AWS 패턴](./aws-pattern.md)
+- AWS 도구
+  - [AWS CLI](./aws-cli.md)
+  - [AWS SDK](./aws-sdk.md)
