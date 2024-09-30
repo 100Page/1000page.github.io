@@ -1,11 +1,11 @@
 ---
-order: 0.1
+order: 0.4
 title: tool
 description: 데이터 관리 도구 종류
 tags:
 - tool
 created_time: 2024-09-30 22:55
-modified_time: 2024-10-01 00:45
+modified_time: 2024-10-01 01:08
 ---
 
 # Data Management Tool

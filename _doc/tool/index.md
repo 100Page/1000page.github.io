@@ -1,12 +1,12 @@
 ---
 order: 30
 title: tool
-description: 개발 도구 (인덱스)
+description: 개발관련 도구 (인덱스)
 tags:
 - index
 - tool
 created_time: 2024-09-22 13:15
-modified_time: 2024-10-01 00:21
+modified_time: 2024-10-01 01:08
 ---
 
 # Tool
@@ -15,7 +15,7 @@ modified_time: 2024-10-01 00:21
 
 - [IDE](./tool-ide.md) 
 - [Editor](./tool-editor.md)
-- [Version Control System](./tool-vcs.md)
+- [Version Control System](./tool-vcs/index.md)
 - [Data Management Tool](./tool-data/index.md)
 - [Authentication Tool](./tool-auth/index.md)
 - [Infrastructure Tool](./tool-infra/index.md)

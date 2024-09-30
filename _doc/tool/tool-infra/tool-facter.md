@@ -1,11 +1,11 @@
 ---
-order: 0.3
+order: 0.6
 title: tool
 description: 시스템 정보 수집 도구 - Facter
 tags:
 - tool
 created_time: 2024-09-30 21:45
-modified_time: 2024-10-01 00:58
+modified_time: 2024-10-01 01:08
 ---
 
 # Facter
