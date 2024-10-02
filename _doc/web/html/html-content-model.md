@@ -4,9 +4,10 @@ title: html
 description: HTML 엘리먼트 분류 (컨텐츠 모델)
 tags:
 - html
-- element content model
+- element
+- content model
 created_time: 2024-10-02 03:29
-modified_time: 2024-10-02 15:50
+modified_time: 2024-10-02 19:07
 ---
 
 # HTML Element Content Model

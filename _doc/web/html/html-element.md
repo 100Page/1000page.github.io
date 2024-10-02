@@ -4,9 +4,9 @@ title: html
 description: HTML 엘리먼트
 tags:
 - html
-- html element
+- element
 created_time: 2024-10-02 02:32
-modified_time: 2024-10-02 13:56
+modified_time: 2024-10-02 19:07
 ---
 
 # HTML Element

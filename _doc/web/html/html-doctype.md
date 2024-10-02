@@ -5,8 +5,9 @@ description: DTD란
 tags:
 - html
 - dtd
+- doctype
 created_time: 2024-10-02 01:47
-modified_time: 2024-10-02 14:03
+modified_time: 2024-10-02 19:07
 ---
 
 # DTD

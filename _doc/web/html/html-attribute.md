@@ -4,9 +4,10 @@ title: html
 description: HTML 엘리먼트 속성
 tags:
 - html
+- element
 - element attribute
 created_time: 2024-10-02 15:44
-modified_time: 2024-10-02 18:27
+modified_time: 2024-10-02 19:07
 ---
 
 # HTML Element Attribute   

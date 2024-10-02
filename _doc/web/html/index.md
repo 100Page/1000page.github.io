@@ -3,10 +3,10 @@ order: 0.1
 title: html
 description: HTML이란
 tags:
-- web document
+- index
 - html
 created_time: 2024-10-01 23:29
-modified_time: 2024-10-02 17:49
+modified_time: 2024-10-02 19:06
 ---
 
 # HTML
