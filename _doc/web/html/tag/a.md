@@ -6,7 +6,7 @@ tags:
 - html
 - tag
 created_time: 2024-10-02 21:48
-modified_time: 2024-10-02 23:06
+modified_time: 2024-10-04 17:25
 ---
 
 # HTML Anchor Tag
@@ -145,7 +145,7 @@ a {display:block}
 
 <a href="#" referrerpolicy="strict-origin-when-cross-origin">링크</a>
 <!-- 
-동일 출처인 경우 전체 url을 다른 출처인 경우 출처만 전송 
-HTTPS에서 HTTP로 이동할 때는 전송하지 않음
+: 동일 출처인 경우 전체 url을 다른 출처인 경우 출처만 전송 
+: HTTPS에서 HTTP로 이동할 때는 전송하지 않음
 -->
 ```
