@@ -5,9 +5,8 @@ description: 클라우드 이용 모델
 tags:
 - cloud
 - cloud model
-- cloud deployment model
 created_time: 2024-09-09 01:22
-modified_time: 2024-09-30 02:12
+modified_time: 2024-10-05 23:27
 ---
 
 # Cloud Deployment Model

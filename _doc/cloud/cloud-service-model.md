@@ -5,9 +5,8 @@ description: 클라우드 서비스 모델
 tags:
 - cloud
 - cloud model
-- cloud service model
 created_time: 2024-09-29 15:38
-modified_time: 2024-09-30 19:18
+modified_time: 2024-10-05 23:27
 ---
 
 # Cloud Service Model
