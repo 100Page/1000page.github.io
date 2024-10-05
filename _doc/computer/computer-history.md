@@ -1,12 +1,11 @@
 ---
-order: 1.2
+order: 0.2
 title: computer
 description: 컴퓨터 역사와 관련 용어
 tags:
 - computer
-- computer history
 created_time: 2024-09-06 07:40
-modified_time: 2024-09-16 15:43
+modified_time: 2024-10-05 23:36
 ---
 
 # Computer History

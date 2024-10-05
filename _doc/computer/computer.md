@@ -1,11 +1,11 @@
 ---
-order: 1.1
+order: 0.1
 title: computer
 description: 컴퓨터란
 tags:
 - computer
 created_time: 2024-09-06 05:40
-modified_time: 2024-09-16 15:43
+modified_time: 2024-09-30 21:10
 ---
 
 # Computer
@@ -89,7 +89,6 @@ Input ==> Process ==> Output
 
 ### Digital Computer
 : 이산적인 데이터를 처리하는 장치 
-
 
 **Barebone Computer**  
 : 필수 부품으로만 구성된 컴퓨터로 추가 부품은 사용자가 직접 추가  

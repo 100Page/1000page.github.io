@@ -1,5 +1,5 @@
 ---
-order: 1.4
+order: 0.3
 title: computer
 description: 컴퓨터 아키텍처 (폰 노이만 모델)
 tags:
@@ -7,34 +7,14 @@ tags:
 - computer architecture
 - von neumann
 created_time: 2024-09-28 11:43
-modified_time: 2024-09-29 10:21
+modified_time: 2024-10-05 23:40
 ---
 
 # Computer Architecture
 : 컴퓨터를 구성하는 하드웨어들의 상호작용에 대한 설계  
 
-**컴퓨터 구조**
-- Von Neumann Architecture
-- Harvard Architecture
-
-**명령어 세트 아키텍처**
-- RISC
-- CISC 
-
-**프로세서 아키텍처**
-- Scalar processors
-- Superscalar processors
-- VLIW processors
-
-**메모리 구조**
-- Cache memory system
-- Virtual memory system
-
-**병렬 처리 아키텍처**
-- SISD
-- SIMD
-- MISD
-- MIMD
+- [Von Neumann Architecture](#von-neumann-architecture)
+- [Harvard Architecture](#harvard-architecture)
 
 
 
