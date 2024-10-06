@@ -1,12 +1,11 @@
 ---
 order: 0.31
 title: data
-description: 데이터 타입이란
+description: 데이터 타입
 tags:
 - data
-- data type
 created_time: 2024-09-20 15:00
-modified_time: 2024-10-03 02:42
+modified_time: 2024-10-06 06:31
 ---
 
 # Data Type
