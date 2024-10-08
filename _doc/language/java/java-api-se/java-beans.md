@@ -6,8 +6,8 @@ tags:
 - programming language
 - language
 - java
-created_time: 2024-10-08 10:29
-modified_time: 2024-10-08 19:22
+created_time: 2024-10-08 07:29
+modified_time: 2024-10-08 19:27
 ---
 
 # Java Beans
@@ -46,7 +46,7 @@ POJO > Java Beans
 : 이벤트 메서드 경우 이벤트 리스너 패턴을 사용함  
 
 
-**java beans example**
+**example**
 ```java
 import java.io.Serializable;
 
@@ -90,7 +90,7 @@ public class User implements Serializable {
   - 데이터 빈즈 : 불변적
   - 서비스 빈즈 : 가변적
 
-여기서 컴포넌트란 Java Bean API를 구현하고 독립적으로 동작하는 객체를 의미
+여기서 컴포넌트란 Java Bean API를 구현하면서 특정 기능을 수행하고 독립적으로 동작하는 객체를 의미
 
 
 
