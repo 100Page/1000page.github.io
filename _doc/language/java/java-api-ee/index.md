@@ -7,7 +7,7 @@ tags:
 - language
 - java
 created_time: 2024-10-07 06:21
-modified_time: 2024-10-08 07:07
+modified_time: 2024-10-11 01:06
 ---
 
 # Java EE
@@ -147,39 +147,36 @@ Connector Container          | ra.xml | 외부 시스템과의 연결을 관리
 
 
 #### Core Profile
-: Jakarta EE 10에서 도입  
+: Jakarta EE 10부터 도입  
 : 클라우드 네이티브 및 마이크로서비스 환경에서 개발하기 위한 최소 스펙 집합   
 : 가장 경량화된 프로파일로 마이크로서비스 환경에 사용하기 적합  
 
 - Jakarta CDI Lite
-- Jakarta DI
-- Jakarta Annotations
-- Jakarta Interceptors
-- ...
-
+- Jakarta JSON
+- Jakarta REST
 
 
 #### Web Profile
 : 웹 애플리케이션 개발에 필요한 스펙 집합  
 : 웹 애플리케이션을 위한 핵심 기술들로 구성  
 
+- Jakarta CDI Full
+- Jakarta Validation
+- Jakarta Security
 - Jakarta Servlet
-- Jakarta CDI
-- Jakarta Bean Validation
+- Jakarta WebSocket
 - Jakarta Persistence
-- ...
-
+- Jakarta Enterprise Beans Lite
 
 
 #### Full Platform
 : 엔터프라이즈 애플리케이션 개발에 필요한 스펙 집합  
 : 엔터프라이즈 애플리케이션 개발을 위한 포괄적인 솔루션 제공  
 
-- Jakarta EJB
-- Jakarta Messaging
+- Jakarta Enterprise Beans
 - Jakarta Mail
-- Jakarta RMI
-- ... 
+- Jakarta Messaging
+- Jakarta Batch
 
 
 
