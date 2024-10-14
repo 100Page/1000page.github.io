@@ -1,5 +1,5 @@
 ---
-order: 0.13
+order: 0.23
 title: java
 description: 자바 변수
 tags:
@@ -7,7 +7,7 @@ tags:
 - language
 - java
 created_time: 2024-10-11 08:45
-modified_time: 2024-10-11 13:56
+modified_time: 2024-10-14 18:45
 ---
 
 # Java Variable

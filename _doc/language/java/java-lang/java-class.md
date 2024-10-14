@@ -1,5 +1,5 @@
 ---
-order: 0.11
+order: 0.21
 title: java
 description: 자바 클래스
 tags:
@@ -7,7 +7,7 @@ tags:
 - language
 - java
 created_time: 2024-10-09 09:31
-modified_time: 2024-10-11 14:34
+modified_time: 2024-10-14 21:25
 ---
 
 # Java Class
@@ -52,9 +52,9 @@ public class Example {
 - member : 멤버란 클래스의 데이터와 기능을 나타내는 특정 요소를 의미
   - [variable](./java-variable.md) = 상태, 특성, 필드, 속성
   - [method](./java-method.md) = 기능, 행위, 행동, 동작
-  - member class 
-- block statement
-- constructor
+  - [member class](./java-class-type.md#inner-class) 
+- [block statement](#block-statement)
+- [constructor](#constructor)
 
 
 ```java
@@ -77,7 +77,7 @@ public class Example {
         return this.num;
     }
 
-    // member class
+    // member class 
     private class InnerClass {}
 
 }
@@ -176,7 +176,10 @@ public class Example {
     }
 
     public static void main(String[] args) {
-
+        
+        // JVM이 new 키워드를 만나면
+        // new 키워드를 통해 생성자를 호출하고 객체를 생성
+        // 객체가 생성되면 인스턴스 주소가 반환되고 이를 참조 변수에 저장
         Example ex = new Example(100);
 
     }
@@ -187,7 +190,7 @@ public class Example {
 
 
 ## Object
-: 클래스란 객체를 생성하기 위해 상태와 행동을 정의한 템플릿  
+: 클래스란 객체를 생성하기 위해 상태와 기능을 정의한 템플릿  
 : 객체는 클래스를 기반으로 생성된 실체(instance)로 객체는 해당 클래스에 속함  
 : 하나의 클래스로부터 여러 객체가 생성될 수 있으며 각 객체는 독립적인 상태(데이터)를 갖음  
 : 객체는 생성자에 의해 생성되며 더 이상 참조되지 않으면 GC에 의해 자동으로 제거됨  
@@ -201,14 +204,9 @@ public class Example {
 : 클래스로부터 실제 객체를 생성하는 과정  
 : new 키워드를 사용해 객체를 생성하면 클래스의 생성자가 호출되어 객체가 초기화 됨  
 : 특정 클래스로부터 만들어진 객체를 인스턴스라고 함  
-: 인스턴스는 클래스 변수나 메소드가 포함되지 않고 인스턴스 변수들로 구성됨
+: 메모리 차원에서 인스턴스는 인스턴스 변수들만 저장하고 클래스 변수나 메소드는 클래스를 참조해 사용
 
   
-**데이터 할당**  
-- 데이터 직접 할당 = 변수에 할당
-- 데이터 간접 할당 = 메소드를 통해 변수에 할당
-
-
 ```java
 public class Example {
 

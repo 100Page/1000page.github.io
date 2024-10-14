@@ -1,5 +1,5 @@
 ---
-order: 0.1
+order: 0.2
 title: java
 description: 자바 프로그램 구조
 tags:
@@ -7,7 +7,7 @@ tags:
 - language
 - java
 created_time: 2024-10-09 08:59
-modified_time: 2024-10-11 11:17
+modified_time: 2024-10-14 21:17
 ---
 
 # Java Program Structure
@@ -30,7 +30,6 @@ public class Example {
 
 	// 5. class member 
 	// - variable 
-	// - constructor method
 	// - method 
 
 	// vriable declaration
@@ -66,12 +65,12 @@ public class Example {
 : 특정 디렉토리에 속한 경우 이를 선언하며 하나의 자바 파일은 하나의 package 선언만 가능  
 
 **종류**
-- 내장 패키지
+- 내장 패키지 = Java API
 - 사용자 정의 패키지 
 
 **명명 규칙**
 - 패키지는 모두 소문자를 사용하고 마침표로 계층을 구분 
-- 일반적으로 최상위 도메인부터 시작
+- 일반적으로 최상위 도메인(도메인 역순)부터 시작
 
 ```java 
 package a;
@@ -88,7 +87,7 @@ a.b.c.Example ex2 = new a.b.c.Example();
 
 
 
-### Unnamed Package 
+### unnamed package 
 = default package, anonymous package  
 : 패키지를 생성하지 않은 경우 생기는 이름없는 패키지  
 : 이름없는 패키지는 하위 패키지를 생성 할 수 없음  
@@ -99,7 +98,8 @@ a.b.c.Example ex2 = new a.b.c.Example();
 
 ## import declaration
 : 다른 패키지에 존재하는 클래스를 참조하기 위한 구문  
-: import 선언을 통해 다른 패키지에 존재하는 클래스를 클래스 이름으로 참조함
+: import 선언을 통해 다른 패키지에 존재하는 클래스를 클래스 이름으로 참조함  
+: 기본이되는 java.lang 패키지는 import 구문이 없어도 참조 가능  
 
 ```java
 // 하위에 속한 모든 클래스 참조 
