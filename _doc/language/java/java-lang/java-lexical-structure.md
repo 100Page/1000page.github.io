@@ -7,7 +7,7 @@ tags:
 - language
 - java
 created_time: 2024-10-14 03:10
-modified_time: 2024-10-14 18:37
+modified_time: 2024-10-14 18:48
 ---
 
 # Java Lexical Structure
@@ -234,7 +234,7 @@ when         | 예약어로 미래에 사용될 수 있음
 
 ### operator
 : 연산을 수행하는 기호로 약 38개 연산자 기호 존재  
-: 연산자는 기능이나 용도에 따라 다양한 [분류](./operator-classification.md)로 나뉨  
+: 연산자는 기능이나 용도에 따라 다양한 [분류](./java-operator.md)로 나뉨  
 
 ```
 =   >   <   !   ~   ?   :   ->
