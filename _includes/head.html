@@ -8,8 +8,8 @@
 <meta name="description" content="{{ page.description | page.summary | site.description  }}">
 <meta name="keywords" content="{{ site.keyword }}{% if page.keywords or page.tags %}, {{ page.keywords | default: page.tags | join: ', ' }}{% endif %}">
 <link rel="canonical" href="{{ page.url | absolute_url }}">
-<link rel="alternate" href="{{ site.url }}/feed.xml" type="application/rss+xml">
 <link rel="sitemap" href="{{ site.url }}/sitemap.xml" type="application/xml">
+<link rel="alternate" href="{{ site.url }}/feed.xml" type="application/rss+xml">
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">

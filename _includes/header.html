@@ -32,3 +32,23 @@
   </div>
 </header>
 <hr>
+
+<nav class="none">
+  <p class="hide">포스트 카테고리</p>
+
+  <div class="common-wrap" style="margin-top:50px">
+  {% assign items = site.data.doc_items %}
+  
+  <button>메뉴 보기</button>
+
+  <span class="category-link-wrap index-category-link" id="categoryLink">
+    {% assign main_categories = items | map: "folder" | uniq %}
+    {% for category in main_categories %}
+      {% assign folder = category | split: '=>' | first | strip %}
+      {% assign folder_name = folder | split: '"' | last | strip %}
+      <a href="#id-{{ folder_name }}">{{ folder_name }}</a>
+    {% endfor %}
+  </span>
+
+  </div>
+</nav>
