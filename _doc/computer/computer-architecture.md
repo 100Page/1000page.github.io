@@ -1,13 +1,12 @@
 ---
 order: 0.3
 title: computer
-description: 컴퓨터 아키텍처 (폰 노이만 모델)
+description: 컴퓨터 아키텍처 종류 (폰 노이만 모델)
 tags:
 - computer
-- computer architecture
-- von neumann
+- architecture
 created_time: 2024-09-28 11:43
-modified_time: 2024-10-05 23:40
+modified_time: 2024-10-07 06:12
 ---
 
 # Computer Architecture
@@ -25,8 +24,8 @@ modified_time: 2024-10-05 23:40
 
 **history**
 ```
-초기 컴퓨터는 명령어를 하드웨어에 내장해 사용했는데 (논리 회로에 저장)  
-고정된 방식으로 동작하므로 작업 처리를 고속으로 수행하는 장점이 있으나
+초기 컴퓨터는 프로그램을 하드웨어에 내장해 사용
+프로그램이 고정되어 있어 작업 처리를 고속으로 수행하는 장점이 있으나
 프로그램이 수정되면 하드웨어를 교체해야 하는 문제가 있었음  
 
 폰 노이만 아키텍처는 프로그램이 메모리에 저장되므로 프로그램을 변경하기 용이하고 
