@@ -1,4 +1,4 @@
-const Util = {
+export const Util = {
 
   debounce: (fn, delay) => {
     let timeoutId;
