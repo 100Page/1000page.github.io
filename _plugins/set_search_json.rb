@@ -1,5 +1,5 @@
 module Jekyll
-  class SearchGenerator < Jekyll::Generator
+  class SearchJsonGenerator < Jekyll::Generator
     safe true
     priority :lowest
 
