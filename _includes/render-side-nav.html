@@ -10,7 +10,7 @@
       {{ item.folder }}
     </h3>
     
-    <div class="sub-nav-container" data-folder-id="{{ item.folder | slugify }}-container">
+    <div class="sub-nav-container" data-folder-id="{{ item.folder | slugify }}">
     {% assign next_depth = include.depth | default:1 | plus: 1 %}
     {% include render-side-nav.html posts=item.posts depth=next_depth %}
     </div>
