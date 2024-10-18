@@ -20,6 +20,13 @@ const initPathComponents = async () => {
   const path = window.location.pathname;
 
   try {
+    
+    if(['/', '/index'].includes(path)) {
+      const { createPostPagination } = await import('./component/index.post.pagination.js');
+      const postPagination = createPostPagination();
+      postPagination.init();
+    }
+
     if(path === '/tag') {
       const { createTagList } = await import('./component/tag.list.js');
       const tagList = createTagList();

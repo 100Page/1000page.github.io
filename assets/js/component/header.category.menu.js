@@ -4,7 +4,7 @@ const defaultOptions = {
   getCloseBtn: () => document.getElementById('categoryCloseBtn'),
 };
 
-export function createHeaderCateogyMenu(customOptions = {}) {
+export function createHeaderCategoryMenu(customOptions = {}) {
   const options = { ...defaultOptions, ...customOptions };
   const { getHeaderCategory, getOpenBtn, getCloseBtn } = options;
 
@@ -16,9 +16,11 @@ export function createHeaderCateogyMenu(customOptions = {}) {
     const isVisible = $headerCategory.classList.toggle('visible');
 
     if(isVisible) {
+      $headerCategory.style.overflowY = 'auto';
       document.documentElement.classList.add('no-scroll');
       document.body.classList.add('no-scroll');
     } else {
+      $headerCategory.style.overflowY = 'hidden';
       document.documentElement.classList.remove('no-scroll');
       document.body.classList.remove('no-scroll');
     }
