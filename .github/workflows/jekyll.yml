@@ -80,7 +80,7 @@ jobs:
       - name: -- Install dependencies
         run: |
           bundle config set --local deployment 'true'
-          bundle install --jobs 4 --retry 3
+          bundle install --without local --jobs 4 --retry 3
 
       - name: -- Jekyll build
         run: |

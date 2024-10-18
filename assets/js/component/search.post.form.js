@@ -35,6 +35,13 @@ export function createSearchPostForm(customOptions = {}) {
       return [item];
     }
 
+    if(item.tags && item.tags.length > 0) {
+      const matchingTags = item.tags.filter(tag => tag.toLowerCase().includes(lowerCaseQuery));
+      if(matchingTags.length > 0) {
+        return [item];
+      }
+    }
+
     if(item.posts && item.posts.length > 0) {
       return item.posts.flatMap(post => filterPost(post, lowerCaseQuery));
     }
@@ -44,10 +51,12 @@ export function createSearchPostForm(customOptions = {}) {
 
   const searchPost = (items, query) => {
     const lowerCaseQuery = query.toLowerCase();
-    return items.flatMap(item => {
+    const results = items.flatMap(item => {
       const filteredPosts = filterPost(item, lowerCaseQuery);
       return filteredPosts.length > 0 ? [{ ...item, posts: filteredPosts }] : [];
     });
+
+    return results;
   };
 
   const createPostElement = (item) => {
@@ -72,6 +81,12 @@ export function createSearchPostForm(customOptions = {}) {
       $searchResult.innerHTML = '<li>검색 결과가 없습니다.</li>';
       return null;
     }
+
+    /*
+    const countElement = document.createElement('p');
+    countElement.className = 'search-count';
+    countElement.textContent = `${items.length} 개의 검색 결과가 있습니다.`;
+    */
 
     const fragment = document.createDocumentFragment();
     const displayItem = (item) => {

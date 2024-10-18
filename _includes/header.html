@@ -1,7 +1,7 @@
 <header class="include-header-wrap" id="commonHeader">
   <div class="common-wrap">
     <p class="hide">다음 링크를 클릭하면 메인 페이지로 이동합니다.</p>
-    <h1 class="header-title" id="headerTitle" tabindex="-1">
+    <h1 class="header-title">
       <a href="{{ "/" | relative_url }}">underPage</a>
     </h1>
 
@@ -26,29 +26,39 @@
       <a href="https://underpage.github.io/">
         {% octicon home-fill height:22.5 class:"home-icon" %}
       </a>
-
     </div>
 
   </div>
 </header>
 <hr>
 
-<nav class="none">
-  <p class="hide">포스트 카테고리</p>
+<div class="header-category-wrap">
 
-  <div class="common-wrap" style="margin-top:50px">
-  {% assign items = site.data.doc_items %}
-  
-  <button>메뉴 보기</button>
+  <button class="category-open-btn" id="categoryOpenBtn" aria-label="포스트 카테고리 열기">menu</button>
 
-  <span class="category-link-wrap index-category-link" id="categoryLink">
-    {% assign main_categories = items | map: "folder" | uniq %}
-    {% for category in main_categories %}
-      {% assign folder = category | split: '=>' | first | strip %}
-      {% assign folder_name = folder | split: '"' | last | strip %}
-      <a href="#id-{{ folder_name }}">{{ folder_name }}</a>
-    {% endfor %}
-  </span>
+  <div class="category-menu-wrap" id="headerCategory">
+    <div class="common-wrap">
+      <button class="category-close-btn" id="categoryCloseBtn" aria-label="포스트 카테고리 닫기"></button>
 
+      <nav class="header-category-nav">
+        {% assign doc_items = site.data.doc_items %}
+        {% assign sorted_items = doc_items | sort: 'order' %}
+        {% include render_header_nav.html items=sorted_items depth=0 %}
+      </nav>
+
+    </div>
   </div>
-</nav>
+
+</div>
+
+<script>
+const menuWrap = document.querySelector('.category-menu-wrap');
+
+document.getElementById('categoryOpenBtn').addEventListener('click', () => {
+  menuWrap.style.overflowY = 'auto';
+});
+
+document.getElementById('categoryCloseBtn').addEventListener('click', () => {
+  menuWrap.style.overflowY = 'hidden';
+});
+</script>

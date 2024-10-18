@@ -16,7 +16,6 @@ exclude:
 
 include:
   - _doc
-  - assets/data/doc_items.json
 
 production:
   build:
