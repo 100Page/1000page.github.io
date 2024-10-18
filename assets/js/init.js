@@ -1,16 +1,51 @@
-import { createHeaderCateogyMenu } from './component/header.category.menu.js';
-import { createSearchPostForm } from './component/search.post.form.js';
+import { createHeaderCategoryMenu } from './component/header.category.menu.js';
 import { createFooterTopBtn } from './component/footer.top.btn.js';
 
 
 
-const headerCateogyMenu = createHeaderCateogyMenu();
-headerCateogyMenu.init();
+const initCommonComponents = () => {
+  try {
+    const headerCategoryMenu = createHeaderCategoryMenu();
+    headerCategoryMenu.init();
 
-const searchPostForm = createSearchPostForm();
-if(window.location.pathname === '/search') {
-  searchPostForm.init();
-}
+    const footerTopBtn = createFooterTopBtn();
+    footerTopBtn.init();
+    
+  } catch (error) {
+    console.error('[Error] init:', error);
+  }
+};
 
-const footerTopBtn = createFooterTopBtn();
-footerTopBtn.init();
+const initPathComponents = async () => {
+  const path = window.location.pathname;
+
+  try {
+    if(path === '/tag') {
+      const { createTagList } = await import('./component/tag.list.js');
+      const tagList = createTagList();
+      tagList.init();
+    }
+
+    if(path === '/search') {
+      const { createSearchPostForm } = await import('./component/search.post.form.js');
+      const searchPostForm = createSearchPostForm();
+      searchPostForm.init();
+    }
+
+    if(path.includes('doc')) {
+      const { createSidePostNav } = await import('./component/side.post.nav.js');
+      const sidePostNav = createSidePostNav();
+      sidePostNav.init();
+    }
+
+  } catch (error) {
+    console.error('[Error] init:', error);
+  }
+};
+
+const init = () => {
+  initCommonComponents();
+  initPathComponents();
+};
+
+document.addEventListener('DOMContentLoaded', init);

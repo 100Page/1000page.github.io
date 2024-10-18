@@ -39,7 +39,7 @@ module Jekyll
             'folder' => File.basename(entry),
             'url' => "/doc/#{relative_path}/index.md".gsub(/\/+/, '/'),
             'order' => folder_order,
-            'post_cnt' => sub_file_count,
+            #'post_cnt' => sub_file_count,
             'posts' => sort_items(sub_items)
           }
 
@@ -51,14 +51,14 @@ module Jekyll
           file_count += 1
 
           item = {
-            'folder' => parent_folder,
+            #'folder' => parent_folder,
             'filename' => File.basename(entry, '.md'),
             'url' => url,
             'title' => front_matter['title'],
             'order' => front_matter['order'],
             'description' => front_matter['description'],
             'tags' => front_matter['tags'],
-            'created_time' => front_matter['created_time'],
+            #'created_time' => front_matter['created_time'],
             'modified_time' => front_matter['modified_time'],
           }
 
@@ -86,7 +86,8 @@ module Jekyll
     def sort_items(items)
       items.sort_by do |item|
         [
-          item['post_cnt'] ? 0 : 1,
+          #item['post_cnt'] ? 0 : 1,
+          item['folder'] ? 0 : 1,
           item['filename'] == 'index' ? 0 : 1,
           item['order'] ? 0 : 1,
           item['order'] || item['folder'] || item['filename'] || '',
