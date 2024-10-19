@@ -11,6 +11,11 @@ export function createHeaderCategoryMenu(customOptions = {}) {
   const $headerCategory = getHeaderCategory();
   const $openBtn = getOpenBtn();
   const $closeBtn = getCloseBtn();
+ 
+  const initCategoryTitle = () => {
+    const firstItem = document.querySelector('.category-title-list button');
+    firstItem?.click();
+  }
 
   const toggleVisibility = () => {
     const isVisible = $headerCategory.classList.toggle('visible');
@@ -19,6 +24,8 @@ export function createHeaderCategoryMenu(customOptions = {}) {
       $headerCategory.style.overflowY = 'auto';
       document.documentElement.classList.add('no-scroll');
       document.body.classList.add('no-scroll');
+      initCategoryTitle();
+
     } else {
       $headerCategory.style.overflowY = 'hidden';
       document.documentElement.classList.remove('no-scroll');

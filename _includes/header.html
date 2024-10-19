@@ -41,9 +41,7 @@
       <button class="category-close-btn" id="categoryCloseBtn" aria-label="포스트 카테고리 닫기"></button>
 
       <nav class="header-category-nav">
-        {% assign doc_items = site.data.doc_items %}
-        {% assign sorted_items = doc_items | sort: 'order' %}
-        {% include render_header_nav.html items=sorted_items depth=0 %}
+        {% include render_header_nav.html %}
       </nav>
 
     </div>
