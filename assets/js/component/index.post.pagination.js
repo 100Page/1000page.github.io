@@ -109,7 +109,7 @@ export function createPostPagination(customOptions = {}) {
     location.hash = `page/${currentPage}`;
     setupPaginationBtn();
 
-    //$indexPostList.classList.remove('none');
+    $indexPostList.hidden = false;
   }
 
   const getPageFromURL = () => {
@@ -130,6 +130,7 @@ export function createPostPagination(customOptions = {}) {
     });
     $itemList.forEach(item => $indexPostList.appendChild(item));
   }
+  
   const init = () => {
 
     $itemList = Array.from($indexPostList .getElementsByTagName('li'));

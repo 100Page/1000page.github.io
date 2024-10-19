@@ -36,7 +36,7 @@
 
   <button class="category-open-btn" id="categoryOpenBtn" aria-label="포스트 카테고리 열기">menu</button>
 
-  <div class="category-menu-wrap" id="headerCategory">
+  <div class="category-menu-wrap" id="headerCategory" tabindex="-1">
     <div class="common-wrap">
       <button class="category-close-btn" id="categoryCloseBtn" aria-label="포스트 카테고리 닫기"></button>
 
@@ -48,3 +48,18 @@
   </div>
 
 </div>
+
+
+<script>
+
+const disableTabFocus = () => {
+  const buttons = document.querySelectorAll('.category-menu-wrap button, .category-menu-wrap a');
+  buttons.forEach(button => {
+    button.setAttribute('tabindex', '-1');
+  });
+};
+
+// 사용 예
+disableTabFocus();
+
+</script>

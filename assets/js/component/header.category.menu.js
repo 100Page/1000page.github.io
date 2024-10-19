@@ -11,7 +11,18 @@ export function createHeaderCategoryMenu(customOptions = {}) {
   const $headerCategory = getHeaderCategory();
   const $openBtn = getOpenBtn();
   const $closeBtn = getCloseBtn();
- 
+
+  const toggleTabIndex = (value) => {
+    $headerCategory.querySelectorAll('button, a').forEach(el => el.tabIndex = value);
+    $headerCategory.tabIndex = value;
+  };
+
+  const toggleScrolling = (enable) => {
+    const method = enable ? 'add' : 'remove';
+    document.documentElement.classList[method]('no-scroll');
+    document.body.classList[method]('no-scroll');
+  };
+
   const initCategoryTitle = () => {
     const firstItem = document.querySelector('.category-title-list button');
     firstItem?.click();
@@ -20,20 +31,16 @@ export function createHeaderCategoryMenu(customOptions = {}) {
   const toggleVisibility = () => {
     const isVisible = $headerCategory.classList.toggle('visible');
 
+    $headerCategory.style.overflowY = isVisible ? 'auto' : 'hidden';
+    toggleTabIndex(isVisible ? '0' : '-1');
+    toggleScrolling(isVisible);
     if(isVisible) {
-      $headerCategory.style.overflowY = 'auto';
-      document.documentElement.classList.add('no-scroll');
-      document.body.classList.add('no-scroll');
-      initCategoryTitle();
-
-    } else {
-      $headerCategory.style.overflowY = 'hidden';
-      document.documentElement.classList.remove('no-scroll');
-      document.body.classList.remove('no-scroll');
+      document.querySelector('.category-title-list button')?.click();
     }
   };
 
   const init = () => {
+    disableTabFocus();
     $openBtn.addEventListener('click', toggleVisibility);
     $closeBtn.addEventListener('click', toggleVisibility);
   };
