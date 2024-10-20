@@ -1,12 +1,20 @@
 ---
 order: 17
 title: cloud
-description: 클라우드란 (인덱스)
+description: 클라우드 컴퓨팅 (인덱스)
+summary:
+keywords:
+- cloud
+- cloud computing
+- cloud service model
+- cloud deployment model
+- 클라우드
+- 클라우드 컴퓨팅
 tags:
 - index
 - cloud
 created_time: 2024-09-07 23:44
-modified_time: 2024-10-05 23:32
+modified_time: 2024-10-18 23:19
 ---
 
 # Cloud Computing
@@ -18,11 +26,11 @@ modified_time: 2024-10-05 23:32
 - [Cloud Service Model](./cloud-service-model)
 - [Cloud Deployment Model](./cloud-deployment-model)
 - [Cloud Architecture](./cloud-architecture.md)
-- Cloud Service Platform
+- Cloud Service Platforms
   - AWS 
   - Azure
   - GCP
-- [Cloud Management Tool](./cloud-management-tool.md)
+- [Cloud Management Tools](./cloud-management-tools.md)
 - [Cloud Security](./cloud-security.md)
 
 

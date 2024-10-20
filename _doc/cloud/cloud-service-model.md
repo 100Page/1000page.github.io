@@ -2,11 +2,19 @@
 order: 0.1
 title: cloud
 description: 클라우드 서비스 모델
+summary:
+keywords:
+- cloud
+- cloud computing
+- cloud service model
+- 클라우드
+- 클라우드 컴퓨팅
+- 클라우드 서비스 모델
 tags:
 - cloud
-- cloud model
+- model
 created_time: 2024-09-29 15:38
-modified_time: 2024-10-05 23:27
+modified_time: 2024-10-19 15:31
 ---
 
 # Cloud Service Model

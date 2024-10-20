@@ -2,11 +2,19 @@
 order: 0.2
 title: cloud
 description: 클라우드 이용 모델
+summary:
+keywords:
+- cloud
+- cloud computing
+- cloud deployment model
+- 클라우드
+- 클라우드 컴퓨팅
+- 클라우드 이용 모델
 tags:
 - cloud
-- cloud model
+- model
 created_time: 2024-09-09 01:22
-modified_time: 2024-10-05 23:27
+modified_time: 2024-10-19 15:33
 ---
 
 # Cloud Deployment Model
@@ -33,7 +41,6 @@ modified_time: 2024-10-05 23:27
 : 특정 조직만을 위해 제공되는 서비스  
 : 특정 요구사항에 맞춰 구축 및 관리하고 리소스 할당과 사용을 직접 제어  
 : 사용자가 한정되므로 보안성이 높음  
-
 
 
 
