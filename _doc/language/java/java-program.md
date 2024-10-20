@@ -2,8 +2,13 @@
 order: 0.4
 title: java
 description: 자바 프로그램
+summary:
+keywords:
+- java
+- java program
+- 자바
+- 자바 프로그램
 tags:
-- programming language
 - language
 - java
 created_time: 2024-10-07 06:45

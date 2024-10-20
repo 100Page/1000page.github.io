@@ -2,22 +2,27 @@
 order: 0
 title: java
 description: 자바 플랫폼 (인덱스)
+summary:
+keywords:
+- java
+- java platform
+- 자바
+- 자바 플랫폼
 tags:
-- programming language
 - language
 - java
 created_time: 2024-09-09 22:51
-modified_time: 2024-10-07 06:52
+modified_time: 2024-10-16 06:01
 ---
 
 # Java
-: 자바 응용 프로그램 개발을 위한 프로그래밍 언어와 개발 도구 및 실행 환경
+: 자바 프로그램 개발을 위한 프로그래밍 언어와 개발 도구 및 실행 환경
 
 - [Java Platform](#java-platform)
   - [JDK](./jdk.md)
-    - [Java Virtual Machine](./jvm.md)
-- [Java Project](./java-project.md)
+    - [JVM](./jvm.md)
 - [Java Version](./java-version.md)
+- [Java Project](./java-project.md)
 - [Java Program](./java-program.md)
 - [Java Programming Language](./java-lang/index.md)
 - [Java SE API](./java-api-se/index.md)
@@ -65,11 +70,16 @@ Java ME Embedded                | 경량화된 Java ME | Java Embedded Suite
 ```
 
 
+
 ## JCP
 Java Community Process  
 : 자바 관리 조직  
 : 자바 플랫폼 버전 및 기술 사양을 제안/검토/승인하는 커뮤니티  
 : Jakarta EE 경우 기술 사양은 Jakarta EE Working Group에서 검토  
+
+**JESP**  
+: Jakarta EE Specification Process  
+: Jakarta EE 사양 프로세스  
 
 
 
@@ -103,3 +113,10 @@ JDK Enhancement Proposal
 
 **JEP list**  
 https://openjdk.org/jeps/0
+
+
+단계 | 설명
+---|---
+Incubator | 새로운 기능이나 API의 초기 개발 및 실험 단계
+Preview   | 인큐베이터에서 테스트된 기능이 안정성을 확보해 커뮤니티의 추가 피드백을 받는 단계
+Standard  | 충분한 피드백과 테스트를 거친 공식 표준 기능
