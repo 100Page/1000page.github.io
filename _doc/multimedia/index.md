@@ -2,11 +2,18 @@
 order: 5
 title: multimedia
 description: 멀티미디어 (인덱스)
+summary:
+keywords:
+- media
+- multimedia
+- 멀티미디어
+- 멀티미디어 요소
+- 멀티미디어 환경
 tags:
 - index
 - multimedia
 created_time: 2024-09-15 09:41
-modified_time: 2024-10-10 09:21
+modified_time: 2024-10-20 09:23
 ---
 
 # Multimedia
@@ -44,8 +51,10 @@ modified_time: 2024-10-10 09:21
 **history**
 ```
 1960년대 하이퍼텍스트와 하이퍼미디어 개념이 제시되며 멀티미디어 개념이 등장
+
 1980년대 컴퓨터 기술이 발전하며 멀티미디어 콘텐츠 제작이 보다 활성화됨
          CD-ROM이 등장하면서 멀티미디어를 저장하고 배포하는 기술이 발전함
+
 1990년대 PC 보급이 확산되고 오디오와 비디오 기능이 PC에 내장되면서 멀티미디어 콘텐츠 소비가 쉬워짐
          웹의 등장으로 멀티미디어 콘텐츠를 쉽게 공유하고 접근하는 환경이 마련됨
 
