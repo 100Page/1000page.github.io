@@ -6,14 +6,14 @@ summary:
 keywords:
 - java
 - jdk
-- java development kit 
+- java development kit
 - 자바
 - 자바 개발 툴킷
 tags:
 - language
 - java
 created_time: 2024-10-07 06:22
-modified_time: 2024-10-20 16:23
+modified_time: 2024-10-21 06:47
 ---
 
 # JDK
