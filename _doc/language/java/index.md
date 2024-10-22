@@ -1,5 +1,5 @@
 ---
-order: 0
+order: 0.1
 title: java
 description: 자바 플랫폼 (인덱스)
 summary:
@@ -12,7 +12,7 @@ tags:
 - language
 - java
 created_time: 2024-09-09 22:51
-modified_time: 2024-10-21 16:47
+modified_time: 2024-10-22 21:50
 ---
 
 # Java
@@ -24,7 +24,7 @@ modified_time: 2024-10-21 16:47
 - [Java Version](./java-version.md)
 - [Java Project](./java-project.md)
 - [Java Program](./java-program.md)
-- [Java Lexical Analysis](./java-lexical analysis.md)
+- [Java Compilation Process](./java-compilation-process.md)
 - [Java Programming Language](./java-lang/index.md)
 - [Java SE API](./java-api-se/index.md)
 - [Java EE API](./java-api-ee/index.md)

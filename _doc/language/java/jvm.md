@@ -13,7 +13,7 @@ tags:
 - language
 - java
 created_time: 2024-10-10 13:14
-modified_time: 2024-10-21 18:14
+modified_time: 2024-10-22 11:51
 ---
 
 # JVM
@@ -30,8 +30,8 @@ Java Virtual Machine
 - [Native Method Library](#native-method-library)
 
 ```
-Class Loader <==> JVM Memoery <==> Execution Engine
-바이트코드 로드    바이트코드 저장    바이트코드 실행
+ Class Loader <==> JVM Memoery <==> Execution Engine
+바이트코드 로드   바이트코드 저장   바이트코드 변환
 ```
 
 **스택 기반의 가상 머신 아키텍처**  
@@ -84,6 +84,59 @@ Class Loader <==> JVM Memoery <==> Execution Engine
 : JVM이 시작될 때 운영체제에 요청해 메모리를 할당받음  
 : 할당받은 메모리를 다양한 영역으로 나누어 관리하고 영역별로 특정 유형의 데이터가 저장됨  
 
+```
+JVM 관리 
+          (GC)
+Stack  |  Heap  |  Program Counter Register  |  Native Method Stack
+        - Young Generation
+          - Eden
+          - Survivor
+        - Old Generation
+
+운영체제가 관리
+Metaspace
+```
+
+
+**JVM 메모리 영역과 객체 생성 과정**  
+
+영역 | 설명 
+---|---
+Stack Memory | 메소드 호출 (객체 참조 변수, 지역 변수)
+Heap Memory  | 객체 (인스턴스 변수), 배열
+Metaspace    | 클래스 메타데이터, 메소드 메타데이터, 클래스 변수, 상수 풀
+
+1. JVM이 필요한 클래스를 Metaspace에 로드  
+  a. JVM은 지연 로딩 방식을 사용해 클래스가 필요한 시점에 로드함
+  b. 클래스 메타데이터, 메소드 메타데이터, 클래스 변수가 로드됨
+  c. 한 번 로드된 클래스는 Metaspace에 저장되어 재사용됨
+
+2. JVM이 new 키워드를 만나면 Heap 메모리에 객체를 생성하기 위한 공간을 할당함  
+  a. 클래스 필드의 기본 데이터 타입 크기를 합산
+  b. 클래스 필드가 객체를 참조하면 32비트 JVM은 4바이트를 64비트 JVM은 8바이트를 할당
+  c. 객체 헤더 정보를 위한 공간 8바이트나 16바이트를 할당 
+  d. 이 과정을 합산하면 인스턴스 크기가 되며 이를 8바이트 배수로 조정함 (성능 최적화, 메모리 정렬)
+
+3. 할당된 메모리 공간의 인스턴스 변수를 초기화함  
+  a. JVM이 메모리 영역 비트를 0으로 채워 기본 값으로 초기화됨 = 객체 생성
+  b. 인스턴스 변수에 값이 명시되어 있으면 이를 메모리에 할당함
+  c. 인스턴스 초기화 블록이 있으면 실행함
+
+4. 생성자를 호출하고 실행해 객체 상태를 설정함  
+  a. this()나 super()가 있으면 다른 생성자를 호출함
+  b. 생성자 내에 있는 코드를 실행함
+
+5. 생성된 객체의 메모리 주소가 반환되어 이를 참조 변수에 저장함
+
+
+용어 | 설명
+---|---
+메모리 주소 | JVM이 사용하는 가상 메모리 공간의 주소로 절대적인 위치    
+오프셋 | 특정 기준점으로 메모리 주소를 나타내는 상대적인 위치 (배열 요소, 객체 필드)  
+참조 버킷 | 객체 참조를 저장하는 메모리 위치 (클래스 변수, 인스턴스 변수, 지역 변수)
+
+
+**메모리 크기 지정**
 ```bash
 # 스택 크기 설정
 java -Xss<스택 크기>
@@ -96,71 +149,50 @@ java -XX:MetaspaceSize=<초기 크기> -XX:MaxMetaspaceSize=<최대 크기>
 ```
 
 
-**Stack Area**   
+
+### Stack Area
 : 스레드 별로 독립적인 스택 메모리를 가짐  
 : 메소드가 호출되면 스택 프레임이 쌓이고 메소드가 종료되면 해당 스택 프레임이 제거됨  
 : 스택 프레임에는 메소드의 호출 정보와 메소드 내부의 객체 참조 변수, 지역 변수 정보가 저장됨  
 : 스레드 별로 스택 메모리 크기가 정해져 있으며 이 크기를 초과하면 StackOverflowError 가 발생함  
 
+**기본 스레드**
+- Main Thread : 실행 스레드
+- Notification Thread
+- Finalizer Thread : Object.finalize()를 관리하기 위한 백그라운드 스레드
+- Common-Cleaner Thread
+- Monitor Deflation Thread
+- Reference Handler Thread
+- Garbage Collector Thread
+- Signal Dispatcher Thread
+- JIT Compiler Thread
 
-**Heap Area**  
+
+
+### Heap Area
 : 모든 스레드가 접근할 수 있는 공유 메모리 영역  
 : 객체와 배열이 생성되어 해당 데이터가 힙 메모리에 저장됨  
 : 새로운 객체는 Young Generation에서 생성되고 오래된 객체는 Old Generation에 저장됨  
 : 가비지 컬렉션이 참조되지 않는 객체와 배열을 해제해 메모리를 관리함  
 
 
-**Metaspace**
-: 클래스 메타데이터, 메소드 메타데이터, 클래스 변수 등이 저장되는 영역  
+
+### Metaspace
+: 네이티브 메모리 영역으로 메모리 제한이 없음  
+: 클래스 메타데이터, 메소드 메타데이터, 클래스 변수, 상수 풀 등이 저장되는 영역  
 
 
-**Program Counter Register**  
+
+### Program Counter Register
 : 스레드 별로 독립적인 PC Register 영역을 가짐  
 : 스레드마다 현재 실행 중인 바이트코드의 위치를 가르키는 레지스터  
 : 레지스터를 통해 현재 실행중인 명령을 추적할 수 있음  
 
 
-**Native Method Stack**  
+
+### Native Method Stack
 : 네이티브 메소드 실행을 위한 스택  
 : 네이티브 메소드가 실행되었을때 네이티브 메소드의 지역 변수와 매개 변수가 저장됨
-
-
-**JVM 메모리 영역과 객체 생성 과정**  
-
-영역 | 설명 
----|---
-Stack Memory | 메소드 호출 (객체 참조 변수, 지역 변수)
-Heap Memory  | 객체 (인스턴스 변수), 배열
-Metaspace    | 클래스 메타데이터, 메소드 메타데이터, 클래스 변수, 상수 풀
-
-1. JVM이 필요한 클래스를 Metaspace에 로드
-  a. JVM은 지연 로딩 방식을 사용해 클래스가 필요한 시점에 로드함
-  b. 클래스 메타데이터, 메소드 메타데이터, 클래스 변수가 로드됨
-  c. 한 번 로드된 클래스는 Metaspace에 저장되어 재사용됨
-
-2. JVM이 new 키워드를 만나면 Heap 메모리에 객체를 생성하기 위한 공간을 할당함
-  a. 클래스 필드의 모든 기본 데이터 타입 크기를 합산
-  b. 클래스 필드가 객체를 참조하면 32비트 JVM은 4바이트를 64비트 JVM은 8바이트를 할당
-  c. 객체 헤더 정보를 위한 공간 8바이트나 16바이트를 할당 
-  d. 이 과정을 합산하면 인스턴스 크기가 되며 이를 8바이트 배수로 조정함 (성능 최적화, 메모리 정렬)
-
-3. 할당된 메모리 공간의 인스턴스 변수를 초기화함
-  a. JVM이 메모리 영역 비트를 0으로 채워 기본 값으로 초기화됨 = 객체 생성
-  b. 인스턴스 변수에 값이 명시되어 있으면 이를 메모리에 할당함
-  c. 인스턴스 초기화 블록이 있으면 실행함
-
-4. 생성자를 호출하고 실행해 객체 상태를 설정함
-  a. this()나 super()가 있으면 다른 생성자를 호출함
-  b. 생성자 내에 있는 코드를 실행함
-
-5. 생성된 객체의 메모리 주소가 반환되어 이를 참조 변수에 저장함
-
-
-용어 | 설명
----|---
-메모리 주소 | JVM이 사용하는 가상 메모리 공간의 주소로 절대적인 위치    
-오프셋 | 특정 기준점으로 메모리 주소를 나타내는 상대적인 위치 (배열 요소, 객체 필드)  
-참조 버킷 | 객체 참조를 저장하는 메모리 위치 (클래스 변수, 인스턴스 변수, 지역 변수)
 
 
 
@@ -207,8 +239,7 @@ OpenJ9   | JIT Compiler, AOT Compiler
 : HotSpotVM의 AOT 컴파일러는 Java 9에서 실험적으로 도입되고 Java 16부터는 제거됨  
 
 
-**JVMCI**  
-: JVM Compiler Interface  
+**JVM Compiler Interface** (JVMCI)    
 : JVMCI를 통해 JVM에 새로운 컴파일러를 연결함 (ex. HotSpot JVM + Graal)  
 : Java 9부터 도입되어 JVM의 컴파일러 교체를 가능하게 함  
 
@@ -221,7 +252,7 @@ System.getProperty("jvmci.Compiler");
 
 ### Garbage Collector
 : 힙 메모리에서 더 이상 참조되지 않는 객체를 찾아 메모리를 해제함  
-: 힙 메모리는 Young Generation, Old Generation, Metaspace로 구분되며 영역에 따라 GC가 다르게 수행됨  
+: 힙 메모리 Young Generation, Old Generation 영역에 따라 GC가 다르게 수행됨  
 : JVM 구현체에 따라 지원하는 GC 알고리즘이 달라질 수 있음  
 
 유형 | 설명 | 특징
