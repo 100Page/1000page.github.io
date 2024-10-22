@@ -2,12 +2,16 @@
 order: 0.2
 title: java
 description: 자바 프로그램 구조
+summary:
+keywords:
+- java
+- java program structure
+- 자바 프로그램 구조
 tags:
-- programming language
 - language
 - java
 created_time: 2024-10-09 08:59
-modified_time: 2024-10-14 21:17
+modified_time: 2024-10-22 10:40
 ---
 
 # Java Program Structure

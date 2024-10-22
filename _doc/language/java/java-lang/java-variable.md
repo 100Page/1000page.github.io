@@ -2,12 +2,16 @@
 order: 0.23
 title: java
 description: 자바 변수
+summary:
+keywords:
+- java
+- java variable
+- 자바 변수
 tags:
-- programming language
 - language
 - java
 created_time: 2024-10-11 08:45
-modified_time: 2024-10-14 18:45
+modified_time: 2024-10-22 10:40
 ---
 
 # Java Variable
@@ -15,12 +19,18 @@ modified_time: 2024-10-14 18:45
 : 변수를 통해 메모리에 접근해 데이터를 저장하고 핸들링함  
 : 프로그램 실제 실행시 변수는 메모리 주소로 변환됨
 
-**종류**
+**범위**
 - [클래스 변수](#static-variable)
 - [인스터턴스 변수](#instance-variable)
 - [지역 변수](#local-variable)
 - [매개 변수](#parameter-variable)
 - [익명 변수](#unnamed-variable)
+- [전역 변수](#global-variable)
+
+**특성**
+- final 변수
+- transient 변수
+- volatile 변수
 
 ```java
 // declaration = 변수 선언 
@@ -53,13 +63,13 @@ Block  | - | 조건문이나 반복문같은 특정 블록 내에서 선언된 �
 
 
 **JVM 메모리 영역**  
-: Java 8 이후 Method Area가 Metaspace로 대체되고 클래스 변수는 Heap에 저장됨
 
 영역 | 설명 
 ---|---
-Stack Memory | 지역 변수와 매개 변수가 저장되는 영역
-Heap Memory  | 클래스 변수와 인스턴스 변수가 저장되는 영역
-Thread-Local Areas | 스레드 로컬 변수 저장되는 영역 
+Stack Memory | 메소드의 지역 변수와 매개 변수가 저장되는 영역
+Heap Memory  | 인스턴스 변수가 저장되는 영역
+Metaspace    | 클래스 변수가 저장되는 영역
+Thread-Local Areas | 스레드 로컬 변수가 저장되는 영역 
 
 
 
@@ -188,3 +198,13 @@ for(int _ : arr) {
     count++;
 }
 ```
+
+
+
+## global variable
+: 자바에서는 전역 변수를 직접 지원하지 않지만 static 키워드와 final 키워드를 통해 유사한 방식을 지원  
+
+```java
+public class Example {
+    public static final int NUM = 0;
+}
