@@ -1,9 +1,12 @@
 ---
-order: 0
+order: 0.1
 title: java
 description: 자바 빈즈
+summary:
+keywords:
+- java
+- java se
 tags:
-- programming language
 - language
 - java
 created_time: 2024-10-08 07:29
