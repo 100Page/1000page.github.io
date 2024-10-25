@@ -58,6 +58,7 @@ modified_time: 2024-10-25 19:33
 - **[저수준 언어](./low-level-language.md)**
   - 기계어
   - 어셈블리어
+  - 하드웨어 기술 언어
 - **[고수준 언어](./high-level-language.md)**
   - [타입 시스템](./type-based-language.md)
     - 정적 언어/동적 언어
@@ -69,24 +70,27 @@ modified_time: 2024-10-25 19:33
     - 스크립트 언어
     - 트랜스파일 언어
     - 하이브리드 언어
+    - 임베디드 언어
   - [플랫폼 의존성](./platform-based-language.md)
     - 플랫폼 독립 언어
-    - 플랫폼 의존 언어  
+    - 플랫폼 의존 언어
+    - 스레드 안전 언어
   - 패러다임
     - [명령형 언어](./imperative-language.md)
       - 절차적 언어  
-      - 동시 병행 언어
       - 객체 지향형 언어
       - 이벤트 기반 언어
-      - 분산형 프로그래밍
     - [선언형 언어](./declarative-language.md)
       - 함수형 언어
       - 논리형 언어 
-      - 반응형 프로그래밍
-  - 기타
+      - 반응형 언어
+    - [동시성 언어](./concurrency-language.md)
+      - 동시 병행 언어
+      - 분산형 언어
+  - 특수 목적 언어
     - [도메인 특화 언어](./domain-specific-language.md)
-    - [메타 프로그래밍 언어](./meta-programming-language.md)
-    - [계약 지향 프로그래밍 언어](./contract-oriented-language.md)
+    - [메타 언어](./meta-language.md)
+    - [계약 지향 언어](./contract-oriented-language.md)
     - [글루 언어](./glue-language.md)
     - 에소테릭 언어
 - [시각적 언어](./visual-language.md)
@@ -96,7 +100,7 @@ modified_time: 2024-10-25 19:33
 
 ```
 프로그래밍 언어는 데이터를 변환하는 반면  
-마크업 언어는 데이터를 표현하므로 마크업 언어가 프로그래밍 언어의 하위 집합에 속하지 않음
+마크업 언어는 데이터를 표현하므로 마크업 언어가 프로그래밍 언어의 하위 집합에 속하지는 않음
 ```
 
 
