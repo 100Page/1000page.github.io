@@ -1,11 +1,15 @@
 ---
 order: 0.11
 title: html
-description: DTD란
-tags:
+description: 문서 형식 선언 (DTD)
+summary:
+keywords:
+- web
 - html
 - dtd
 - doctype
+tags:
+- html
 created_time: 2024-10-02 01:47
 modified_time: 2024-10-02 19:07
 ---

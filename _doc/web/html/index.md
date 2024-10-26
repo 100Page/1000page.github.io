@@ -1,9 +1,14 @@
 ---
 order: 0.1
 title: html
-description: HTML이란
+description: HTML
+summary:
+keywords:
+- web
+- html
+- html version
+- markup Language
 tags:
-- index
 - html
 created_time: 2024-10-01 23:29
 modified_time: 2024-10-02 19:06
@@ -39,6 +44,8 @@ XHTML 1.0 (2000) | XML을 기반으로 하는 엄격 구조 도입  |
 XHTML 2.0 (폐기) | XForm, XFrames, XEvents 등 도입 |
 HTML 5.x (2014~) | WHATWG와 W3C의 협력으로 웹 플랫폼 표준화  | [spec](https://html.spec.whatwg.org/)
 
+
+**history**
 ```
 웹 애플리케이션이 발전하며 복잡한 데이터의 관리를 위해서 XHTML이 도입되었으며 
 HTML의 느슨한 문법을 엄격하게 처리하고 웹 접근성, 모듈화 등 다양한 기술을 도입한 XHTML 2.0이 제안되었으나 

@@ -2,19 +2,24 @@
 order: 0.123
 title: html
 description: HTML 엘리먼트 속성 값
-tags:
+summary:
+keywords:
+- web
 - html
 - element
-- element attribute
+- attribute value
+tags:
+- html
 created_time: 2024-10-02 17:49
-modified_time: 2024-10-02 19:07
+modified_time: 2024-10-05 23:24
 ---
 
-# HTML Element Attribute Value
+# HTML Attribute Value
 : 엘리먼트 속성에 사용되기 위해 미리 정의된 값들  
 
 - [rel](#rel)
 - [target](#target)
+- [srcset](#srcset)
 
 
 
@@ -65,3 +70,13 @@ tag          | - | o | o | - | 현재 웹 문서와 링크된 리소스를 설�
 \_parent   | 부모 프레임에서 링크 오픈
 \_top      | 현재 윈도우 전체에서 링크 오픈  
 framename  | 이름이 정의된 프레임에서 링크 오픈
+
+
+
+## srcset
+: img, source 태그에서 사용하는 속성
+
+값 | 설명
+---|---
+w | 이미지의 너비
+x | 디바이스 픽셀 비율

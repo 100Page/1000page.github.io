@@ -2,10 +2,15 @@
 order: 0.3
 title: html
 description: HTML 마이크로데이터
-tags:
+summary:
+keywords:
+- web
 - html
 - microdata
 - microformats
+- 마이크로데이터
+tags:
+- html
 created_time: 2024-10-02 18:29
 modified_time: 2024-10-02 19:06
 ---
@@ -44,7 +49,6 @@ https://seoscout.com/tools/schema-generator
 
 마이크로 데이터 시각화   
 https://www.webmoves.net/tools/microdata
-
 
 
 
