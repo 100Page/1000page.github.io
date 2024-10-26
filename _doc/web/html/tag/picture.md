@@ -2,9 +2,13 @@
 order: 0.9
 title: html
 description: HTML Picture Tag
-tags:
+summary:
+keywords:
+- web
 - html
 - tag
+tags:
+- html
 created_time: 2024-10-04 04:13
 modified_time: 2024-10-04 17:25
 ---

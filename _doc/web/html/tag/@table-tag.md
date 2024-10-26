@@ -1,10 +1,14 @@
 ---
-order: 0.13
+order: 0.3
 title: html
 description: 테이블 태그 목록
-tags:
+summary:
+keywords:
+- web
 - html
 - tag
+tags:
+- html
 created_time: 2024-10-02 20:15
 modified_time: 2024-10-02 21:15
 ---

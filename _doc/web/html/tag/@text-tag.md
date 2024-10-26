@@ -1,12 +1,16 @@
 ---
-order: 0.14
+order: 0.4
 title: html
 description: 텍스트 태그 목록
-tags:
+summary:
+keywords:
+- web
 - html
 - tag
+tags:
+- html
 created_time: 2024-10-02 19:32
-modified_time: 2024-10-02 22:50
+modified_time: 2024-10-04 17:25
 ---
 
 # HTML Text Tag
