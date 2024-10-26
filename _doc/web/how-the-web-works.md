@@ -2,11 +2,16 @@
 order: 0.2
 title: web
 description: 웹 동작 방식과 주요 용어
-tags:
+summary:
+keywords:
 - web
 - how the web works
+- 웹 동작 방식
+tags:
+- web
+- glossary
 created_time: 2024-08-29 20:27
-modified_time: 2024-10-01 07:55
+modified_time: 2024-10-26 22:16
 ---
 
 # How The Web Works

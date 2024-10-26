@@ -1,11 +1,17 @@
 ---
 order: 0.2
 title: browser
-description: 브라우저 유형
-tags:
+description: 브라우저 종류
+summary:
+keywords:
+- web
 - browser
-modified_time: 2024-10-01 23:22
+- browser type
+- 브라우저 종류
+tags:
+- web
 created_time: 2024-10-01 22:56
+modified_time: 2024-10-26 22:16
 ---
 
 # Browser Type

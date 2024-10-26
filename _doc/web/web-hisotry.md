@@ -2,12 +2,16 @@
 order: 0.1
 title: web
 description: 웹 발전 단계
-tags:
+summary:
+keywords:
 - web
 - web hisotry
 - hypertext
+- 웹 발전 단계
+tags:
+- web
 created_time: 2024-08-29 19:51
-modified_time: 2024-10-01 06:35
+modified_time: 2024-10-26 22:16
 ---
 
 # Web Hisotry 
