@@ -1,7 +1,13 @@
 ---
-order: 0.6
+order: 0
 title: tool
-description: 시스템 정보 수집 도구 - Facter
+description: 시스템 정보 수집 도구 (Facter)
+summary:
+keywords:
+- tool
+- infrastructure tool
+- facter
+- 시스템 정보 수집 도구
 tags:
 - tool
 created_time: 2024-09-30 21:45
