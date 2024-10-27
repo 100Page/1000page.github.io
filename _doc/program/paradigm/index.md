@@ -4,20 +4,22 @@ title: paradigm
 description: 프로그래밍 패러다임
 summary:
 keywords:
+- program
 - programming
 - programming paradigm
 - 프로그래밍 패러다임
 tags:
 - program
+- paradigm
 created_time: 2024-09-18 01:35
-modified_time: 2024-10-25 23:24
+modified_time: 2024-10-26 22:16
 ---
 
 # Programming Paradigm
 : 프로그램을 구현하기 위한 프로그래밍 언어의 원칙이나 방식  
 : 프로그래밍 언어는 한 개 이상의 패러다임을 지원하며 패러다임 원칙을 100% 구현하지 않음  
 
-**Imperative Programming**
+**[Imperative Programming](./imperative-programming.md)**
 - Unstructured Programming
   - Sequential Programming
 - Structured Programming
@@ -25,15 +27,15 @@ modified_time: 2024-10-25 23:24
   - Object Oriented Programming
   - Modular Programming
 
-**Declarative Programming**
+**[Declarative Programming](./declarative-programming.md)**
 - Functional Programming
 - Logic Programming
 
-**Concurrent Programming**
+**[Concurrent Programming](./concurrent-programming.md)**
 - Parallel Programming
 - Distributed Programming
 
-**Reactive Programming**
+**[Reactive Programming](./reactive-programming.md)**
 - Event Driven Programming
 - Data Flow Programming
 
@@ -65,13 +67,13 @@ modified_time: 2024-10-25 23:24
 : 일반적으로 패러다임은 추상화 수준이 높고 기법은 구체적인 구현 방식을 제공  
 : 일부 기법들은 패러다임으로 발전할 수 있음  
 
-- Generic Programming
-- Meta Programming
+- [Generic Programming](./generic-programming.md)
+- [Meta Programming](./meta-programming.md)
 - Aspect Oriented Programming
 - Language-Oriented Programming
 - Contract Programming
 
 ```
 AOP는 패러다임이면서 동시에 OOP의 한계를 보완하는 기법에 속함
-IoC와 DI는 이보다 더 구체적이고 특화된 기법에 속함 (패턴에 가까움)
+IoC와 DI는 이보다 더 구체적이고 특화된 기법에 속함 (아키텍처나 패턴에 가까움)
 ```
