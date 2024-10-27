@@ -1,18 +1,17 @@
 ---
 order: 0.9
-title: programming language
+title: language
 description: 마크업 언어
 summary:
 keywords:
 - programming language
 - markup language
-- 프로그래밍 언어
 - 마크업 언어
 tags:
 - program
 - programming language
-created_time: 2024-09-17 02:30
-modified_time: 2024-10-25 16:46
+created_time: 2024-10-25 22:53
+modified_time: 2024-10-26 22:16
 ---
 
 # Markup Language

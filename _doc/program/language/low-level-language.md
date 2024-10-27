@@ -1,13 +1,12 @@
 ---
 order: 0.1
-title: programming language
+title: language
 description: 저수준 언어
 summary:
 keywords:
 - programming language
 - machine language
 - assembly language
-- 프로그래밍 언어
 - 저수준 언어
 - 기계어
 - 어셈블리어
@@ -15,7 +14,7 @@ tags:
 - program
 - programming language
 created_time: 2024-09-17 02:30
-modified_time: 2024-10-25 16:46
+modified_time: 2024-10-26 22:16
 ---
 
 # Low Level Language

@@ -1,6 +1,6 @@
 ---
 order: 0.2
-title: programming language
+title: language
 description: 프로그래밍 언어
 summary:
 keywords:
@@ -12,7 +12,7 @@ tags:
 - program
 - programming language
 created_time: 2024-09-12 06:36
-modified_time: 2024-10-25 19:33
+modified_time: 2024-10-26 22:16
 ---
 
 # Programming Language
@@ -58,49 +58,50 @@ modified_time: 2024-10-25 19:33
 - **[저수준 언어](./low-level-language.md)**
   - 기계어
   - 어셈블리어
-  - 하드웨어 기술 언어
 - **[고수준 언어](./high-level-language.md)**
-  - [타입 시스템](./type-based-language.md)
-    - 정적 언어/동적 언어
-    - 강타입 언어/약타입 언어
-    - 타입 선언 언어/타입 추론 언어
-  - [실행 방식](./execution-based-language.md)
+  - 실행 방식
     - 컴파일 언어
     - 인터프리터 언어
     - 스크립트 언어
     - 트랜스파일 언어
     - 하이브리드 언어
     - 임베디드 언어
-  - [플랫폼 의존성](./platform-based-language.md)
-    - 플랫폼 독립 언어
-    - 플랫폼 의존 언어
-    - 스레드 안전 언어
+  - 타입 시스템
+    - 정적 언어/동적 언어
+    - 강타입 언어/약타입 언어
+    - 타입 선언 언어/타입 추론 언어
   - 패러다임
-    - [명령형 언어](./imperative-language.md)
+    - 명령형 언어
       - 절차적 언어  
       - 객체 지향형 언어
       - 이벤트 기반 언어
-    - [선언형 언어](./declarative-language.md)
-      - 함수형 언어
+    - 선언형 언어
       - 논리형 언어 
+      - 함수형 언어
       - 반응형 언어
-    - [동시성 언어](./concurrency-language.md)
+    - 동시성 언어
       - 동시 병행 언어
       - 분산형 언어
+  - 플랫폼 의존성
+    - 플랫폼 독립 언어
+    - 플랫폼 의존 언어
   - 특수 목적 언어
     - [도메인 특화 언어](./domain-specific-language.md)
-    - [메타 언어](./meta-language.md)
+      - [마크업 언어](./markup-language.md)
     - [계약 지향 언어](./contract-oriented-language.md)
     - [글루 언어](./glue-language.md)
     - 에소테릭 언어
 - [시각적 언어](./visual-language.md)
 
-
-\+ [마크업 언어](./markup-language.md)
+**언어 정의**
+- [메타 언어](./meta-language.md)
+- 스키마 언어
 
 ```
-프로그래밍 언어는 데이터를 변환하는 반면  
+프로그래밍 언어는 데이터를 변환하는 반면
+
 마크업 언어는 데이터를 표현하므로 마크업 언어가 프로그래밍 언어의 하위 집합에 속하지는 않음
+메타 언어와 스키마 언어는 프로그래밍 언어를 정의하거나 데이터 구조를 정의하는 도구에 가까움
 ```
 
 

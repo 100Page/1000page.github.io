@@ -1,6 +1,6 @@
 ---
 order: 0.2
-title: programming language
+title: language
 description: 고수준 언어
 summary:
 keywords:
@@ -11,8 +11,8 @@ keywords:
 tags:
 - program
 - programming language
-created_time: 2024-10-17 02:30
-modified_time: 2024-10-26 01:46
+created_time: 2024-09-18 03:13
+modified_time: 2024-10-26 22:16
 ---
 
 # High Level Language
