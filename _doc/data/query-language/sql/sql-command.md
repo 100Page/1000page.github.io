@@ -12,12 +12,12 @@ keywords:
 tags:
 - sql
 - language
-created_time: 2024-10-03 19:41
-modified_time: 2024-10-28 22:16
+created_time: 2024-10-28 21:04
+modified_time: 2024-10-29 22:47
 ---
 
 # SQL Command
-: 테이블 생성 및 삭제와 데이터 삽입 및 삭제 등을 위한 명령어  
+: SQL 문장을 기능에 따라 분류
 
 - [DDL](#ddl)
 - [DML](#dml)
@@ -94,6 +94,16 @@ DROP VIEW 뷰이름;
 -- 데이터 삭제
 TRUNCATE TABLE 테이블명;
 ```
+
+
+제약 조건 | 설명
+---|---
+PRIMARY KEY | 각 행을 고유하게 식별하는 키 지정
+FOREIGN KEY | 다른 테이블의 키와 연결을 맺는 키 지정
+UNIQUE      | 특정 컬럼이 고유한 값이어야 함을 지정
+NOT NULL    | 특정 컬럼에 NULL 값을 허용하지 않도록 지정
+CHECK       | 컬럼의 값이 특정 조건을 만족해야 함을 지정
+DEFAULT     | 특정 컬럼에 기본값을 설정
 
 
 **Data Dictionary**  
