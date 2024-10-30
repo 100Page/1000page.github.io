@@ -1,16 +1,18 @@
 ---
 order: 0.1
 title: java
-description: 자바 빈즈
+description: Java Beans
 summary:
 keywords:
 - java
-- java se
+- java api
+- java beans
+- 자바 빈즈
 tags:
 - language
 - java
 created_time: 2024-10-08 07:29
-modified_time: 2024-10-08 19:27
+modified_time: 2024-10-30 19:45
 ---
 
 # Java Beans
