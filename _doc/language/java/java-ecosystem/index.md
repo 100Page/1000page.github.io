@@ -2,12 +2,16 @@
 order: 0.5
 title: java
 description: 자바 에코시스템
-tags:
-- programming language
-- language
+summary:
+keywords:
 - java
+- java ecosystem
+- 자바 에코시스템
+tags:
+- java
+- tool
 created_time: 2024-10-07 06:11
-modified_time: 2024-10-09 06:57
+modified_time: 2024-10-26 22:16
 ---
 
 # Java Ecosystem
@@ -31,6 +35,20 @@ modified_time: 2024-10-09 06:57
 
 
 
+## Java Library
+
+**Apache Commons Collections**  
+: Java Collections Framework를 확장해 여러 유용한 컬렉션 클래스와 메서드를 제공  
+
+**Eclipse Collections**  
+: Eclipse 재단에서 제공하는 컬렉션 라이브러리  
+: Java Collections Framework를 확장해 추가 기능과 성능 최적화를 제공  
+
+**Guava**  
+: Java Collections Framework를 확장해 추가 컬렉션 타입과 유틸리티 메서드를 제공  
+
+
+
 ## Java Virtual Machine
 
 - HotSpot JVM
@@ -39,6 +57,7 @@ modified_time: 2024-10-09 06:57
 
 
 ## Java Application Server
+
 - Tomcat
 - Jetty
 - WildFly
@@ -106,7 +125,6 @@ modified_time: 2024-10-09 06:57
 
 ## Java Concurrency Framework
 
-- Java Concurrency Utilities
 - Akka
 - Disruptor
 - RxJava
@@ -114,7 +132,6 @@ modified_time: 2024-10-09 06:57
 
 ## Java Persistence Framework
 
-- Java Persistence API
 - MyBatis
 - Hibernate
 - EclipseLink
@@ -134,7 +151,6 @@ modified_time: 2024-10-09 06:57
 **implementation**  
 : Logging Wrapper 구현체  
 
-- java.util.logging
 - Log4j2
 - Logback
 - Tinylog
@@ -176,3 +192,9 @@ modified_time: 2024-10-09 06:57
 - SonarQube
 - Checkstyle
 - PMD
+
+
+## Java Static Analysis Tool
+
+- DeepSource
+- SpotBugs
