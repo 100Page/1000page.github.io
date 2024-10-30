@@ -1,21 +1,20 @@
 ---
-order: 0.1
+order: 0.5
 title: java
-description: 자바 시간
+description: Java Time API
 summary:
 keywords:
 - java
-- java se
-- java time
-- 자바 시간
+- java api
+- java time api
 tags:
 - language
 - java
-created_time: 2024-10-08 07:29
-modified_time: 2024-10-27 22:16
+created_time: 2024-10-28 01:15
+modified_time: 2024-10-29 22:48
 ---
 
-# Java Time 
+# Java Time API
 : Java 8부터 지원하는 ISO-8601 표준을 준수하는 시간과 날짜 관련 API ([JSR-310](https://jcp.org/en/jsr/detail?id=310))
 : 스레드 안전성, 객체 불변성 등 기존 Date, Calendar 클래스 단점 및 문제점 보완  
 : 모든 클래스는 불변이며 메소드 연산 결과로 새로운 객체를 반환함  
