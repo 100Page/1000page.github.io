@@ -1,5 +1,5 @@
 ---
-order: 0.9
+order: 0
 title: html
 description: HTML Figure Tag
 summary:
@@ -7,10 +7,11 @@ keywords:
 - web
 - html
 - tag
+- figure
 tags:
 - html
 created_time: 2024-10-02 21:49
-modified_time: 2024-10-04 17:25
+modified_time: 2024-10-29 22:48
 ---
 
 # HTML Figure Tag
