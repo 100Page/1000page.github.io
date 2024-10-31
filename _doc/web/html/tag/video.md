@@ -1,5 +1,5 @@
 ---
-order: 0.9
+order: 0
 title: html
 description: HTML Video Tag
 summary:
@@ -7,10 +7,11 @@ keywords:
 - web
 - html
 - tag
+- video
 tags:
 - html
 created_time: 2024-10-04 03:54
-modified_time: 2024-10-04 17:25
+modified_time: 2024-10-31 23:48
 ---
 
 # HTML Video Tag
