@@ -1,5 +1,5 @@
 ---
-order: 0
+order: 1
 title: html
 description: HTML Dialog Tag
 summary:
@@ -10,8 +10,8 @@ keywords:
 - dialog
 tags:
 - html
-created_time: 2024-10-04 03:36
-modified_time: 2024-10-29 22:48
+created_time: 2024-10-31 05:31
+modified_time: 2024-11-01 20:36
 ---
 
 # HTML Dialog Tag

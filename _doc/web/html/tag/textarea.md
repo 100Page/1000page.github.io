@@ -1,5 +1,5 @@
 ---
-order: 0
+order: 1
 title: html
 description: HTML Textarea Tag
 summary:
@@ -11,7 +11,7 @@ keywords:
 tags:
 - html
 created_time: 2024-10-31 05:31
-modified_time: 2024-10-31 23:52
+modified_time: 2024-11-01 03:45
 ---
 
 # HTML Textarea Tag

@@ -1,5 +1,5 @@
 ---
-order: 0
+order: 1
 title: html
 description: HTML Datalist Tag
 summary:
@@ -10,13 +10,14 @@ keywords:
 - datalist
 tags:
 - html
-created_time: 2024-10-04 03:36
-modified_time: 2024-10-29 22:48
+created_time: 2024-10-31 05:31
+modified_time: 2024-11-01 20:36
 ---
 
 # HTML Datalist Tag
 : 미리 정의된 옵션 목록을 지원하는 태그  
 : input 태그의 list 속성과 연결되며 일반적인 드롭다운이 아니라 텍스트 입력이 가능  
+: input 태그가 주이며 datalist는 input 태그를 위한 보조 역학을 하는 태그  
 
 **포함 요소**   
 - [option](./option.md)
