@@ -11,7 +11,7 @@ keywords:
 tags:
 - web
 created_time: 2024-10-01 23:28
-modified_time: 2024-11-02 00:25
+modified_time: 2024-11-02 01:50
 ---
 
 # DOM
@@ -21,13 +21,12 @@ Document Object Model
 
 - [DOM Level](#dom-level-1)
 - [DOM Infrastructure](./dom-infrastructure.md)
+  - [DOM Parser](./dom-parser.md)
 - [DOM Event](./dom-event.md)
 - [DOM API](./api-dom/index.md)
   - [HTML API](./api-dom/index.md)
   - [CSS API](./api-dom/index.md)
 - [BOM API](./api-dom/index.md)
-- [DOM Optimization](./dom-optimization.md)
-- [DOM Parser](./dom-parser.md)
 
 
 스펙  
