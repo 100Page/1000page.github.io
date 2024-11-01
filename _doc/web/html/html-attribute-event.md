@@ -11,7 +11,7 @@ keywords:
 tags:
 - html
 created_time: 2024-10-05 06:21
-modified_time: 2024-10-05 23:24
+modified_time: 2024-10-29 22:48
 ---
 
 # HTML Event Attribute
