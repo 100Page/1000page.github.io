@@ -5,12 +5,13 @@ description: 문서 객체 모델 (DOM)
 summary:
 keywords:
 - web
+- document object model
 - dom
 - 문서 객체 모델
 tags:
 - web
 created_time: 2024-10-01 23:28
-modified_time: 2024-10-26 23:29
+modified_time: 2024-11-02 00:25
 ---
 
 # DOM
