@@ -7,28 +7,28 @@ keywords:
 - web
 - css
 - cascading style sheets
+- css load
 tags:
 - web
 - css
 created_time: 2024-08-30 02:38
-modified_time: 2024-11-04 21:49
+modified_time: 2024-11-04 23:24
 ---
 
 # CSS Load
 
 ```
-HTML 로드  -->  HTML 구문 분석  -------------->  DOM
-                   CSS 로드 -->  구문 분석  -->  CSSOM
+HTML 로드 => HTML 구문 분석 ========> DOM
+             CSS 로드 => 구문 분석 => CSSOM
+```
 
-
-1. HTML 로드
+1. HTML 파일 로드
 2. HTML 구문 분석을 하면서 CSS 파일을 연결한 link 태그를 발견하면 CSS 파일을 로드하고 파싱 준비를 함
 3. CSS는 두 단계를 통해 구문 분석
   1. CSS 파일을 위에서 아래로 스캔하며 CSS 충돌 해결 (Cascading)
   2. 요소에 적용할 최종 값을 만듬 (상대 값은 절대 값으로 변환됨)
 4. 구문 분석이 완료되면 CSSOM 생성
 5. DOM과 CSSOM을 결합해 렌더 트리 형성
-```
 
 
 **CSS 적용 방법**
@@ -37,15 +37,20 @@ HTML 로드  -->  HTML 구문 분석  -------------->  DOM
 - [Browser default CSS](#browser-default-css)
 
 
+**CSS 우선 순위**  
+: CSS 출처에 따라 우선 순위가 다름  
+
+> Author CSS > User-defined CSS > Browser default CSS
+
+
 
 ## Author CSS
-: 사용자가 직접 정의한 CSS  
+: 개발자가 정의한 CSS  
 
-{:.mt-25}
 **Inline CSS**  
 : 요소에 직접 스타일 속성 지정  
 : 웹 문서에 포함되므로 우선 순위가 높음  
-: 인라인 스타일 지정시 가상 클래스와 가상 엘리먼트 사용 불가   
+: 인라인 스타일 지정시 가상 클래스와 가상 엘리먼트 사용 불가  
 
 ```html
 <div style="width:50%;"></div>
@@ -65,7 +70,7 @@ div {width:50%;}
 
 
 **External CSS**  
-: link 태그를 사용해 웹 문서에 CSS 파일 연결  
+: link 태그를 사용해 웹 문서에 CSS 파일을 연결  
 
 ```html
 <head>
