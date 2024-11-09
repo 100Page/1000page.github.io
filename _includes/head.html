@@ -7,7 +7,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="{{ page.description | default: site.description  }}{% if page.summary %} | {{ page.summary }}{% endif %}">
 <meta name="keywords" content="{% if page.keywords %}{{ page.keywords | join: ', ' }}{% elsif page.tags %}{{ page.tags | join: ', ' }}{% else %}{{ site.keyword }}{% endif %}">
-<meta name="google-site-verification" content="f79251548275aadf">
+<meta name="google-site-verification" content="GfydRoSpDG65oJAnLYow1n9-upKTy-G1zP_C_CGXfX0">
+
+<meta property="og:title" content="{{ site.title }}">
+<meta property="og:description" content="{{ site.description }}">
+<meta property="og:url" content="{{ site.url }}">
+<meta property="og:type" content="website">
 
 <link rel="canonical" href="{{ page.url | absolute_url }}">
 <link rel="sitemap" href="{{ site.url }}/sitemap.xml" type="application/xml">
