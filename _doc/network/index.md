@@ -1,12 +1,18 @@
 ---
-order: 9
+order: 15
 title: network
 description: 네트워크 (인덱스)
+summary:
+keywords:
+- network
+- 네트워크
+- 네트워크 기술
+- 데이터 통신
 tags:
 - index
 - network
 created_time: 2024-09-09 23:03
-modified_time: 2024-10-04 17:34
+modified_time: 2024-11-09 16:26
 ---
 
 # Network
@@ -27,15 +33,16 @@ modified_time: 2024-10-04 17:34
   - [Network Hardware](./network-hardware/index.md) 
   - [Network Software](./network-software/index.md)
   - [Network Protocol](./network-protocol/index.md)
-- [Network Address](./network-address.md)
 - [Data Communication](./data-communication.md)
-- [Communication Network](./communication-network.md)
+- [Network Address](./network-address.md)
 - [Network Performance](./network-performance.md)
 - [Network Service](./network-service/index.md)
   - DNS
-  - NAT 
-- [Network Security](./network-security/index.md)
+  - NAT
 - [Network Technology](./network-technology/index.md)
-  - Mobile Network
-    - 5G
+  - SDN
+- [Network Security](./network-security/index.md)
+- [Communication Network](./communication-network/index.md)
+  - Wired Communication
+  - Mobile Communication
 - [Network Glossary](./network-glossary.md)
