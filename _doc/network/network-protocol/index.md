@@ -1,13 +1,17 @@
 ---
 order: 0.3
 title: protocol
-description: 네트워크 프로토콜이란
-tags:
+description: 네트워크 프로토콜
+summary:
+keywords:
 - network
 - network protocol
-- protocol
-created_time: 2024-10-04 17:34
-modified_time: 2024-10-05 00:34
+- 네트워크
+- 네트워크 프로토콜
+tags:
+- network
+created_time: 2024-10-04 22:41
+modified_time: 2024-11-10 15:47
 ---
 
 # Network Protocol

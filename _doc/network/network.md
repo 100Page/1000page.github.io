@@ -1,12 +1,17 @@
 ---
 order: 0.1
 title: network
-description: 네트워크란
-tags:
+description: 네트워크 의미
+summary:
+keywords:
 - network
 - communication
+- 네트워크
+- 통신
+tags:
+- network
 created_time: 2024-09-14 09:47
-modified_time: 2024-09-30 15:36
+modified_time: 2024-11-10 15:44
 ---
 
 # Network
@@ -21,10 +26,6 @@ modified_time: 2024-09-30 15:36
 
 - 물리적 : 장치와 장치를 연결하는 물리적 전송 매체 (컴퓨터, 프린터, 라우터, 허브, 케이블 등)
 - 논리적 : 데이터 흐름 정의 (소프트웨어, 프로토콜)
-
-
-**communication network**
-: 통신망이란 정보를 전송하기 위한 물리적 및 논리적 구조의 집합  
 
 
 **networking**  
