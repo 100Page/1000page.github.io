@@ -2,10 +2,15 @@
 order: 0.31
 title: network
 description: 네트워크 토폴로지 종류
+summary:
+keywords:
+- network
+- network topology
+- 네트워크 토폴로지
 tags:
 - network
 created_time: 2024-09-14 11:01
-modified_time: 2024-09-29 19:41
+modified_time: 2024-11-10 15:41
 ---
 
 # Network Topology

@@ -2,10 +2,15 @@
 order: 0.33
 title: network
 description: 서비스 제공 방식에 따른 네트워크 종류
+summary:
+keywords:
+- network
+- network service
+- 네트워크 서비스
 tags:
 - network
 created_time: 2024-09-14 11:00
-modified_time: 2024-09-30 15:42
+modified_time: 2024-11-10 15:42
 ---
 
 # Network Service Type

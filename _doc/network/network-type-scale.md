@@ -2,10 +2,15 @@
 order: 0.32
 title: network
 description: 규모에 따른 네트워크 종류
+summary:
+keywords:
+- network
+- network scale
+- 네트워크 규모
 tags:
 - network
 created_time: 2024-09-14 11:01
-modified_time: 2024-09-29 19:41
+modified_time: 2024-11-10 15:42
 ---
 
 # Network Scale Type
