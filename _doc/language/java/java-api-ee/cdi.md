@@ -2,12 +2,17 @@
 order: 0
 title: java
 description: 컨텍스트 및 의존성 주입 (CDI)
+summary:
+keywords:
+- java api
+- java enterprise
+- cdi
+- 컨텍스트 및 의존성 주입
 tags:
-- programming language
-- language
 - java
+- enterprise
 created_time: 2024-10-07 13:42
-modified_time: 2024-10-11 01:28
+modified_time: 2024-11-10 18:17
 ---
 
 # CDI
@@ -36,6 +41,12 @@ CDI Full | 전체 기능 지원, 런타임에 의존성 주입을 결정, 동적
 **CDI Full**
 : 엔터프라이즈 애플리케이션 개발을 위한 다양한 기능 지원  
 : 런타임에 의존성 주입을 결정하며 리플렉션이나 동적 프록시를 통해 동적 기능 지원
+
+
+**구현체**
+- Weld
+- OpenWebBeans
+- CanDI
 
 
 

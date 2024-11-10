@@ -11,8 +11,8 @@ keywords:
 tags:
 - java
 - enterprise
-created_time: 2024-10-10 21:51
-modified_time: 2024-10-30 19:45
+created_time: 2024-11-10 18:21
+modified_time: 2024-11-10 19:16
 ---
 
 # JTA

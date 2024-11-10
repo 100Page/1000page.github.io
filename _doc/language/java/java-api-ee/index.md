@@ -2,12 +2,18 @@
 order: 0.3
 title: java
 description: 자바 엔터프라이즈 에디션
-tags:
-- programming language
-- language
+summary:
+keywords:
 - java
+- java api
+- java enterprise
+- jakarta ee
+- 자바 엔터프라이즈 에디션
+tags:
+- java
+- enterprise
 created_time: 2024-10-07 06:21
-modified_time: 2024-10-11 01:06
+modified_time: 2024-11-10 18:16
 ---
 
 # Java EE
