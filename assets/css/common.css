@@ -310,11 +310,11 @@ button:focus {color:#fff;background:#111;}
 
 /* content */
 .markdown h1 {margin-bottom:10px;font-size:32px;line-height:1.6;border-bottom:1px solid #e5e5e5;}
-.markdown h2 {margin-top:45px;margin-bottom:10px;font-size:29px;line-height:1.6;border-bottom:1px solid #e5e5e5;}
-.markdown h3 {margin-top:45px;margin-bottom:5px;font-size:26px;}
-.markdown h4 {margin-top:45px;margin-bottom:5px;font-size:24px;}
-.markdown h5 {margin-top:35px;margin-bottom:5px;font-size:22px;}
-.markdown h6 {margin-top:35px;margin-bottom:5px;font-size:20px;}
+.markdown h2 {margin-top:45px;margin-bottom:10px;font-size:28px;line-height:1.6;border-bottom:1px solid #e5e5e5;}
+.markdown h3 {margin-top:45px;margin-bottom:5px;font-size:24px;}
+.markdown h4 {margin-top:45px;margin-bottom:5px;font-size:22px;}
+.markdown h5 {margin-top:35px;margin-bottom:5px;font-size:20px;}
+.markdown h6 {margin-top:35px;margin-bottom:5px;font-size:18px;}
 
 .markdown h1 + p + *,
 .markdown h2 + p + *,
