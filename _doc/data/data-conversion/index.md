@@ -1,12 +1,17 @@
 ---
-order: 0.1
-title: data
-description: 데이터 변환 (인덱스)
-tags:
+order: 0.3
+title: data conversion
+description: 데이터 변환
+summary:
+keywords:
 - data
 - data conversion
+- 데이터 변환
+tags:
+- data
+- data process
 created_time: 2024-10-10 00:25
-modified_time: 2024-10-10 02:00
+modified_time: 2024-11-21 15:01
 ---
 
 # Data Conversion
@@ -14,23 +19,22 @@ modified_time: 2024-10-10 02:00
 : 서로 다른 시스템 간 데이터가 원활하게 교환되도록 형식과 구조를 일치시킴  
 : 다양한 장치와 데이터 소스의 등장으로 데이터 변환은 필수적인 과정으로 자리 잡음  
 
-**데이터 표현 단계**
 ```
-데이터 입력 => 데이터 형식 변환 => 메모리에 할당 => 데이터 처리 => 데이터 표현 
+데이터 입력 => 데이터 변환 (포맷팅, 인코딩, 압축, 변환) => 데이터 무결성 확인 후 저장  
 ```
 
-- Data Format
-- Data Encoding
-  - Encoding System 
+- [Data Format](./format/index.md)
+  - Data Serialization
+- [Data Encoding](./encoding/index.md)
+  - Encoding System
   - Data Decoding
-- Data Compression
-- Data Transformation
+- [Data Transformation](./data-transformation.md)
   - Type Conversion
+  - Data Parsing
+  - Data Normalization
   - Data Cleansing
   - Data Filtering
-- Error Detection and Correction
-  - Checksum
-  - CRC (Cyclic Redundancy Check)
-  - Reed-Solomon codes
-  - Hamming code
-  - Parity bit
+- [Data Compression](./data-compression.md)
+  - Lossless Compression
+  - Lossy Compression
+- [Error Detection and Correction](./data-detection-correction.md)

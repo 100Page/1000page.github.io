@@ -2,11 +2,15 @@
 order: 0.2
 title: data
 description: 데이터 분류
+summary:
+keywords:
+- data
+- data representation
+- 데이터 분류
 tags:
 - data
-- data classification
 created_time: 2024-08-31 17:22
-modified_time: 2024-09-29 17:54
+modified_time: 2024-11-21 14:03
 ---
 
 # Data Classification
@@ -56,8 +60,8 @@ modified_time: 2024-09-29 17:54
 
 
 **데이터 품질**
-- 정제된 데이터 (Clean Data)
 - 정제되지 않은 데이터 (Raw Data)
+- 정제된 데이터 (Clean Data)
 
 
 **데이터 시간 (구간)**    

@@ -2,10 +2,16 @@
 order: 0.31
 title: data
 description: 데이터 타입
+summary:
+keywords:
+- data
+- data representation
+- 데이터 타입
 tags:
 - data
+- computer
 created_time: 2024-09-20 15:00
-modified_time: 2024-10-06 06:31
+modified_time: 2024-10-26 22:16
 ---
 
 # Data Type
@@ -13,7 +19,7 @@ modified_time: 2024-10-06 06:31
 : 프로그래밍 언어가 발전하며 데이터를 정확하고 효율적으로 처리하기 위해 도입  
 : 데이터 타입을 통해 정확한 연산을 수행하며 적절한 크기의 메모리 공간을 할당함  
 : 데이터 타입은 개발자와 컴파일러에게 데이터를 처리하는 방법에 대한 정보를 제공함  
-: 데이터 타입의 도입은 데이터 구조와 타입 시스템 발전으로 이어짐  
+: 데이터 타입의 도입은 [자료 구조](./data-structure/index.md)와 [타입 시스템](../program/language/type-system.md) 발전으로 이어짐  
 
 **type**  
 : 어떤 값과 다른 값을 분별할 수 있는 고유한 특성  
@@ -66,4 +72,4 @@ modified_time: 2024-10-06 06:31
 - 기본 데이터 타입
 - 복합 데이터 타입
 - 사용자 정의 타입
-- 특수 타입 (언어에 따라 다름)
+- 특수 목적 타입
