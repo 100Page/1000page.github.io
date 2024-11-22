@@ -5,39 +5,25 @@ description: 운영체제 (인덱스)
 summary:
 keywords:
 - os
-- operating system 
+- operating system
 - 운영체제
 tags:
 - index
 - os
 created_time: 2024-09-08 07:10
-modified_time: 2024-10-27 16:01
+modified_time: 2024-11-23 02:27
 ---
 
 # Operating System 
-: 하드웨어와 소프트웨어 사이 통신을 관리하고 하드웨어와 사용자 간 인터페이스를 제공  
-: 하드웨어 자원을 효율적으로 관리하고 소프트웨어의 실행을 위한 환경을 지원  
+: 다수의 프로그램과 구성 요소들로 이루어진 복합적인 시스템 소프트웨어  
+: 하드웨어와 소프트웨어 간 통신을 관리하고 사용자와 하드웨어 간 인터페이스를 제공함  
+: 하드웨어 자원을 효율적으로 관리하며 소프트웨어 및 프로그램 실행을 위한 환경을 제공  
+: 실행 환경이란 CPU 할당, 명령어 적재 등을 의미하며 운영체제는 실행 중인 프로그램을 관리함  
 
-- **[OS Component](./os-component.md)**
-  - Bootloader
-  - Kernel
-  - Shell
-  - System Program
-  - UI (CLI, GUI)
-- **[OS Concept](./os-concept.md)**
-  - Process
-  - Thread
-  - Concurrency Control
-    - Synchronization
-    - Deadlock
-  - Storage
-    - File
-    - File System
-  - Memory
-  - I/O
-  - Network Communication
-  - Virtualization
-- **OS Function**
+- [OS Component](./os-component.md)
+- [OS Concept](./os-concept.md)
+- [OS Processing Model](./os-processing-model.md)
+- Kernel Modules
   - [Interrupt](./interrupt.md)
   - [System Call](./system-call.md)
   - [Process Management](./process-management.md)
@@ -46,37 +32,28 @@ modified_time: 2024-10-27 16:01
   - [Device Management](./device-management.md)
   - [Network Management](./network-management.md)
   - [Security Management](./security-management.md)
-- **OS Processing Model**
-  - Multiprogramming
-  - Time-sharing
-  - Multitasking
-  - Batch Processing
-  - Real-time Processing
-  - Parallel Processing
-  - Distributed Processing
-- **Performance Optimization**
-  - Caching 
-  - Buffering
-  - Spooling
-  - Prefetching
-  - Memory Mapping
-  - DMA (Direct Memory Access)
+- [OS Performance Optimization](./os-optimization.md)
 
 
-**사용에 따른 분류**
+**OS Classification**
 - Server OS
   - UNIX
-  - Linux
+  - Server Linux
   - Windows Server
-- Network OS
-  - Cisco IOS
-  - Juniper JUNOS
+- Desktop OS
+  - Desktop Linux
+  - Windows
+  - Mac
 - Mobile OS
   - Android
   - iOS
-- Desktop OS
+- Network OS
+  - Cisco IOS
+  - Juniper JUNOS
 - Embedded OS
-- Real-Time OS
+  - Embedded Linux
+  - Windows Embedded
+  - Android Things
 
 
 **history**
