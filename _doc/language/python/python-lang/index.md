@@ -11,14 +11,15 @@ tags:
 - language
 - python
 created_time: 2024-11-26 00:32
-modified_time: 2024-11-26 01:06
+modified_time: 2024-11-27 19:50
 ---
 
 # Python Programming Language
 : 절차형, 함수형, 객체지향 패러다임을 지원하는 멀티 프로그래밍 언어  
-: 인터프리터 언어로 실행 전에 바이트코드로 컴파일하는 중간 과정이 포함됨  
+: 인터프리터 언어로 실행 전 바이트코드로 컴파일하는 중간 과정이 포함됨  
 : 변수의 데이터 타입을 명시하지 않는 동적 타이핑 언어로 실행 시점에 인터프리터가 타입을 결정함  
 : 정수, 문자, 함수, 클래스 등 모든 것이 객체로 취급되어 속성과 메소드를 가짐  
+: 객체는 참조 카운팅 방식으로 관리되어 더 이상 참조되지 않는 객체는 가비지 컬렉터에 의해 제거됨  
 
 ```
            컴파일러        인터프리터
@@ -27,16 +28,23 @@ python code  -->  byte code  -->  machine code
 ```
 
 
-- Variable
-- Keyword
-- Operator
-- Expression
-- Statement
-- Function
-- Class
-- Object
-- Data Type
-- Exception Handling
+- Python Basic 
+  - [Variable](./python-variable.md)
+  - [Data Type](./python-data-type.md)
+  - [Keyword](./python-keyword.md)
+  - [Operator](./python-operator.md)
+  - [Statement](./python-statement.md)
+  - [Function](./python-function.md)
+  - [Object](./python-object.md)
+  - [Exception](./python-exception.md)
+  - [Underscore](./python-underscore.md)
+- Module
+- Namespace
+- Decorator
+- Python OOP Programming
+- Python Functional Programming
+- Python Concurrency
+- Python Metaprogramming 
 
 
 
@@ -59,10 +67,12 @@ python3.x  | UTF-8 | UTF-8 외 다른 인코딩을 사용하려면 소스 파일
 
 ```python
 if Ture:
-    print('ture')
+    print('true')
 else:
     print('false')
 ```
+
+
 
 ## Python Semicolon
 : 일반적으로 세미콜론은 사용하지 않지만 한 행에 여러 문장을 사용할 경우에는 세미콜론을 사용함  

@@ -1,5 +1,5 @@
 ---
-order: 0.2
+order: 0.13
 title: python
 description: 파이썬 키워드
 summary:
@@ -11,7 +11,7 @@ tags:
 - language
 - python
 created_time: 2024-11-26 08:27
-modified_time: 2024-11-26 08:43
+modified_time: 2024-11-27 19:49
 ---
 
 # Python Keyword   
@@ -43,7 +43,7 @@ from     | 모듈에서 특정 부분 임포트
 global   | 함수에서 전역 변수 참조
 if       | 조건문
 import   | 모듈 임포트
-in       | for문 일부로 순서있는 객체의 요소를 나열
+in       | for문 일부로 iterable 객체의 요소를 나열
 is       | 객체의 동일성 비교
 lambda   | 익명 함수 정의
 nonlocal | 중첩 함수에서 외부 변수 참조

@@ -1,5 +1,5 @@
 ---
-order: 0.4
+order: 0.15
 title: python
 description: 파이썬 문장
 summary:
@@ -11,7 +11,7 @@ tags:
 - language
 - python
 created_time: 2024-11-26 08:44
-modified_time: 2024-11-26 11:16
+modified_time: 2024-11-27 19:50
 ---
 
 # Python Statement
@@ -33,6 +33,10 @@ num = 0
 
 # 표현식 문
 num = 1 + 2
+
+# 조건부 표현식 문
+num = 1 if True else 0
+num = 1 if False else 0
 
 
 # del 문
@@ -96,8 +100,8 @@ from 패키지명 import 모듈명
 : 블록 구조를 통해 여러 줄로 구성되는 문장
 
 - [제어 흐름 문](#control-flow-statement)
-- with 문
-- match 문
+- [with 문](#with-statement)
+- [match 문](#match-statement)
 - type parameter list
 - [예외 처리](./python-exception.md)
 - [함수 정의](./python-function.md)
@@ -135,11 +139,22 @@ else:
 for i in iterable:
     print(i)
 
+for i in iterable : 
+    print(i)
+else :
+    print("반복문이 정상 종료되면 실행됨")
+
 
 # 조건 기반 반복문
 while True:
     print("true")
-    break    
+    break
+
+while True:
+    print("true")
+    break
+else :
+    print("반복문이 정상 종료되면 실행됨")
 ```
 
 
