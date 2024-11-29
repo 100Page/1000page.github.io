@@ -11,11 +11,11 @@ tags:
 - index
 - information
 created_time: 2024-10-20 11:26
-modified_time: 2024-11-29 15:39
+modified_time: 2024-11-29 15:41
 ---
 
 # Information 
-: 데이터를 의사결정이나 문제 해결이 가능하게 처리하여 의미있게 구조화된 데이터  
+: [데이터](../data/index.md)를 의사결정이나 문제 해결이 가능하게 처리하여 의미있게 구조화한 데이터  
 : 데이터는 특정 목적을 위해 문맥에 맞게 분석, 가공, 조직화된 형태로 변환되는데 이를 정보라고 함  
 
 - Information Processing
@@ -32,4 +32,4 @@ modified_time: 2024-11-29 15:39
 
 **상호작용**  
 - [Human Computer Interaction](./hci/index.md)
-- [Data-Driven User Experience](./dux/index.md)
+- [Data-Driven User Experience](./ddux/index.md)
