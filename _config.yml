@@ -12,7 +12,9 @@ exclude:
   - _gitadd.rb
   - _order.rb
   - _setorder.rb
+  - _url.rb
   - _order.txt
+  - _url.csv
 
 include:
   - _doc
