@@ -12,7 +12,7 @@ tags:
 - program
 - programming language
 created_time: 2024-09-18 03:13
-modified_time: 2024-10-26 22:16
+modified_time: 2024-11-17 19:32
 ---
 
 # High Level Language
@@ -33,9 +33,9 @@ modified_time: 2024-10-26 22:16
 시대 | 언어
 ---|---
 1950년대 | FORTRAN, LISP, COBOL
-1960년대 | BASIC, PL/1, Algol68, Snobol, Simula67
+1960년대 | BASIC, PL/1, Algol60, Snobol, Simula67
 1970년대 | Pascal, C, Smalltalk
-1980년대 | Ada, Scheme, C++, Perl
+1980년대 | Ada, Prolog, Scheme, C++, Perl
 1990년대 | Haskell, Python, Lua, Java, Ruby
 2000년대 | C#, Scala, Clojure, Dart, Swift
 2010년대 | Rust, Go, Kotlin

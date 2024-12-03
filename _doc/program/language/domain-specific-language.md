@@ -1,18 +1,18 @@
 ---
 order: 0.21
 title: language
-description: 도메인 특화 언어 
+description: 도메인 특화 언어
 summary:
 keywords:
 - programming language
 - domain specific language
 - dsl
-- 도메인 특화 언어 
+- 도메인 특화 언어
 tags:
 - program
 - programming language
-created_time: 2024-09-17 02:30
-modified_time: 2024-10-27 22:16
+created_time: 2024-10-05 07:13
+modified_time: 2024-12-03 21:33
 ---
 
 # DSL
@@ -34,13 +34,9 @@ modified_time: 2024-10-27 22:16
 - Configuration Language
 - Build Language
 - Markup Language
-  - HTML
-  - XML
 - Style Sheet Language
 - Template Language
 - Query Language
-  - SQL
-  - GraphQL
 - Modeling Language
   - UML
   - ERD

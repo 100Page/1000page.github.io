@@ -1,5 +1,5 @@
 ---
-order: 0.9
+order: 0.22
 title: language
 description: 마크업 언어
 summary:
@@ -11,7 +11,7 @@ tags:
 - program
 - programming language
 created_time: 2024-10-25 22:53
-modified_time: 2024-10-26 22:16
+modified_time: 2024-12-03 21:31
 ---
 
 # Markup Language
@@ -27,27 +27,33 @@ modified_time: 2024-10-26 22:16
 - 확정성 : 새로운 태그 정의가 가능함
 
 
-**분류**
-- **문서 마크업 언어** : 문서의 구조와 내용 표현
-  - GML
-  - SGML
-    - HTML
-    - XML
-      - DocBook
-      - MathML
-  - Markdown
-  - AsciiDoc
-- **TeX 계열 언어**  : 프로그래밍 가능
-  - TeX 
-  - LaTeX
-  - pTeX
-  - XeTeX 
-
-
 **마크업 방식별 분류**
 - [표현적 마크업](#presentational-markup)
 - [절차적 마크업](#procedural-markup)
 - [기술적 마크업](#descriptive-markup)
+
+
+**문서 마크업 언어 종류**  
+: 문서의 구조와 내용을 표현하는 언어  
+
+- GML
+- SGML
+  - HTML
+  - XML
+    - DocBook
+    - MathML
+- Markdown
+- AsciiDoc
+
+
+**TeX 계열 언어 종류**  
+: 문서를 작성하고 일부 프로그래밍 가능한 언어  
+: 수학식 표현이 가능하여 수학과 과학 문서에 많이 사용됨   
+
+- TeX 
+- LaTeX
+- pTeX
+- XeTeX 
 
 
 
@@ -67,7 +73,7 @@ modified_time: 2024-10-26 22:16
 = 절차적 마크업  
 : 문서의 시각적 요소와 인쇄 형식을 결정하는 명령어를 제공하는 마크업  
 : 요소가 화면에 어떻게 나타나고 인쇄되는지에 대한 처리 방법을 제공  
-: 출판 시스템이나 인쇄물에서 사용됨  
+: 주로 출판 시스템이나 인쇄물에서 사용됨  
 
 **종류**
 - Troff
@@ -79,19 +85,26 @@ modified_time: 2024-10-26 22:16
 ## Descriptive Markup
 = 기술적 마크업, 설명적 마크업, 의미적 마크업  
 : 문서의 의미와 구조를 표현하는 마크업  
-: 다른 마크업에 비해 문법이 엄격해 작성하기 다소 복잡  
+: 다른 마크업에 비해 문법이 엄격해 작성하기 다소 복잡함  
 : 웹이나 데이터 저장이나 전송을 위해 사용됨  
 
 **종류**
-- SGML
-- HTML
-- XML
+- [SGML](#sgml)
+- [HTML](../../web/html/index.md)
+- [XML](../../data/data-conversion/format/xml.md)
+
+
+
+### SGML
+: 1986년에 [ISO](../../standard/index.md#iso)에서 표준으로 채택한 기술적 마크업 언어  
+: 문서의 구조를 정의하고 데이터를 마크업하여 저장하고 교환할 수 있도록 설계  
+: HTML과 XML은 SGML을 기반으로 발전한 마크업 언어  
 
 
 
 # Practical Markup Language   
 : 실용 마크업 언어  
-: 문서 마크업 언어의 단점을 보완한 새로운 마크업 언어   
+: 문서 마크업 언어의 단점을 보완한 새로운 마크업 언어  
 : 기사, 서적, 보고서 등의 문서를 인간 친화적으로 작성하도록 설계  
 
 ```

@@ -1,17 +1,17 @@
 ---
 order: 0.23
 title: language
-description: 계약 지향 프로그래밍 언어  
+description: 계약 지향 프로그래밍 언어
 summary:
 keywords:
 - programming language
 - contract oriented programming language
-- 계약 지향 프로그래밍 언어  
+- 계약 지향 프로그래밍 언어
 tags:
 - program
 - programming language
-created_time: 2024-09-17 02:30
-modified_time: 2024-10-26 22:16
+created_time: 2024-10-25 22:51
+modified_time: 2024-10-29 22:48
 ---
 
 # Contract-Oriented Programming Language
