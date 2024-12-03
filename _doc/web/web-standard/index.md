@@ -1,6 +1,6 @@
 ---
-order: 0.6
-title: web standard
+order: 0.11
+title: web
 description: 웹 표준 지침
 summary:
 keywords:
@@ -10,7 +10,7 @@ keywords:
 tags:
 - web
 created_time: 2024-11-13 22:02
-modified_time: 2024-11-13 22:18
+modified_time: 2024-12-03 19:42
 ---
 
 # Web Standard
