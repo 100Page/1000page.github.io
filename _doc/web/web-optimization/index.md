@@ -1,7 +1,7 @@
 ---
-order: 0.7
-title: web optimization
-description: 웹 최적화
+order: 0.13
+title: web
+description: 웹 사이트 최적화
 summary:
 keywords:
 - web
@@ -9,14 +9,16 @@ keywords:
 - web performance optimization
 - search engine optimization
 - 웹 최적화
+- 웹 사이트 최적화
 tags:
 - web
 created_time: 2024-10-01 07:54
-modified_time: 2024-11-13 21:56
+modified_time: 2024-12-03 20:09
 ---
 
 # Web Optimization
-: 웹 애플리케이션 성능과 검색 엔진 최적화를 통해 사용자 경험을 향상시키고 웹사이트의 가시성을 높이는 방법 및 과정
+: 웹 성능을 향상하고 검색 엔진 최적화를 통해 웹 사이트의 가시성을 높이고 사용자 경험을 개선하는 기술  
+: 다양한 기술을 통해 페이지 로딩 속도를 향상시키고 검색 엔진 노출을 개선하는데 중점을 둠  
 
 - [Web Performance Optimization](./web-performance-optimization.md)
 - [Search Engine Optimization](./search-engine-optimization.md)
@@ -25,6 +27,6 @@ modified_time: 2024-11-13 21:56
 **최적화 이점**
 - 사용자 경험 향상
 - 웹 접근성 향상
-- 검색 엔진 노출 개선
-- 운영 효율성 증대 : 리소스 최적화를 통해 비용 절감
+- 검색 엔진 노출 최적화
+- 운영 효율성 증대 : 리소스 최적화를 통한 비용 절감
 - 경쟁력 강화

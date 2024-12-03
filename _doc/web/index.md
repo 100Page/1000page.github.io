@@ -12,7 +12,7 @@ tags:
 - index
 - web
 created_time: 2024-08-27 20:43
-modified_time: 2024-12-03 19:29
+modified_time: 2024-12-03 19:38
 ---
 
 # Web
@@ -44,7 +44,7 @@ modified_time: 2024-12-03 19:29
   - [WAI-ARIA](./web-standard/wai-aria.md)
   - [WCAG](./web-standard/wcag.md)
 - [Web Technology](./web-technology/index.md)
-  - Semantic Web
+  - [Semantic Web](./web-technology/semantic-web.md)
 - [Web Optimization](./web-optimization/index.md)
 - [Web Architecture](./web-architecture/index.md)
 - [Web Service](./web-service/index.md)
@@ -62,9 +62,11 @@ modified_time: 2024-12-03 19:29
 
 
 **웹의 개념적 발전 단계**  
-: 공식적인 발전 단계는 아니며 기준이나 정의는 조직이나 연구자마다 다르게 정의
+: 공식적인 발전 단계는 아니며 기준이나 정의는 조직이나 연구자마다 다르게 정의  
+: 웹 3.0은 미래의 웹을 정의하기 위해 사용되는 용어로 구체적인 기술은 확정되지 않았음  
+: 웹 4.0과 웹 5.0은 웹이 나아갈 방향을 예측하는 의미로 사용되며 구체적인 형태는 확정되지 않았음  
 
-웹 | 정의
+단계 | 정의
 ---|---
 웹 1.0 (1990년~) | Read-Only Web, Static Web <br> - 정보 전달 웹 (정적)<br> - 정보는 카테고리로 분류되어 제공됨 (디렉토리 검색)
 웹 2.0 (2000년~) | Read-Write Web, Participating Web <br> - 플랫폼으로서 웹 (동적) <br> - 사용자들이 콘텐츠를 생성하고 편집하며 이를 공유함 (집단 지성)
