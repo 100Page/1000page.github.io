@@ -90,7 +90,7 @@ module Jekyll
           item['folder'] ? 0 : 1,
           item['filename'] == 'index' ? 0 : 1,
           item['order'] ? 0 : 1,
-          item['order'] || item['folder'] || item['filename'] || '',
+          item['order'].to_f || item['folder'] || item['filename'] || '',
           item['filename'] || '',
         ]
       end
