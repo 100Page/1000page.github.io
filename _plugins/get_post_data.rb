@@ -89,7 +89,7 @@ module Jekyll
           #item['post_cnt'] ? 0 : 1,
           item['folder'] ? 0 : 1,
           item['filename'] == 'index' ? 0 : 1,
-          item['order'],
+          item['order'] || Float::INFINITY,
           item['filename'] || '',
         ]
       end
