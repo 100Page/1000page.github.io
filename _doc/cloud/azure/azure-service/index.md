@@ -1,17 +1,17 @@
 ---
-order: 0.1
+order: 1
 title: azure
 description: 애저 서비스 종류
 summary:
 keywords:
-- cloud
 - azure
-- microsoft azure
+- azure service
 - 애저 서비스
 tags:
 - azure
+- cloud
 created_time: 2024-11-11 19:17
-modified_time: 2024-11-11 19:56
+modified_time: 2024-12-16 22:07
 ---
 
 # Microsoft Azure Service
@@ -19,6 +19,7 @@ modified_time: 2024-11-11 19:56
 
 **컴퓨팅 리소스**
 - Azure Virtual Machines
+- Azure Virtual Machine Scale Sets
 - Azure App Services
 - Azure Virtual Desktop
 - Azure Batch
@@ -45,12 +46,18 @@ modified_time: 2024-11-11 19:56
 - Azure Virtual Network
 - Azure DNS
 - Azure Load Balancer
-- Application Gateway
+- Azure Application Gateway
 - Azure VPN Gateway
 - Azure Express Route
+- Azure Traffic Manager
+- Azure Front Door
+
+**네트워크 보안**
 - Azure Firewall 
-- Azure Bastion
+- Azure Firewall Manager
+- Azure DDoS Protection
 - Azure Application Gateway WAF
+- Azure Bastion
 
 **DevOps 및 자동화**
 - Azure DevOps
@@ -65,27 +72,28 @@ modified_time: 2024-11-11 19:56
 
 **하이브리드 클라우드**
 - Azure Arc
+- Azure Arc-enabled Kubernetes
 - Azure Stack
 - Azure Site Recovery
 - Azure Files Sync
-- Azure Arc-enabled Kubernetes
 
-**보안 및 ID**
-- Azure Active Directory
-- Azure RBAC
-- Azure MFA
-- Azure Key Vault
-- Azure Security Center
-- Azure Sentinel
-- Azure Policy/Blueprints
-- Azure Firewall Manager
-- Azure DDoS Protection
-- Azure Identity Protection
+**규정 및 정책**
+- Azure Policy
+- Azure Blueprints
+
+**ID 및 액세스 관리**
+- Microsoft Entra ID
+- Microsoft Entra Permissions Management
+- Microsoft Entra Verified ID
+
+**보안 운영 및 위협 탐지**
+- Microsoft Defender for Cloud
+- Microsoft Sentinel 
 
 **모니터링**
 - Azure Monitor
 - Azure Service Health
-- Application Insights
+- Azure Application Insights
 - Azure Log Analytics
 
 **AI 및 ML**
