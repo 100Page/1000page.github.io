@@ -5,14 +5,14 @@ description: 데이터 (인덱스)
 summary:
 keywords:
 - data
-- data process
+- data processing
 - 데이터
-- 데이터 처리 과정
+- 데이터 처리
 tags:
 - index
 - data
 created_time: 2024-09-28 11:43
-modified_time: 2024-11-21 14:31
+modified_time: 2024-12-26 22:58
 ---
 
 # Data
@@ -33,15 +33,15 @@ modified_time: 2024-11-21 14:31
 
 
 **데이터 설계 및 관리**
-- [Data Architecture](./data-architecture.md) -- 구조
+- [Data Architecture](./data-architecture.md)
   - [Data Modeling](./data-modeling.md)
-  - [Data Governance](./data-governance.md) -- 정책
-  - [Data Management Framework](./data-management-framework.md) -- 프로세스
+  - [Data Governance](./data-governance.md)
+  - [Data Management Framework](./data-management-framework.md)
 
 
 **데이터 처리 과정**
 ```
-[데이터 수집]  =>  [데이터 통합/전처리]  =>  [데이터 처리/저장]  =>  [데이터 분석]
+데이터 수집/변환  =>  데이터 통합/전처리  =>  데이터 처리/저장  =>  데이터 분석
 ```
 
 - [Data Collection](./data-collection/index.md)
@@ -49,14 +49,19 @@ modified_time: 2024-11-21 14:31
   - [Data Format](./data-conversion/format/index.md)
   - [Data Encoding](./data-conversion/encoding/index.md)
 - [Data Preprocessing](./data-preprocessing/index.md)
-  - Data Integration
+  - [Data Transformation](./data-preprocessing/data-transformation.md)
+  - [Data Integration](./data-preprocessing/data-integration.md)
 - [Data Storage](./data-storage/index.md)
   - [File](./data-storage/file.md)
   - [Database](./data-storage/database/index.md)
   - [Database Management System](./data-storage/dbms/index.md)
   - [Query Language](./query-language/index.md)
-    - [SQL](./data-storage/query-language/sql/)
+    - [SQL](./query-language/sql/index.md)
 - [Data Processing](./data-processing/index.md)
   - [Search Engine](./data-processing/search-engine.md)
 - [Data Analysis](./data-analysis/index.md)
-  - Data Visualization
+  - [Data Visualization](./data-analysis/visualization/index.md)
+
+
+**데이터 보안**
+- [Data Protection](../security/security-feature/data-protection.md)
