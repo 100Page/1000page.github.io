@@ -1,32 +1,38 @@
 ---
-order: 0.11
+order: 3
 title: database
 description: 데이터베이스 모델
-tags:
-- data
+summary:
+keywords:
 - database
-created_time: 2024-09-28 11:41
-modified_time: 2024-10-03 12:41
+- database model
+- 데이터베이스 모델
+tags:
+- database
+- model
+created_time: 2024-10-03 14:13
+modified_time: 2025-01-04 10:35
 ---
 
 # Database Model
 : 데이터베이스의 논리적 구조를 결정하는 추상적 개념  
-: 데이터를 어떻게 구조화하고 저장하고 접근하는지 등을 정의
+: 데이터를 어떻게 구조화하고 저장하고 접근하는지 등을 이론적으로 정의  
+: 데이터베이스 모델은 데이터가 효율적이고 확장 가능하게 저장되고 빠르게 처리될 수 있게 도와줌  
 
-- 1960년대 Hierarchical
-- 1970년대 Network 
-- 1970년대 Relational
-- 1980년대 Object Oriented
-- 1990년대 Object Relational
-- 1990년대 Distributed
-- 2000년대 Non Relational
-- 2000년대 Graph
-- 2010년대 Streaming
+- 1960년대 [Hierarchical](#hierarchical-database-model)
+- 1970년대 [Network](#network-database-model) 
+- 1970년대 [Relational](#relational-database-model)
+- 1980년대 [Object Oriented](#object-oriented-database-model)
+- 1990년대 [Object Relational](#object-relational-database-model)
+- 1990년대 [Distributed](#distributed-database-model)
+- 2000년대 [Non Relational](#non-relational-database-model)
+- 2000년대 [Graph](#graph-database-model)
+- 2010년대 [Streaming](#streaming-database-model)
 
 
 용어 | 설명
 ---|---
-데이터 구조 | 데이터를 구조화하는 방식
+데이터 구조 | 데이터를 구조화하는 방식으로 모델은 각각 다른 방식으로 데이터를 표현
 데이터 관계 | 데이터 간 연관성을 표현하는 방식
 
 
@@ -50,9 +56,51 @@ modified_time: 2024-10-03 12:41
 
 ## Relational Database Model
 : 관계형 데이터베이스 모델  
-: 데이터를 테이블로 구성하고 테이블 간 관계를 맺는 데이터베이스  
+: 데이터를 테이블로 표현하고 테이블 간 관계를 맺는 데이터베이스  
 : SQL를 통해 데이터를 조작하고 관리하는 방법 지원  
 : 유연하고 데이터가 독립적이나 대용량 데이터 처리시 성능 저하 문제가 있을 수 있음  
+
+**Codd's 12 rules**  
+: 커드의 12가지 규칙  
+: 관계형 데이터베이스 시스템 정의 및 특성을 규정한 12가지 규칙  
+
+1. 정보 규칙
+=> 데이터베이스의 모든 데이터는 테이블 형태로 표현되며 테이블의 값은 원자값이어야 함
+
+2. 보장된 접근 규칙
+=> 데이터베이스에 저장된 모든 데이터는 고유한 이름을 가진 항목으로 식별되어야 함
+
+3. 널 값 처리 규칙
+=> 널 값은 특정 규칙(미지의 값, 존재하지 않는 값)에 따라 처리되어야 함
+
+4. 동적 온라인 카탈로그 규칙
+=> 데이터베이스 시스템은 메타데이터나 스키마 정보를 테이블로 관리해야 함
+
+5. 포괄적인 데이터 서브언어 규칙
+=> 데이터베이스 시스템은 하나 이상의 독립적인 데이터 언어를 지원해야 함
+
+6. 뷰 업데이트 규칙
+=> 뷰는 물리적 데이터 구조에 독립적이여야 함
+
+7. 고수준 삽입, 업데이트, 삭제 규칙
+=> 데이터를 삽입, 수정, 삭제하는 연산은 고수준 언어로 정의되어야 함
+
+8. 물리적 데이터 독립성 규칙
+=> 데이터베이스의 물리적 구조는 논리적 구조에서 독립적이어야 함
+=> 물리적 저장 방식의 변화가 논리적 구조나 애플리케이션에 영향을 미치지 않아야 함
+
+9. 논리적 데이터 독립성 규칙
+=> 논리적 데이터 구조의 변화가 애플리케이션에 영향을 미치지 않아야 함
+
+10. 무결성 독립성 규칙
+=> 데이터베이스 시스템은 무결성 제약 조건을 독립적으로 관리하고 자동적으로 적용되어야 함
+
+11. 분산 독립성 규칙
+=> 데이터베이스는 물리적 위치와 상관없이 분산되어야 함
+
+12. 비하위 규칙
+=> 관계형 언어를 사용해 모든 데이터를 처리할 수 있어야 함
+=> 이외 접근 방식을 통해 관계형 모델 특성을 우회하면 안됨
 
 
 
