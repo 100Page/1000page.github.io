@@ -14,7 +14,7 @@ tags:
 - index
 - computing
 created_time: 2024-09-28 11:43
-modified_time: 2025-01-15 09:27
+modified_time: 2025-01-16 01:30
 ---
 
 # Computing 
@@ -27,10 +27,9 @@ modified_time: 2025-01-15 09:27
 
 - [Computing Fundamental](./computing-fundamental/index.md)
   - [Abstraction](./computing-fundamental/abstraction.md)
-- [Computing Model](./computing-model.md) -- 추상적
+- [Computing Model](./computing-model.md)
   - [Turing Machine](./computing-model.md#turing-machine) 
-- [Computing Paradigm](./computing-paradigm.md) -- 이론적
-- [Computing Architecture](./computing-architecture.md) -- 구체적
+- [Computing Paradigm](./computing-paradigm.md)
 - Computing Disciplines
   - Computer Science
   - Information Science
