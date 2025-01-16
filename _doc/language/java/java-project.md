@@ -1,18 +1,17 @@
 ---
-order: 0.3
+order: 3
 title: java
 description: 자바 프로젝트
 summary:
 keywords:
 - java
 - java project
-- 자바
 - 자바 프로젝트
 tags:
-- language
 - java
+- language
 created_time: 2024-10-07 06:23
-modified_time: 2024-10-21 06:47
+modified_time: 2025-01-16 15:14
 ---
 
 # Java Project

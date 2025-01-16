@@ -1,5 +1,5 @@
 ---
-order: 0.2
+order: 2
 title: java
 description: 자바 버전별 특징
 summary:
@@ -7,16 +7,20 @@ keywords:
 - java
 - java version
 - jdk version
-- 자바
 - 자바 버전
 tags:
-- language
 - java
+- language
 created_time: 2024-10-07 06:24
-modified_time: 2024-10-22 10:40
+modified_time: 2025-01-16 15:13
 ---
 
-# JDK Version 
+# JDK Version
+: 6개월을 주기로 새로운 버전이 출시되며 장기 지원 버전이 아닌 경우 단기 지원을 받음  
+
+**장기 지원 버전**  
+: Java 11, Java 17, Java 21 버전이 장기 지원 버전으로 5년간 지원됨  
+
 
 
 ## JDK 9
