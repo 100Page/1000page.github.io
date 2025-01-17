@@ -18,7 +18,8 @@
 
     <p class="index-post-tag">
       {% for tag in item.tags  %}
-        <a href="/tag#{{ tag | slugify }}">{{ tag }}</a>
+        <!-- <a href="/tag#{{ tag | slugify }}">{{ tag }}</a> -->
+        <span>{{ tag }}</span>
       {% endfor %}
     </p>
   </li>

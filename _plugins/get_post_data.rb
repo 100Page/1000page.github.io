@@ -57,8 +57,7 @@ module Jekyll
             'title' => front_matter['title'],
             'order' => front_matter['order'],
             'description' => front_matter['description'],
-            'tags' => front_matter['tags'],
-            #'created_time' => front_matter['created_time'],
+            'tags' => front_matter['keywords'],
             'modified_time' => front_matter['modified_time'],
           }
 
@@ -86,7 +85,6 @@ module Jekyll
     def sort_items(items)
       items.sort_by do |item|
         [
-          #item['post_cnt'] ? 0 : 1,
           item['folder'] ? 0 : 1,
           item['filename'] == 'index' ? 0 : 1,
           item['order'] || Float::INFINITY,
