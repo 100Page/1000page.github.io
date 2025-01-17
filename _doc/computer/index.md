@@ -6,13 +6,11 @@ summary:
 keywords:
 - computer
 - computer system
-- 컴퓨터
-- 컴퓨터 시스템
 tags:
 - index
 - computer
 created_time: 2024-09-28 11:43
-modified_time: 2024-11-13 12:53
+modified_time: 2025-01-17 19:06
 ---
 
 # Computer
@@ -24,9 +22,10 @@ modified_time: 2024-11-13 12:53
   - [Hardware](./hardware/index.md)
   - [Software](./software/index.md)
   - [Firmware](./firmware/index.md)
+- [Computer Architecture Paradigm](./computer-architecture-paradigm.md)
 - [Computer Architecture](./computer-architecture.md)
   - [Hardware Architecture](./hardware-architecture.md)
   - [Software Architecture](./software-architecture.md)
   - [Instruction Set Architecture](./instruction-set-architecture.md)
-- [Computer Processing Type](./computer-processing-type.md)
+- [Computer Processing Model](./computer-processing-model.md)
 - [Computer Booting Process](./computer-booting-process.md)

@@ -1,17 +1,21 @@
 ---
-order: 0.2
+order: 3
 title: computer
 description: 컴퓨터 역사와 관련 용어
+summary:
+keywords:
+- computer
+- computer hisotry
 tags:
 - computer
 created_time: 2024-09-06 07:40
-modified_time: 2024-10-05 23:36
+modified_time: 2025-01-18 06:11
 ---
 
 # Computer History
 : 1820년대 최초 기계식 컴퓨터 개발 시도 - ALU와 메모리 개념 도입    
 : 1940년대 최초 전자식 컴퓨터 개발 (아타나소프 베리, 콜로서스, 에니악) - 메모리에 데이터만 저장  
-: 1950년대 폰 노이만 구조에 기반을 둔 컴퓨터 개발 (에드삭, 에드박) - 메모리에 데이터와 명령어를 함께 저장  
+: 1950년대 폰 노이만 구조 기반 컴퓨터 개발 (에드삭, 에드박) - 메모리에 데이터와 명령어를 함께 저장  
 : 1960년대 운영체제가 등장하며 하드웨어와 소프트웨어가 명확하게 분리
 
 
