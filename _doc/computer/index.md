@@ -10,7 +10,7 @@ tags:
 - index
 - computer
 created_time: 2024-09-28 11:43
-modified_time: 2025-01-17 19:06
+modified_time: 2025-01-18 11:49
 ---
 
 # Computer
@@ -26,6 +26,7 @@ modified_time: 2025-01-17 19:06
 - [Computer Architecture](./computer-architecture.md)
   - [Hardware Architecture](./hardware-architecture.md)
   - [Software Architecture](./software-architecture.md)
+  - [Memory Architecture](./memory-architecture.md)
   - [Instruction Set Architecture](./instruction-set-architecture.md)
 - [Computer Processing Model](./computer-processing-model.md)
 - [Computer Booting Process](./computer-booting-process.md)
