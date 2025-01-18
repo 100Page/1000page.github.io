@@ -10,7 +10,7 @@ tags:
 - index
 - computer
 created_time: 2024-09-28 11:43
-modified_time: 2025-01-18 11:49
+modified_time: 2025-01-18 14:19
 ---
 
 # Computer
@@ -20,7 +20,7 @@ modified_time: 2025-01-18 11:49
 - [Computer History](./computer-history.md)
 - Computer Component
   - [Hardware](./hardware/index.md)
-  - [Software](./software/index.md)
+  - [Software](./software/index.md) 
   - [Firmware](./firmware/index.md)
 - [Computer Architecture Paradigm](./computer-architecture-paradigm.md)
 - [Computer Architecture](./computer-architecture.md)
