@@ -7,11 +7,12 @@ keywords:
 - tool
 - development tool
 - ide
+- vcs
 tags:
 - index
 - tool
 created_time: 2024-09-22 13:15
-modified_time: 2025-01-19 14:07
+modified_time: 2025-01-19 15:54
 ---
 
 # Development Tools
@@ -21,15 +22,17 @@ modified_time: 2025-01-19 14:07
 - [IDE](./tool-ide/index.md)
 - [Editor](./tool-editor/index.md)
 - [Version Control System](./tool-vcs/index.md)
-
-**Data & Security**
 - [Data](./tool-data/index.md)
 - [Database](./tool-database/index.md)
 - [Security](./tool-security/index.md)
-
-**Build & Deployment**
-- [Toolchain](./tool-toolchain/index.md)
+- [Build](./tool-build/index.md)
+- [Package](./tool-package/index.md)
 - [Infrastructure](./tool-infra/index.md)
+  - [CI/CD Tool](./tool-infra/cicd/index.md)
+  - [Virtualization Tool](./tool-infra/virtual/index.md)
+  - [Container Tool](./tool-infra/container/index.md)
+  - [Configuration Tool](./tool-infra/config/index.md)
+  - [Monitoring Tool](./tool-infra/monitor/index.md)
 
 **Development Support**
 - API Testing
