@@ -1,47 +1,48 @@
 ---
 order: 30
 title: tool
-description: 소프트웨어 개발 도구 (인덱스)
+description: 소프트웨어 도구 (인덱스)
 summary:
 keywords:
 - tool
-- 개발 도구
+- development tool
+- ide
 tags:
 - index
 - tool
 created_time: 2024-09-22 13:15
-modified_time: 2024-10-05 23:24
+modified_time: 2025-01-19 14:07
 ---
 
 # Development Tools
 : 프로그램 개발을 지원하는 도구나 프로그램  
 : 개발 과정의 효율성, 품질, 협업을 향상시키는 모든 소프트웨어와 서비스  
 
-**Core**
-- [IDE](./tool-ide/index.md) 
+- [IDE](./tool-ide/index.md)
 - [Editor](./tool-editor/index.md)
 - [Version Control System](./tool-vcs/index.md)
 
 **Data & Security**
-- [Data Management Tool](./tool-data/index.md)
-- [Authentication Tool](./tool-auth/index.md)
+- [Data](./tool-data/index.md)
+- [Database](./tool-database/index.md)
+- [Security](./tool-security/index.md)
 
 **Build & Deployment**
-- [Toolchain Tool](./tool-toolchain/index.md)
-- [Infrastructure Tool](./tool-infra/index.md)
+- [Toolchain](./tool-toolchain/index.md)
+- [Infrastructure](./tool-infra/index.md)
 
 **Development Support**
-- API Testing Tool
+- API Testing
   - Postman
   - Insomnia
   - Swagger UI
-- Documentation Tool
+- Documentation
   - Swagger
   - Doxygen
   - Sphinx
   - ReadMe
   - Confluence
-- Diagram Tool
+- Diagram
   - draw.io
   - PlantUML 
   - Archi 
@@ -56,7 +57,7 @@ modified_time: 2024-10-05 23:24
   - ClickUp
   - Taiga
   - Odoo
-- License Compliance Tool
+- License Compliance
   - FOSSology
   - Protex
   - Black Duck
