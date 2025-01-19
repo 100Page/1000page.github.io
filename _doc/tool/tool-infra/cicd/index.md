@@ -1,17 +1,16 @@
 ---
-order: 0.1
+order: 1
 title: tool
 description: 지속적 통합 및 지속적 배포 (CICD)
 summary:
 keywords:
 - tool
-- infrastructure tool
+- infra
 - cicd
-- 지속적 통합 및 지속적 배포
 tags:
 - tool
-created_time: 2024-09-30 21:44
-modified_time: 2024-10-01 01:08
+created_time: 2024-10-26 15:57
+modified_time: 2025-01-19 15:58
 ---
 
 # CI/CD Tool

@@ -1,19 +1,18 @@
 ---
-order: 0.7
+order: 9
 title: tool
-description: 인프라 도구 종류
+description: 인프라 관리 도구
 summary:
 keywords:
 - tool
-- infrastructure tool
-- 인프라 도구
+- infra management
 tags:
 - tool
 created_time: 2024-09-30 21:44
-modified_time: 2024-10-01 01:08
+modified_time: 2025-01-19 15:58
 ---
 
-# Infrastructure Tool
+# Infrastructure Management Tool
 : 인프라 관리 및 자동화 도구
 
 - [CI/CD Tool](./cicd/index.md)

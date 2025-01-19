@@ -11,7 +11,7 @@ keywords:
 tags:
 - tool
 created_time: 2024-09-30 21:45
-modified_time: 2024-10-01 01:08
+modified_time: 2024-10-26 22:16
 ---
 
 # Facter

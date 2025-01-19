@@ -1,17 +1,16 @@
 ---
-order: 0.2
+order: 2
 title: tool
 description: 가상화 도구
 summary:
 keywords:
 - tool
-- infrastructure tool
-- virtualization tool
-- 가상화 도구
+- infra
+- virtual
 tags:
 - tool
-created_time: 2024-09-30 21:44
-modified_time: 2024-10-01 01:08
+created_time: 2024-10-26 16:02
+modified_time: 2025-01-19 15:59
 ---
 
 # Virtualization Tool

@@ -1,17 +1,16 @@
 ---
-order: 0.4
+order: 4
 title: tool
 description: 구성 관리 도구
 summary:
 keywords:
 - tool
-- infrastructure tool
-- configuration tool
-- 구성 관리 도구
+- infra
+- configuration
 tags:
 - tool
-created_time: 2024-09-30 21:44
-modified_time: 2024-10-01 01:08
+created_time: 2024-10-26 15:59
+modified_time: 2025-01-19 16:00
 ---
 
 # Configuration Tool

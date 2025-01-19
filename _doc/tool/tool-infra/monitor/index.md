@@ -1,17 +1,16 @@
 ---
-order: 0.5
+order: 5
 title: tool
 description: 모니터링 도구
 summary:
 keywords:
 - tool
-- infrastructure tool
-- monitoring tool
-- 모니터링 도구
+- infra
+- monitoring
 tags:
 - tool
-created_time: 2024-09-30 21:44
-modified_time: 2024-10-01 01:08
+created_time: 2024-10-26 15:58
+modified_time: 2025-01-19 16:00
 ---
 
 # Monitoring Tool
