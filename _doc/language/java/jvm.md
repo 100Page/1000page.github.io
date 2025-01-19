@@ -1,25 +1,24 @@
 ---
-order: 0.11
+order: 1.1
 title: java
 description: 자바 가상 머신 (JVM)
 summary:
 keywords:
 - java
-- jvm
 - java virtual machine
-- 자바
-- 자바 가상 머신
+- jvm
+- class loader
 tags:
 - language
 - java
 created_time: 2024-10-10 13:14
-modified_time: 2024-10-22 11:51
+modified_time: 2025-01-19 16:40
 ---
 
 # JVM
 Java Virtual Machine  
 : 바이트코드가 실행되기 위한 환경  
-: 운영체제와 자바 프로그램 사이에 위치해 프로그램이 실행되는데 필요한 리소스를 확보하고 이를 관리함  
+: 운영체제와 자바 프로그램 사이에 위치해 프로그램 실행을 위한 리소스를 확보하고 이를 관리함  
 : 운영체제 별 JVM이 존재하며 JVM 자체는 운영체제에 종속적  
 
 **구성 요소**
@@ -42,25 +41,33 @@ Java Virtual Machine
 
 ## Class Loader
 : 자바 클래스 파일을 찾아 보안 검증 후 JVM 메모리에 로드하고 연결  
+: 프로그램을 실행되면 최초 한 번 로딩하고 프로그램 실행 중 클래스가 필요하면 다시 로딩함  
 
 **단계**  
 ```
-1. load :클래스 파일을 읽어 이를 JVM 메모리에 로딩
-
+1. load : 클래스 파일을 읽어 이를 JVM 메모리에 로딩
+          (동적 로딩으로 필요한 클래스만 로딩됨)
 2. link
    2-1. verify  : bytecode verifier가 바이트코드의 유효성과 보안을 검증함 (sandbox)
    2-2. prepare : 메모리를 기본값으로 초기화하는 등 실행 준비를 함
+                  (로딩된 클래스의 정적 변수가 기본 값으로 초기화 됨)
    2-3. resolve : 심볼릭 레퍼런스를 실제 메모리 주소로 변환함
 
-3. initialize : 정적 변수 값을 할당하고 정적 블록 실행해 클래스 초기화를 함
+3. initialize : 로딩된 클래스의 정적 변수에 값을 할당하고 정적 블록 실행함
 
 => 문제가 없으면 실행 엔진으로 넘어감
 ```
 
 
-**클래스 로딩 방식**    
-- load-time dynamic loading : 클래스 로딩 중 참조되는 클래스도 로딩  
-- run-time dynamic loading : 프로그램 실행 중 필요한 클래스 로딩   
+**클래스 로딩 방식**
+- Load-Time Dynamic Loading : 클래스 로딩 중 참조되는 클래스 로딩
+- Run-Time Dynamic Loading : 프로그램 실행 중 필요한 클래스 로딩 (주로 리플렉션)
+
+
+**클래스 로딩 조건**
+- 정적 변수나 정적 메소드를 사용하는 클래스
+- new 키워드를 통해 인스턴스를 생성
+- Class.forName()을 통해 로딩되는 클래스
 
 
 **클래스 로더 종류**    
@@ -74,6 +81,7 @@ Java Virtual Machine
 부트 스트랩 로더를 통해 로딩된 클래스는 JVM의 생애 주기 동안 메모리에 상주함
 확장 클래스 로더나 시스템 클래스 로더에 의해 로딩된 클래스는 필요없어지면 언로드됨
 ```
+
 
 **클래스 언로드**  
 : JVM 메모리에서 특정 조건에 따라 특정 클래스를 제거하는 과정  

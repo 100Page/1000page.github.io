@@ -1,25 +1,24 @@
 ---
-order: 0.1
+order: 1
 title: java
 description: 자바 개발 툴킷 (JDK)
 summary:
 keywords:
 - java
-- jdk
 - java development kit
-- 자바
-- 자바 개발 툴킷
+- jdk
+- jre
 tags:
 - language
 - java
 created_time: 2024-10-07 06:22
-modified_time: 2024-10-21 06:47
+modified_time: 2025-01-19 16:39
 ---
 
 # JDK
-Java Development Kit   
-: 자바 프로그램 개발을 위한 도구와 라이브러리 모음  
-: 자바 프로그램을 개발하고 실행, 테스트, 배포하기 위한 라이브러리와 도구들로 구성  
+Java Development Kit  
+: 자바 프로그램 개발하기 위한 도구와 라이브러리 모음  
+: 자바 프로그램을 개발, 실행, 테스트, 배포하기 위한 라이브러리와 도구들로 구성  
 
 **구성 요소**
 - [JRE](#jre)
@@ -28,8 +27,12 @@ Java Development Kit
 - [Java Tools](#java-tools) 
 
 
+**OpenJDK**  
+: 자바 표준 사양을 바탕으로 구현된 공식 구현체  
+: 다른 JDK는 OpenJDK를 기반으로 커스텀하여 배포판을 제공함   
+
+
 **무료 구현체**
-- OpenJDK
 - Temurin (Eclipse)
 - Zulu (Azul)
 - Corretto (Amazon)
@@ -58,7 +61,7 @@ Java Runtime Environment
 ```
 Java Program
 ------------
-JRE (JVM)
+JVM
 ------------
 OS
 ```
@@ -72,7 +75,7 @@ OS
 
 ### Java Class Library
 : JVM이 런타임에 호출할 수 있는 동적으로 로드 가능한 클래스와 API 집합  
-: Java 8 에서는 rt.jar에 포함되었으나 Java 9 이후에는 모듈 단위로 지원  
+: Java8 에서는 rt.jar에 포함되었으나 Java 9 이후에는 모듈 단위로 지원  
 
 
 #### rt.jar 
@@ -110,7 +113,7 @@ java     | 자바 인터프리터로 바이트코드를 해석하고 실행
 javap    | 자바 역어셈블러로 클래스 파일을 자바 파일로 변환
 jdeps    | 자바 패키지와 클래스의 종속성 분석  
 javadoc  | 자바 문서 생성기
-javah    | 헤더 파일 생성
+javah    | 헤더 파일(.h) 과 소스 파일(.c) 생성기
 jdb      | 자바 명령줄 디버거
 jar      | 자바 압축 파일 생성 및 관리
 extcheck | 이전 JAR 파일과 현재 설치될 JAR 파일간의 버전 충돌 감지  

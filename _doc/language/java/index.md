@@ -1,38 +1,40 @@
 ---
-order: 0.1
+order: 1
 title: java
-description: 자바 플랫폼 (인덱스)
+description: 자바 플랫폼
 summary:
 keywords:
 - java
 - java platform
-- 자바
-- 자바 플랫폼
+- jcp
+- jsr
+- jep
 tags:
 - language
 - java
 created_time: 2024-09-09 22:51
-modified_time: 2024-10-22 21:50
+modified_time: 2025-01-19 17:08
 ---
 
-# Java
-: 자바 프로그램 개발을 위한 프로그래밍 언어와 개발 도구 및 실행 환경
+# Java Platform
+: 자바 프로그램 개발을 위한 프로그래밍 언어와 개발 도구 및 실행 환경  
 
 - [Java Platform](#java-platform)
   - [JDK](./jdk.md)
     - [JVM](./jvm.md)
+    - [JVM Implementation](./jvm-implement.md)
+  - [Java Tools](./java-tool/index.md)
 - [Java Version](./java-version.md)
 - [Java Project](./java-project.md)
+  - [Java Module System](./java-module-system.md)
 - [Java Program](./java-program.md)
 - [Java Compilation Process](./java-compilation-process.md)
 - [Java Programming Language](./java-lang/index.md)
 - [Java SE API](./java-api-se/index.md)
 - [Java EE API](./java-api-ee/index.md)
-- [Java Pattern](./java-pattern/index.md)
-- [Java Ecosystem](./java-ecosystem/index.md)
-  - [Java Framework](./java-ecosystem/java-framework.md)
-  - [Java Library](./java-ecosystem/java-lib.md)
-  - [Java Tool](./java-ecosystem/java-tool.md)
+- [Java Ecosystem](./java-ecosystem.md)
+  - [Java Framework](./java-framework/index.md)
+  - [Java Library](./java-lib/index.md)
 
 
 **history**  
@@ -112,12 +114,12 @@ JDK Enhancement Proposal
 
 > JEP 작성 > JEP 제출 > 검토 및 피드백 > 승인 > 개발
 
-**JEP list**  
-https://openjdk.org/jeps/0
-
-
 단계 | 설명
 ---|---
 Incubator | 새로운 기능이나 API의 초기 개발 및 실험 단계
 Preview   | 인큐베이터에서 테스트된 기능이 안정성을 확보해 커뮤니티의 추가 피드백을 받는 단계
 Standard  | 충분한 피드백과 테스트를 거친 공식 표준 기능
+
+
+**JEP list**  
+https://openjdk.org/jeps/0

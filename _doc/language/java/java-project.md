@@ -6,12 +6,13 @@ summary:
 keywords:
 - java
 - java project
-- 자바 프로젝트
+- jigsaw
+- graal
 tags:
-- java
 - language
+- java
 created_time: 2024-10-07 06:23
-modified_time: 2025-01-16 15:14
+modified_time: 2025-01-19 16:41
 ---
 
 # Java Project

@@ -1,26 +1,22 @@
 ---
-order: 0.4
+order: 4
 title: java
-description: 자바 프로그램 실행 과정
+description: 자바 프로그램 및 실행 과정
 summary:
 keywords:
 - java
 - java program
 - java program execution
-- java bytecode
-- 자바
-- 자바 프로그램
-- 자바 프로그램 실행 과정
-- 바이트코드
+- bytecode
 tags:
 - language
 - java
 created_time: 2024-10-07 06:45
-modified_time: 2024-10-22 10:40
+modified_time: 2025-01-19 17:20
 ---
 
 # Java Program 
-: 자바 프로그래밍 언어로 만들어지고 자바 컴파일러를 통해 변환되어 JVM에서 실행되는 프로그램  
+: 자바 프로그래밍 언어로 만들어지고 자바 컴파일러를 통해 변환되어 [JVM](./jvm.md)에서 실행되는 프로그램  
 
 **종류**
 - 콘솔 애플리케이션
@@ -99,7 +95,7 @@ modified_time: 2024-10-22 10:40
 
 
 **invokedynamic**  
-: Java 7부터 도입된 Opcode  
+: Java 7 부터 도입된 Opcode  
 : JVM을 런타임으로 사용하는 동적 타입 언어를 위해 도입  
 
 ```java

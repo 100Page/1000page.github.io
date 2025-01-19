@@ -1,39 +1,38 @@
 ---
-order: 0.13
+order: 1.2
 title: java
 description: 자바 가상 머신 구현체
 summary:
 keywords:
 - java
 - jvm
-- java virtual machine
 - jvm implementation
-- 자바
-- 자바 가상 머신
-- 자바 가상 머신 구현체
+- hotspot
+- graal
 tags:
 - language
 - java
 created_time: 2024-10-10 13:18
-modified_time: 2024-10-21 06:47
+modified_time: 2025-01-19 17:07
 ---
 
 # JVM Implementation
-: JVM 구체적인 구현체  
+: 오픈소스 커뮤니티 또는 기업에서 개발한 [JVM](./jvm.md) 구현체  
+: 특정 환경 최적화, 성능 향상 등 요구에 따라 개발되어 각각 고유한 특징을 가짐  
 
 **구현체**
 - HotSpot JVM
 - OpenJ9 JVM
 - GraalVM
 
-
 JDK | JVM
 ---|---
-Oracle JDK | HotSpot JVM
-OpenJDK    | HotSpot JVM
-Temurin    | HotSpot JVM, OpenJ9 JVM 선택
-Zulu       | HotSpot JVM
-Corretto   | HotSpot JVM
+OpenJDK     | HotSpot JVM
+Oracle JDK  | HotSpot JVM
+Temurin     | HotSpot JVM, OpenJ9 JVM 선택
+Zulu        | HotSpot JVM
+Corretto    | HotSpot JVM
+GraalVM JDK | GraalVM
 
 
 

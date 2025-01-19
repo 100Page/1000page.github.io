@@ -6,13 +6,12 @@ summary:
 keywords:
 - java
 - java version
-- jdk version
-- 자바 버전
+- jdk 22
 tags:
-- java
 - language
+- java
 created_time: 2024-10-07 06:24
-modified_time: 2025-01-16 15:13
+modified_time: 2025-01-19 16:40
 ---
 
 # JDK Version
