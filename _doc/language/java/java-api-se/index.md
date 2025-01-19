@@ -1,18 +1,17 @@
 ---
-order: 0.2
+order: 3
 title: java
 description: 자바 스탠다드 에디션
 summary:
 keywords:
 - java
-- java se
-- java api
-- 자바 스탠다드 에디션
+- java standard edition
+- javase
 tags:
 - language
 - java
 created_time: 2024-10-07 06:21
-modified_time: 2024-10-26 22:16
+modified_time: 2025-01-19 21:17
 ---
 
 # Java SE
@@ -22,7 +21,7 @@ Java Standard Edition
 : Java EE에서 Java SE 스펙 일부를 상속해 기능을 확장하여 사용하는 스펙도 존재함  
 
 - [Java Beans](./java-beans.md)
-- [Java Native Interface](./jni.md)
+- [Java Reflection](./java-reflection.md)
 
 **데이터 처리**
 - [Java Collections Framework](./jcf.md)
@@ -34,22 +33,27 @@ Java Standard Edition
 - [Java NIO API](./java-io.md#nio)
 
 **데이터 통신**
-- [Java Database Connectivity](./jdbc.md)
-- [Java Remote Method Invocation](./rmi.md)
 - [Java Networking API](./java-network.md)
+- [Java Database Connectivity](./jdbc.md)
 - [Java Naming and Directory Interface](./jndi.md)
+- [Java Remote Method Invocation](./rmi.md)
 
 **보안**
 - [Java Security API](./java-security.md)
 - [Java Authentication and Authorization Service](./jaas.md)
+- [Java Cryptography Architecture](./jca.md)
 - [Java Cryptography Extension](./jce.md)
 - [Java Secure Socket Extension](./jsse.md)
+- [Java Generic Security Services](./jgss.md)
+- [Java Cryptography Extension KeyStore](./jceks.md)
 
 **동시성**
+- [Java Thread](./java-thread.md)
 - [Java Concurrency API](./java-concurrency.md)
 
 **관리**
 - [Java Management Extensions](./jmx.md)
+- [Java Native Interface](./jni.md)
 
 
 **스펙**  

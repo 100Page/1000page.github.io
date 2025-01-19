@@ -1,27 +1,26 @@
 ---
-order: 0.3
+order: 4
 title: java
 description: 자바 엔터프라이즈 에디션
 summary:
 keywords:
 - java
-- java api
-- java enterprise
-- jakarta ee
-- 자바 엔터프라이즈 에디션
+- java enterprise edition
+- javaee
+- jakarta
 tags:
+- language
 - java
-- enterprise
 created_time: 2024-10-07 06:21
-modified_time: 2024-11-10 18:16
+modified_time: 2025-01-19 21:21
 ---
 
 # Java EE
-= Jakarta EE    
-: 엔터프라이즈 애플리케이션 개발을 위함 플랫폼  
+= Jakarta EE  
+: 자바 엔터프라이즈 애플리케이션 개발을 위함 플랫폼  
 : 대규모 동시 접속, 보안, 배치 시스템 등 엔터프라이즈 애플리케이션 개발을 위한 스펙 제공  
 : Java EE 소유권이 Eclipse Foundation으로 이전되며 Jakarta EE로 명칭이 변경됨  
-: Jakarta EE는 클라우드 네이티브 및 마이크로서비스 환경을 위해 다양한 기술 도입  
+: Jakarta EE는 클라우드 네이티브와 마이크로서비스 환경을 위해 기술을 도입  
 
 > J2SE 1.2 일부 => J2EE => Java EE => Jakarta EE 
 
