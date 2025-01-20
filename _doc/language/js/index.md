@@ -1,36 +1,41 @@
 ---
-order: 0.2
+order: 1
 title: javascript
-description: 자바스크립트 (인덱스)
+description: 자바스크립트
 summary:
 keywords:
-- js
-- javascript
 - ecmascript
-- 자바스크립트
+- javascript
+- js
 tags:
 - language
-- javascript
+- js
 created_time: 2024-11-06 07:26
-modified_time: 2024-11-06 08:13
+modified_time: 2025-01-20 15:26
 ---
 
 # JavaScript 
-: 사용자와 동적 상호 작용, DOM 객체 제어, 자바 애플릿을 대체하기 위해 만든 브라우저 스크립팅 언어  
-: 초기에는 모카스크립트라고 명명되었으나 나중에 자바스크립트로 변경됨  
-: ECMA-262라는 사양이 나오고 이를 따른 표준 언어를 ECMAScript이라 명명함  
-: 자바스크립트는 브라우저 환경에서만 동작했으나 최근에는 브라우저가 아닌 환경에서도 지원  
+: 사용자와 동적 상호작용, DOM 제어, 자바 애플릿을 대체하기 위해 만들어진 브라우저 스크립팅 언어  
+: 초기에는 브라우저 환경에서만 동작했으나 최근에는 모바일과 서버 환경도 지원하며 생태계를 형성  
+: ECMA-262라는 표준 사양을 따르는 언어를 ECMAScript라 명칭하나 여전히 자바스크립트로 통용됨  
 
 - [ECMAScript](#ecmascript)
 - [JS Language](./js-lang/index.md)
-- [JS Module System](./js-module.md)
-- [JS Package Manager](./js-tool-package-manager.md)
+  - [Native Object](./js-api/object/index.md)
+  - [Built-in Class](./js-api/class/index.md)
+- [AltJS](./js-alt.md)
+  - [TypeScript](./ts/index.md)
+- [JS Module System](./js-module-system.md)
+- [JS Package Manager](./js-package-manager.md)
+- [JS Package Registry](./js-package-registry.md)
 - [JS Transpiler](./js-tool-transpiler.md)
 - [JS Build](./js-tool-build.md)
-- [AltJS](./alt-js.md)
-  - [TypeScript](./typescript/index.md)
-- [JS Runtime Environments](./js-runtime-environments.md)
-  - [JS Runtime](./ssjs/index.md)
+- [JS Runtime Environments](./js-runtime-environment.md)
+  - [Node](./ssjs-node/index.md)
+  - [Deno](./ssjs-deno/index.md)
+  - [Bun](./ssjs-bun/index.md)
+- [JS Ecosystem](./js-ecosystem.md)
+- [Frontend Pattern](./frontend-pattern/index.md)
 
 
 **history**  
@@ -88,12 +93,12 @@ ES2015 : 2015년에 표준화 된 ES6
 ---|---
 ES10 | Object.fromEntries(), Array.prototype.flat(), Array.prototype.flatMap()
 ES11 | `??` 연산자, `?.` 연산자, Promise.allSettled(), BigInt 데이터타입
-ES12 | 논리 할당 연산자, WeakRefs클래스, FinalizationRegistry 클래스
+ES12 | 논리 할당 연산자, WeakRefs 클래스, FinalizationRegistry 클래스
 ES13 | Array.at(), 클래스 필드 정의 문법
 ES14 | Array.findLast(), Hashbang 지원, 정규식 UnicodeSets 지원
 
 
-**ES.Next**  
+**ES.Next** (https://tc39.es/)  
 : 현재 버전의 다음 버전에 포함될 예정인 기능이나 제안 기능들을 지칭하는 용어  
 : 제안된 기능은 여러 단계를 거쳐 최종 승인되면 스펙에 추가됨  
 
@@ -104,8 +109,6 @@ Stage 1 | 아이디어나 기능의 개념을 구체화해 제안서 형태로 �
 Stage 2 | 기능의 구체적인 문법과 API를 작성해 실행 가능한 형태로 구체화함
 Stage 3 | 기능이 거의 최종 형태로 구현되어 테스트하고 피드백을 받아 수정함
 Stage 4 | 공식적으로 승인되어 표준에 포함됨
-
-https://tc39.es/
 
 
 **ES4**  
