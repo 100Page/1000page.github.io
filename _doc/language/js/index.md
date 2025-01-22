@@ -13,7 +13,7 @@ tags:
 - language
 - js
 created_time: 2024-11-06 07:26
-modified_time: 2025-01-22 21:55
+modified_time: 2025-01-23 02:57
 ---
 
 # JavaScript 
@@ -25,8 +25,12 @@ modified_time: 2025-01-22 21:55
 - [JS Language](./js-lang/index.md)
   - [Native Object](./js-object/object/index.md)
   - [Built-in Class](./js-object/class/index.md)
+- JS Core Concept
+  - [JS Hoisting](./js-hoisting.md)
+  - [JS Scope](./js-scope.md)
+  - [JS Closure](./js-closure.md)
+  - [JS Execution Context](./js-execution-context.md)
 - [JS Module System](./js-module-system.md)
-- [JS Execution Context](./js-execution-context.md)
 - [JS Runtime Environment](./js-runtime-environment.md)
   - [Node](./ssjs-node/index.md)
   - [Deno](./ssjs-deno/index.md)

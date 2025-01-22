@@ -1,5 +1,5 @@
 ---
-order: 1
+order: 2
 title: javascript
 description: 자바스크립트 모듈 시스템
 summary:
@@ -12,7 +12,7 @@ tags:
 - language
 - js
 created_time: 2025-01-20 14:18
-modified_time: 2025-01-22 21:52
+modified_time: 2025-01-23 01:50
 ---
 
 # JS Module System
