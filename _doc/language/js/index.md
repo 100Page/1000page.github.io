@@ -13,7 +13,7 @@ tags:
 - language
 - js
 created_time: 2024-11-06 07:26
-modified_time: 2025-01-21 21:44
+modified_time: 2025-01-22 21:55
 ---
 
 # JavaScript 
@@ -23,12 +23,11 @@ modified_time: 2025-01-21 21:44
 
 - [ECMAScript](#ecmascript)
 - [JS Language](./js-lang/index.md)
-  - [Native Object](./js-api/object/index.md)
-  - [Built-in Class](./js-api/class/index.md)
-- [JS Execution Context](./js-execution-context.md)
+  - [Native Object](./js-object/object/index.md)
+  - [Built-in Class](./js-object/class/index.md)
 - [JS Module System](./js-module-system.md)
-- [JS Event Loop](./js-event-loop.md)
-- [JS Runtime Environments](./js-runtime-environment.md)
+- [JS Execution Context](./js-execution-context.md)
+- [JS Runtime Environment](./js-runtime-environment.md)
   - [Node](./ssjs-node/index.md)
   - [Deno](./ssjs-deno/index.md)
   - [Bun](./ssjs-bun/index.md)
@@ -41,7 +40,7 @@ modified_time: 2025-01-21 21:44
   - [JS Linter](./js-tool-linter.md)
   - [JS Testing](./js-tool-testing.md)
   - [JS Monorepo](./js-tool-monorepo.md)
-- JS Development Practices
+- [JS Execution Mechanism](./js-execution-mechanism.md)
   - JS Performance Optimization
   - JS Debugging
 - [JS Ecosystem](./js-ecosystem.md)

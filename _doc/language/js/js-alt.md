@@ -1,18 +1,17 @@
 ---
-order: 5
+order: 4
 title: javascript
-description: 자바스크립트 대안 언어
+description: 자바스크립트 대안 언어 및 도구
 summary:
 keywords:
-- javascript
 - js
+- alternative to js
 - typescript
-- purescript
 tags:
 - language
 - js
 created_time: 2025-01-20 14:22
-modified_time: 2025-01-21 21:47
+modified_time: 2025-01-22 21:56
 ---
 
 # AltJS

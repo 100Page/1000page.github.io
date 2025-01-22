@@ -1,10 +1,9 @@
 ---
-order: 2
+order: 1
 title: javascript
 description: 자바스크립트 모듈 시스템
 summary:
 keywords:
-- javascript
 - js
 - module system
 - commonjs
@@ -13,7 +12,7 @@ tags:
 - language
 - js
 created_time: 2025-01-20 14:18
-modified_time: 2025-01-21 20:22
+modified_time: 2025-01-22 21:52
 ---
 
 # JS Module System
