@@ -1,16 +1,18 @@
 ---
 order: 1
 title: javascript
-description: 자바스크립트 표준 객체
+description: 자바스크립트 내장 객체
 summary:
 keywords:
 - js
 - js native object
+- string
+- json
 tags:
 - language
 - js
 created_time: 2024-11-06 11:26
-modified_time: 2025-01-22 18:10
+modified_time: 2025-01-23 02:29
 ---
 
 # JS Native Object

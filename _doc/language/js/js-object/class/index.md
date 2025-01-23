@@ -12,7 +12,7 @@ tags:
 - language
 - js
 created_time: 2024-11-06 11:16
-modified_time: 2025-01-22 18:13
+modified_time: 2025-01-23 20:46
 ---
 
 # JS Built-in Class
@@ -20,17 +20,19 @@ modified_time: 2025-01-22 18:13
 : ES2015 부터 도입된 내장 클래스로 new 키워드를 통해 인스턴스를 생성해 사용  
 
 **데이터**
-- [DataView](./js-dataview.md)
 - [Map](./js-class-map.md)
 - [Set](./js-class-set.md)
 
 **비동기**
 - [Promise](./js-class-promise.md)
 
-**버퍼 조작**
-- Typed Array
-- ArrayBuffer
-- SharedArrayBuffer
+**데이터 조작**
+- [DataView](./js-class-dataview.md)
+- [Typed Array](./js-class-typedarray.md)
+
+**버퍼**
+- [ArrayBuffer](./js-class-arraybuffer.md)
+- [SharedArrayBuffer](./js-class-arraybuffer.md#sharedarraybuffer)
 
 **메모리 관리**
 - [Proxy](./js-class-proxy.md)
@@ -38,37 +40,3 @@ modified_time: 2025-01-22 18:13
 - [WeakSet](./js-class-weakset.md)
 - [WeakRef](./js-class-weakref.md)
 - [FinalizationRegistry](./js-class-fnalizationregistry.md)
-
-
-**Error**
-- EvalError
-- RangeError
-- ReferenceError
-- SyntaxError
-- TypeError
-- URIError
-- AggregateError
-
-**Intl**
-- Collator
-- DateTimeFormat
-- ListFormat
-- NumberFormat
-- PluralRules
-- RelativeTimeFormat
-- Segmenter
-
-**TypedArray**
-- Int8Array
-- Uint8Array
-- Uint8ClampedArray
-- Int16Array
-- Uint16Array
-- Int32Array
-- Uint32Array
-- Float32Array
-- Float64Array
-- BigInt64Array
-- BigUint64Array
-- ArrayBuffer
-- SharedArrayBuffer
