@@ -1,22 +1,21 @@
 ---
-order: 40
+order: 41
 title: standard
 description: 국제 표준화 기구 (인덱스)
 summary:
 keywords:
+- international standard
 - standard
-- standardization
-- International standard
-- 표준
-- 국제 표준화 기구
+- iso
+- ieee
 tags:
 - index
 - standard
 created_time: 2024-09-04 10:05
-modified_time: 2024-11-21 11:38
+modified_time: 2025-01-24 19:17
 ---
 
-# Standard
+# International Standard
 : 일관된 호환성을 보장하기 위해 제정한 규칙이나 기준  
 : 기업, 기구, 정부 등 다양한 당사자 간 합의에 따라 기술 표준을 개발하고 구현  
 
@@ -25,6 +24,7 @@ modified_time: 2024-11-21 11:38
 - [ITU](#itu)
 - [IEEE](#ieee)
 - [IETF](#ietf)
+  - [RFC](./rfc/index.md)
 - [W3C](#w3c)
 - [ANSI](#ansi)
 - [BSI](#bsi)
