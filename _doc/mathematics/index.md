@@ -1,22 +1,24 @@
 ---
-order: 50
+order: 100
 title: math
 description: 수학 (인덱스)
 summary:
 keywords:
 - mathematics
 - math
-- 수학
+- math element
+- math object
 tags:
 - index
 - math
 created_time: 2024-09-08 06:57
-modified_time: 2024-12-28 23:09
+modified_time: 2025-01-31 23:19
 ---
 
 # Mathematics
 : Mathematics는 그리스어 máthema(배움, 학습)에서 유래  
 : 수학은 수, 구조, 공간 등을 연구하는 학문으로 논리적 추론과 증명을 통해 추상적인 개념을 탐구함  
+: 수학에 대한 연구를 바탕으로 물리학, 경제학 등 현실 문제를 해결하는 방향으로 범위가 확장됨  
 : 컴퓨터 과학에서는 자료 구조, 알고리즘, 그래픽스, 암호학 등에 수학적 원리가 사용됨  
 
 - [수학 요소](#mathematics-elements)
@@ -27,23 +29,22 @@ modified_time: 2024-12-28 23:09
 
 **컴퓨터 과학과 수학**
 - [이산 수학](./discrete-mathematics/index.md)
+  - [논리](./discrete-mathematics/logic.md)
+  - [증명](./discrete-mathematics/proof.md)
 - [선형 대수학](./linear-algebra/index.md)
 - [확률과 통계](./probability-statistics/index.md)
 
 
 **수학 분류**
-- 기하학 : 도형과 공간의 성질 및 관계를 연구
+- [기하학](./geometry.md)
   - 유클리드 기하학
-  - 비유클리드 기하학
   - 해석기하학
   - 미분기하학
-  - 위상수학
   - 대수기하학
-- 대수학 : 수학적 구조의 성질 연구 
+- [대수학](./algebra.md)
   - 선형 대수학
-  - 군/환/체
   - 추상 대수학
-- 해석학 : 수학적 개념의 연속성 연구
+- [해석학](./analysis.md)
   - 미적분학
   - 실해석학
   - 복소해석학
@@ -53,8 +54,6 @@ modified_time: 2024-12-28 23:09
 
 ## Mathematics Elements
 : 수학을 구성하는 기본 개념들과 수학적 사고와 추론의 기반이 되는 요소들  
-
-**기본 요소**
 
 요소| 설명
 ---|---
@@ -203,7 +202,7 @@ modified_time: 2024-12-28 23:09
 확률적 모형 | 동일한 입력에도 다양한 출력 값이 나오는 모형으로 무작위성과 불확실성을 포함
 
 
-**공리론**
+**공리론**  
 : 기본 가정(공리)에서 출발해 논리적 추론을 통해 수학 체계를 구축
 
 ```
