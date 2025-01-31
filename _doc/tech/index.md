@@ -1,25 +1,26 @@
 ---
-order: 14
+order: 25
 title: tech
 description: 최신 기술들 (인덱스)
 summary:
 keywords:
 - tech
+- ai
 - blockchain
-- bigdata
-- 최신 기술
+- big data
+- iot
 tags:
 - index
 - tech
 created_time: 2024-09-29 17:42
-modified_time: 2024-12-10 23:55
+modified_time: 2025-01-31 23:25
 ---
 
 # Tech
-: 최근 나타난 혁신적인 기술들  
+: 혁신적인 최신 기술 및 트렌드  
 
 - [AI](./ai/index.md)
 - [Blockchain](./blockchain/index.md)
-- [Bigdata](./bigdata/index.md)
-- [Iot](./iot/index.md)
+- [Big Data](./bigdata/index.md)
+- [IoT](./iot/index.md)
 - AR/VR
