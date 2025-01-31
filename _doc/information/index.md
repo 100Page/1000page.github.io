@@ -1,35 +1,35 @@
 ---
-order: 5
+order: 4
 title: information
 description: 인포메이션 (인덱스)
 summary:
 keywords:
 - information
-- 인포메이션
-- 정보
+- multimedia
 tags:
 - index
 - information
 created_time: 2024-10-20 11:26
-modified_time: 2024-11-29 15:41
+modified_time: 2025-02-01 02:09
 ---
 
 # Information 
-: [데이터](../data/index.md)를 의사결정이나 문제 해결이 가능하게 처리하여 의미있게 구조화한 데이터  
-: 데이터는 특정 목적을 위해 문맥에 맞게 분석, 가공, 조직화된 형태로 변환되는데 이를 정보라고 함  
+: 특정 목적을 위해 [데이터](../data/index.md)를 분석하고 가공하여 의미와 맥락을 부여한 결과  
+: 정보는 의사결정이나 문제 해결이 가능하게 처리된 의미있는 데이터  
 
-- Information Processing
-- Information Architecture
-- Information Design
-- Information Visualization
-- Knowledge Management
+**정보 관리**
+- [Information Processing](./information-processing.md)
+- [Information Architecture](./information-architecture.md)
+- [Information Design](./information-design.md)
+- [Information Visualization](./information-visualization.md)
+- [Knowledge Management](./knowledge-management.md)
 
 **정보 표현**  
 - [Multimedia](./multimedia/index.md)
 
-**정보 환경**  
-- [Ubiquitous](./ubiquitous/index.md)
-
-**상호작용**  
+**정보 활용**
 - [Human Computer Interaction](./hci/index.md)
 - [Data-Driven User Experience](./ddux/index.md)
+
+**환경**  
+- [Ubiquitous](./ubiquitous/index.md)
