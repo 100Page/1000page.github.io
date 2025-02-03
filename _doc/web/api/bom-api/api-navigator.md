@@ -6,14 +6,16 @@ summary:
 keywords:
 - web
 - web api
+- bom
 - navigator
 tags:
 - web
+- web api
 created_time: 2024-11-06 01:00
-modified_time: 2025-02-03 00:11
+modified_time: 2025-02-03 11:46
 ---
 
-# Navigator
+# Navigator API
 : 브라우저와 관련된 정보를 제공하는 인터페이스  
 : 브라우저 버전, 운영체제 정보, 사용자 에이전트 문자열 등을 제공  
 
@@ -21,12 +23,41 @@ modified_time: 2025-02-03 00:11
 https://html.spec.whatwg.org/multipage/system-state.html#the-navigator-object  
 
 
+**속성과 메소드**
+
 속성 | 설명
 ---|---
 userAgentData | Client Hints API 기반 브라우저 정보 제공
 
 
-**인터페이스**
+**share()**  
+: Web Share API로 텍스트, 파일 등을 공유할 수 있도록 함  
+: HTTPS 환경과 모바일 브라우저에 주로 지원하며 데스크탑 브라우저 경우 일부만 지원
+
+```js
+navigator.share({
+  url: window.location.href,
+  title: '공유할 제목',
+  text: '공유항 텍스트',
+  files: [File],
+}).then(() => console.log('공유 성공'))
+  .catch((e) => console.log('공유 실패'));
+```
+
+
+**canShare()**  
+: Web Share API로 URL이나 File 공유를 지원하는지 여부를 반환
+
+```js
+if(navigator.canShare({ files: [file]})) {
+  navigator.share
+}
+```
+
+
+**인터페이스**  
+: Navigator는 다른 인터페이스를 조합해 기능을 확장한 인터페이스
+
 - [NavigatorID](#navigatorid)
 - [NavigatorLanguage](#navigatorlanguage)
 - [NavigatorOnLine](#navigator)
@@ -34,15 +65,6 @@ userAgentData | Client Hints API 기반 브라우저 정보 제공
 - [NavigatorCookies](#navigatorcookies)
 - [NavigatorPlugins](#navigatorplugins)
 - [NavigatorConcurrentHardware](#navigatorconcurrenthardware)
-
-```js
-interface Navigator implements NavigatorID, NavigatorLanguage, NavigatorOnLine, 
-    NavigatorContentUtils, NavigatorCookies, NavigatorPlugins, 
-    NavigatorConcurrentHardware {
-
-    readonly attribute NavigatorUAData userAgentData;
-}
-```
 
 
 
@@ -123,7 +145,6 @@ tel	   | 전화 걸기   | tel:+1234567890
 mms	   | 멀티미디어 메시지 | mms:+1234567890
 geo    | 위치 정보 | geo:00.1111,00.2222
 webcal | 웹 기반 캘린더 | webcal://example.com/calendar.ics
-
 
 
 **unregisterProtocolHandler()**  
