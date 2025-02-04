@@ -1,53 +1,34 @@
 ---
 order: 1
-title: web api
-description: WindowOrWorkerGlobalScope Interface
+title: web
+description: Web API - WindowOrWorkerGlobalScope
 summary:
 keywords:
 - web
 - web api
+- windoworworkerglobalscope
 tags:
+- web
 - web api
 created_time: 2024-11-06 01:07
-modified_time: 2024-11-06 01:11
+modified_time: 2025-02-04 20:11
 ---
 
 # WindowOrWorkerGlobalScope
-: 메인 스레드와 웹 워커에서 사용할 수 있는 속성과 메소드 제공하는 인터페이스  
-: 브라우저 창이나 탭마다 독립적인 메인 스레드가 생성  
+: 브라우저 환경과 워커 환경 모두에서 필요한 공통 기능을 제공하는 인터페이스  
+: 브라우저 창이나 탭마다 독립적인 메인 스레드가 생성됨  
 : 웹 워커는 한 개의 메인 스레드와 연결되어 있으며 메인 스레드와 별도로 실행되는 스레드  
-
-
-**구현**
-- Window
-- WorkerGlobalScope
-
 
 **스펙**  
 https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope  
 
-```webidl
-interface mixin WindowOrWorkerGlobalScope {
-  [Replaceable] readonly attribute USVString origin;
-  readonly attribute boolean isSecureContext;
-  readonly attribute boolean crossOriginIsolated;
 
-  DOMString btoa(DOMString data);
-  ByteString atob(DOMString data);
+**구현**
+- [Window](./bom-api/api-window.md)
+- [WorkerGlobalScope](./web-api/api-web-worker.md#workerglobalscope)
 
-  long setTimeout(TimerHandler handler, optional long timeout = 0, any... arguments);
-  undefined clearTimeout(optional long handle = 0);
-  long setInterval(TimerHandler handler, optional long timeout = 0, any... arguments);
-  undefined clearInterval(optional long handle = 0);
 
-  undefined queueMicrotask(VoidFunction callback);
-
-  Promise<ImageBitmap> createImageBitmap(ImageBitmapSource image, optional ImageBitmapOptions options = {});
-  Promise<ImageBitmap> createImageBitmap(ImageBitmapSource image, long sx, long sy, long sw, long sh,
-      optional ImageBitmapOptions options = {});
-};
-```
-
+**속성과 메소드**
 
 속성 | 설명
 ---|---
@@ -81,10 +62,10 @@ crossOriginIsolated | 현재 컨텍스트가 교차 출처 격리 상태인지 �
 
 
 **queueMicrotask()**  
-: 주어진 작업을 마이크로태스크 큐에 추가하면 현재 작업 완료 후 작업이 실행됨  
+: 작업을 마이크로태스크 큐에 추가하면 현재 작업 완료 후 해당 작업이 실행됨  
 : 자바스크립트는 마이크로태스크 큐를 통해 비동기 작업의 실행 순서를 제어  
 : 즉시 실행이 필요한 경우 마이크로태스크 큐에 추가하면 작업을 바로 처리할 수 있음  
-: Promise 객체의 then()과 catch() 메소드는 내부적으로 queueMicrotask()를 사용
+: Promise 객체의 then()과 catch()는 내부적으로 queueMicrotask()를 사용함  
 
 ```js
 setTimeout(() => {
@@ -107,10 +88,10 @@ console.log('0');
 : 리소스가 여러번 사용되는 경우 ImageBitmap 객체로 생성하면 성능을 향상할 수 있음  
 
 ```js
-const img = new Image();
+var img = new Image();
 img.src = 'image.jpg';
 
 img.onload = async () => {
-  const bitmap = await createImageBitmap(img);
+  var bitmap = await createImageBitmap(img);
 }
 ```
