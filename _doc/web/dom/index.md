@@ -1,59 +1,39 @@
 ---
-order: 0.3
-title: dom
+order: 3
+title: web
 description: 문서 객체 모델 (DOM)
 summary:
 keywords:
-- web
 - document object model
 - dom
-- 문서 객체 모델
+- dom version
 tags:
 - web
 created_time: 2024-10-01 23:28
-modified_time: 2024-11-02 01:50
+modified_time: 2025-02-04 19:18
 ---
 
 # DOM
 Document Object Model  
-: HTML, XML, SVG, MathML 같은 마크업 언어를 위한 API  
+: HTML, XML, SVG, MathML 같은 [마크업 언어](../../program/language/markup-language.md)를 위한 인터페이스  
 : 마크업 언어로 작성된 웹 문서를 구조화하는 방법과 접근하고 조작하는 방법 정의  
 
 - [DOM Level](#dom-level-1)
 - [DOM Infrastructure](./dom-infrastructure.md)
-  - [DOM Parser](./dom-parser.md)
 - [DOM Event](./dom-event.md)
-- [DOM API](./api-dom/index.md)
-  - [HTML API](./api-dom/index.md)
-  - [CSS API](./api-dom/index.md)
-- [BOM API](./api-dom/index.md)
+- [DOM API](../api/dom-api/index.md)
 
 
-스펙  
-https://dom.spec.whatwg.org/   
-
-
-**변환 단계**
-```
-웹 문서 => 파싱 => 문서 객체 모델
-```
-
-
-**DOM vs JS**  
-: 자바스크립트는 DOM API를 통해 HTML 요소에 접근하고 요소를 제어함  
-
-```
-     DOM             JS
-layout-engine  |  js-engine
-```
+**스펙**  
+https://dom.spec.whatwg.org
 
 
 
 ## DOM level 1
-: 각 벤더사에서 확장되던 DOM을 W3C에서 표준화  
-: HTML과 XML 문서의 기본 구조를 트리 구조로 표현 확립  
-: Node, Element, Attr, Document 등 Core 인터페이스와 HTML 인터페이스 등 정의  
-: DOM을 조작하는 기본 메소드들 정의  
+: 브라우저 벤더사에서 각각 구현되던 DOM을 W3C에서 표준화함  
+: HTML과 XML의 기본 구조를 트리 구조로 표현하기로 확립  
+: Node, Element, Attr, Document 등 Core 인터페이스와 HTML 인터페이스를 정의  
+: DOM에 접근하고 조작하는 기본 메소드들 정의  
 
 https://www.w3.org/TR/REC-DOM-Level-1/
 
@@ -91,9 +71,8 @@ https://www.w3.org/TR/DOM-Level-3-Core/
 
 ## DOM level 4
 = DOM Living Standard  
-: 2015년 부터 WHATWG에서 DOM 표준 관리  
-: WHATWG은 기존 사양을 유지하면서 필요에 따라 새로운 기능을 추가  
+: 2015년 부터 WHATWG에서 DOM 표준을 관리  
+: WHATWG은 기존 사양을 유지하면서 필요에 따라 새로운 기능을 추가하는 방식으로 관리  
 : 일부 인터페이스와 인터페이스의 멤버가 제거됨   
 
-https://www.w3.org/TR/dom40/   
 https://dom.spec.whatwg.org/   
