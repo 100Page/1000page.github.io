@@ -1,59 +1,35 @@
 ---
 order: 1
-title: web api
-description: Web Console API
+title: web
+description: Web API - Console
 summary:
 keywords:
 - web
 - web api
-- console api
+- console
 tags:
+- web
 - web api
-created_time: 2024-11-02 02:55
-modified_time: 2024-11-04 21:49
+created_time: 2024-11-05 22:34
+modified_time: 2025-02-04 19:33
 ---
 
 # Console API
-: 브라우저의 개발자 도구를 통해 디버깅, 로깅, 오류 추적 등을 지원하는 API  
-: console은 전역 객체로 브라우저 개발자 도구의 콘솔과 연동  
-: 스펙이 늦게 확정되어 일부 브라우저는 메소드 기능에 차이가 있을 수 있음  
-
+: 브라우저의 개발자 도구를 통해 디버깅, 로깅, 오류 추적 등을 지원하기 위한 인터페이스  
+: console은 전역 객체로 브라우저 개발자 도구의 콘솔과 연동됨  
 
 **스펙**  
-https://console.spec.whatwg.org/  
+https://console.spec.whatwg.org
 
 
-```webidl
-namespace console {
+**로그 레벨별 메소드**
 
-  // Logging
-  undefined assert(optional boolean condition = false, any... data);
-  undefined clear();
-  undefined debug(any... data);
-  undefined error(any... data);
-  undefined info(any... data);
-  undefined log(any... data);
-  undefined table(optional any tabularData, optional sequence<DOMString> properties);
-  undefined trace(any... data);
-  undefined warn(any... data);
-  undefined dir(optional any item, optional object? options);
-  undefined dirxml(any... data);
-
-  // Counting
-  undefined count(optional DOMString label = "default");
-  undefined countReset(optional DOMString label = "default");
-
-  // Grouping
-  undefined group(any... data);
-  undefined groupCollapsed(any... data);
-  undefined groupEnd();
-
-  // Timing
-  undefined time(optional DOMString label = "default");
-  undefined timeLog(optional DOMString label = "default", any... data);
-  undefined timeEnd(optional DOMString label = "default");
-}
-```
+레벨 | 메소드
+---|---
+log   | log(), trace(), dir(), dirxml(), group(), groupCollapsed(), debug(), timeLog()
+info  | count(), info(), timeEnd()
+warn  | warn(), countReset()
+error | error(), assert()
 
 
 **console.assert()**  
