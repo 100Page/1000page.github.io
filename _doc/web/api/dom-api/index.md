@@ -9,48 +9,53 @@ keywords:
 - dom
 tags:
 - web
+- web api
 created_time: 2024-11-02 02:06
-modified_time: 2025-02-03 01:11
+modified_time: 2025-02-04 19:24
 ---
 
-# DOM API
-: DOM 트리를 동적으로 조작하기 위한 인터페이스  
-: HTML API와 CSS API를 포함하며 문서의 구조, 스타일, 콘텐츠에 동적으로 조작이 가능함  
+# DOM
+: DOM 트리를 동적으로 탐색하고 조작하기 위한 인터페이스  
 
-- Node
-  - Document
-  - DocumentType
-  - DocumentFragment
-    - ShadowRoot 
-  - Element
-  - Attr
-  - CharacterData
-    - Text
-    - Comment
+- [Node](./api-node.md)
+  - [Document](./api-document.md)
+  - [DocumentType](./api-documenttype.md)
+  - [DocumentFragment](./api-documentfragment.md)
+    - [ShadowRoot](./api-shadowroot.md)
+  - [Element](./api-element.md)
+  - [Attr](./api-attr.md)
+  - [CharacterData](./api-characterdata.md)
+    - [Text](./api-characterdata.md#text)
+    - [Comment](./api-characterdata.md#comment)
+
+
+**믹스인**
+- [NonElementParentNode](./api-mixin.md#nonelementparentnode)
+- [DocumentOrShadowRoot](./api-mixin.md#documentorshadowroot)
+- [ParentNode](./api-mixin.md#parentnode)
+- [NonDocumentTypeChildNode](./api-mixin.md#nondocumenttypechildnode)
+- [ChildNode](./api-mixin.md#childnode)
+- [Slottable](./api-mixin.md#slottable)
+
 
 **컬렉션**
-- NodeList
-- HTMLCollection
+- [NodeList](./api-nodelist.md)
+- [HTMLCollection](./api-htmlcollection.md)
 
 **속성**
-- NamedNodeMap
-- DOMTokenList
+- [NamedNodeMap](./api-namednodemap.md)
+- [DOMTokenList](./api-domtokenlist.md)
 
 **이벤트**
-- Event
-  - FocusEvent
-  - InputEvent
-  - KeyboardEvent
-  - MouseEvent
-  - WheelEvent
-- TouchEvent
-- CustomEvent
+- [Event](./api-event.md)
+  - [CustomEvent](./api-customevent.md)
+- [Abort](./api-abort.md)
 
 **범위**
-- Range
-- Selection
+- [Range](./api-range.md)
+- [Selection](./api-selection.md)
 
 **순회**
-- NodeIterator
-- TreeWalker
-- NodeFilter
+- [NodeIterator](./api-traversal.md#nodeiterator)
+- [TreeWalker](./api-traversal.md#treewalker)
+- [NodeFilter](./api-traversal.md#nodefilter)
