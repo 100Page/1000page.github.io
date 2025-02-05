@@ -1,5 +1,5 @@
 ---
-order: 7
+order: 8
 title: web
 description: 웹 표준 스펙 및 기관
 summary:
@@ -12,14 +12,41 @@ keywords:
 tags:
 - web
 created_time: 2024-11-13 22:02
-modified_time: 2025-01-24 19:58
+modified_time: 2025-02-05 21:23
 ---
 
 # Web Standard
 : 웹 정의, 웹 기술 등 웹과 관련된 국제적 표준 지침  
-: 웹의 일관성, 접근성, 상호운용성을 보장하기 위해 개발되는 포괄적인 기술 표준  
-: 이러한 웹표준 주요 스펙은 표준화 기관 W3C와 WHATWG에서 정의  
-: 일부 기술은 IETF나 ECMA같은 다른 기구와 협력하여 개발됨  
+: 웹의 일관성, 접근성, 상호운용성 등을 보장하기 위해 개발되는 포괄적인 기술 표준  
+: 스펙은 표준화 기관 W3C와 WHATWG에서 정의되며 일부 기술은 IETF나 ECMA같은 기구와 협력하여 개발됨  
+
+- Origin Security
+  - [Same-Origin Policy](./sop.md)
+  - [CORS](./cors.md)
+  - COOP
+  - COEP
+  - CORB
+- Content Security
+  - [Content Security Policy](./csp.md)
+  - Secure Contexts
+- Resource Security
+  - Cache-Control 
+  - HTTP Strict Transport Security
+  - Mixed Content Policy
+  - Subresource Integrity
+  - Referrer Policy
+- State Management
+  - Cookie Policy
+  - Storage Policy
+- Document Security
+  - Permissions Policy
+  - Document Policy
+  - X-Frame-Options
+- Accessibility Standards
+  - WCAG
+  - ARIA
+
+
 
 **기관**
 - [W3C](#w3c)
@@ -50,28 +77,12 @@ Web Applications Working Group
 https://www.w3.org/groups/wg/webapps   
 
 
-**spec**
-- WCAG
-- WAI-ARIA
-- Web Components
-- Web Workers
-
-
 
 ### WebApp Security WG
 Web Application Security Working Group  
 : 웹 애플리케이션 보안을 위한 기술과 정책 정의  
 
 https://www.w3.org/groups/wg/webappsec
-
-
-**spec**
-- Content Security Policy (CSP)
-- Cross-Origin Resource Sharing (CORS)
-- Referrer Policy
-- Subresource Integrity (SRI)
-- Secure Contexts
-- Web Authentication 
 
 
 
@@ -96,18 +107,18 @@ https://whatwg.org/
 **spec**
 - HTML (https://html.spec.whatwg.org/)
 - DOM (https://dom.spec.whatwg.org/)
-- Encoding
-- MIME Sniffing
-- URL
+- Encoding (https://encoding.spec.whatwg.org/)
+- MIME Sniffing (https://mimesniff.spec.whatwg.org/)
+- URL (https://url.spec.whatwg.org/)
 
 **api**
 - History
 - Events
 - Canvas
 - Fetch
+- Web Storage
+- IndexedDB
+- WebSockets
 - Streams
 - Notifications
 - Geolocation
-- IndexedDB
-- Web Storage
-- WebSockets

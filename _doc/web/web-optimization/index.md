@@ -1,19 +1,16 @@
 ---
-order: 0.13
+order: 9
 title: web
-description: 웹 사이트 최적화
+description: 웹 성능과 검색 최적화
 summary:
 keywords:
 - web
-- web optimization
 - web performance optimization
 - search engine optimization
-- 웹 최적화
-- 웹 사이트 최적화
 tags:
 - web
 created_time: 2024-10-01 07:54
-modified_time: 2024-12-03 20:09
+modified_time: 2025-02-05 21:47
 ---
 
 # Web Optimization
