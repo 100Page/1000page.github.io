@@ -28,6 +28,7 @@ export function createSearchPostForm(customOptions = {}) {
   }
   
   const filterPost = (item, lowerCaseQuery) => {
+
     const title = (item.title || '').toLowerCase();
     const description = (item.description || '').toLowerCase();
 
@@ -36,7 +37,11 @@ export function createSearchPostForm(customOptions = {}) {
     }
 
     if(item.tags && item.tags.length > 0) {
-      const matchingTags = item.tags.filter(tag => tag.toLowerCase().includes(lowerCaseQuery));
+      const matchingTags = item.tags.filter(tag => {
+        if(tag) {
+          tag.toLowerCase().includes(lowerCaseQuery)
+        }
+      });
       if(matchingTags.length > 0) {
         return [item];
       }
