@@ -174,9 +174,12 @@ button:focus {color:#fff;background:#111;}
 .index-post-list .date {margin-top:5px;}
 
 /* keyword */
-.index-post-tag span {padding-right:2px;font-weight:200;font-size:14px !important;color:#999;}
-.index-post-tag span::before {content:"#";padding-right:1px;font-size:13px;}
+.index-post-keyword {padding-left:2px;}
+.index-post-keyword span {margin-right:3px;font-weight:200;font-size:14px;color:#999;}
+.index-post-keyword span::after {content:",";}
+.index-post-keyword span:last-child::after {content:"";}
 
+/* tag */
 .index-post-tag a {position:relative;font-weight:200;font-size:14px;color:#999;}
 .index-post-tag a::before {content:"#";padding-right:1px;font-size:13px;}
 .index-post-tag a::after {

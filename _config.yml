@@ -8,12 +8,10 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  - _doc.rb
-  - _gitadd.rb
   - _order.rb
+  - _order.txt
   - _setorder.rb
   - _url.rb
-  - _order.txt
   - _url.csv
 
 include:
