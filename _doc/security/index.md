@@ -6,47 +6,111 @@ summary:
 keywords:
 - security
 - protection
+- threat
+- rist
 tags:
 - index
 - security
+- glossary
 created_time: 2024-09-07 17:36
-modified_time: 2025-01-31 14:47
+modified_time: 2025-02-07 15:42
 ---
 
 # Security
-: 위협으로부터 시스템과 자산을 보호하기 위한 기술, 도구, 정책을 포함한 포괄적인 개념  
-: 공격, 비인가 접근 등 다양한 위협을 식별하고 이에 대응해 전체 리스크 관리 및 예방을 목표로 함  
+: 위협으로부터 자산을 보호하기 위한 기술, 도구, 정책을 포함한 포괄적인 개념  
+: 공격, 비인가 접근 등 다양한 위협을 식별하고 이에 대응하여 리스크 관리 및 예방을 목표로 함  
 
-**protection**  
-: 시스템 내부 리소스를 안전하게 관리하고 시스템을 정상적으로 동작하게 관리하는 것을 목표로 함  
-: 접근 제어, 리소스 권한 설정, 메모리 보호 등이 포함되며 보호는 보안의 하위 개념에 해당함  
-
-
-**보안 원칙과 전략**
-- [Security Concept](./security-concept.md)
-- [Security Management](./security-management.md)
-
-**보안 요소와 구현**
-- [Security Threats](./security-threat/index.md)
-- [Security Models](./security-model/index.md)
-- [Security Features](./security-feature/index.md)
-- [Security Protocols](./security-protocol/index.md)
-- [Security Tools](../tool/tool-security/index.md)
+- [보안 원칙](./security-principle.md)
+- [보안 전략](./security-strategy/index.md)
+  - [보안 관리 프로세스](./security-strategy.md#security-management-process)
+- [보안 기술](./security-technology/index.md)
+  - [암호학](./security-technology/cryptography.md)
+- [보안 위협](./security-threat/index.md)
+- [보안 프로토콜](./security-protocol/index.md)
+- [보안 표준](./security-standard/index.md)
+- [보안 도구](../tool/tool-security/index.md)
 
 
-**보안이 실패하는 이유**  
-- 기술적 요인
-  - 시스템 복잡성 증가
-  - 레거시 시스템 문제
-  - 기술 변화 속도 : 기술 발전으로 기존 보안 대책 무력화
-- 관리적 요인
-  - 보안 인식 부족
-  - 자원(예산) 제약
-- 인적 요인
-  - 사용자 실수
-  - 보안 정책 미준수
-  - 내부자 위협
-- 환경적 요인
-  - 새로운 위협 등장
-  - 공격 기술의 진화
-  - 규제 환경 변화
+
+## Security Glossary
+: 보안 관련 주요 용어
+
+
+**자산** (Asset)  
+: 조직이 보호할 대상으로 물리적, 논리적, 인적 요소  
+: 데이터와 이를 처리하는 시스템과 관련된 프로세스 등이 모두 보호 대상이 됨  
+
+자산 | 대상
+---|---
+물리적 | 데이터 센터, 서버, 네트워크 장비 등
+논리적 | 데이터, 소스 코드, 암호화 키 등
+
+
+**위협** (Threat)  
+: 조직의 자산에 피해를 줄 수 있는 모든 잠재적 요소  
+: 허락되지 않은 접근이나 권한없는 사람이나 시스템의 리소스 수정, 훼손, 유출 등  
+: 위협은 항상 존재하며 이를 완전히 제거하는 것은 불가능하므로 적절한 보안 관리와 대응이 필요
+
+
+**위협 요소** (Threat Actor/Source)  
+: 위협을 발생시키는 주체나 원천
+
+- 공격자
+- 내부자 위협
+- 기술적 위협 : 취약한 소프트웨어, 네트워크 결합
+- 환경적 요인 : 전력 장애, 자연 재해
+
+
+**취약점** (vulnerability)  
+: 자산의 특성에 따라 존재하는 약점이나 허점으로 위협 요소는 이를 이용해 공격을 시도함  
+: 보안 취약점은 보안 위협이 실현될 가능성을 제공함  
+
+
+**위협** (Risk)  
+: 특정 위협이 현실화될 가능성과 그로 인한 피해 정도를 결합한 개념  
+: 리스크는 관리와 감소가 가능하므로 보안 관리의 핵심 목표가 됨  
+
+> 리스크 = 위협 x 취약점 x 영향
+
+
+**공격** (Attack)  
+: 위협 요소가 보안 취약점을 이용해 자산에 피해를 가하는 행위  
+
+
+**보안 사고** (Security Incident)  
+: 자산에 대한 기밀성, 무결성, 가용성을 위협하는 사건
+
+
+**보안** (Security)  
+: 자산을 위협으로부터 보호하여 안전한 상태를 유지하기 위한 모든 활동과 상태    
+
+
+**보호** (protection)  
+: 보안의 하위 개념으로 자산을 위협으로부터 안전하게 지키기 위한 모든 조치  
+: 리소스는 안전하게 관리하고 시스템을 정상적으로 동작하게 관리하는 것을 목표로 함  
+
+
+**대응** (Response)  
+: 보안 사고가 발생할 때 이를 탐지/분석/통제/복구하기 위한 기술이나 행동  
+: 대응을 통해 공격을 예방하고 공격이 발생하면 피해를 최소화하고 재발 방지를 위한 개선과 조치  
+
+
+**통제** (Control)  
+: 리스크를 감소시키기 위한 관리적, 기술적, 물리적 보안 조치  
+
+
+**대책** (Countermeasure)  
+: 위협으로부터 자산을 보호하고 취약점을 방지하거나 완화하기 위한 구체적인 기술적/물리적/관리적 조치
+
+
+**보안 거버넌스** (Security Governance)  
+: 조직의 전반적인 보안 방향성과 의사결정 체계를 정의  
+: 보안 목표 설정, 리스크 관리 전략, 자원 할당 등에 대한 기본 원칙을 수립함  
+
+
+**보안 정책**  
+: 조직의 보안 목표를 달성하기 위한 고수준의 원칙과 지침  
+
+
+**보안 관리**  
+: 보안 정책을 실현하기 위한 체계적인 계획, 실행, 평가, 개선 활동  
