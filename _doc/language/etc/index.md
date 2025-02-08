@@ -1,15 +1,19 @@
 ---
 order: 100
 title: language
-description: 기타 프로그래밍 언어
+description: 프로그래밍 언어 종류
 summary:
 keywords:
-- language
-- 프로그래밍 언어
+- programming language
 tags:
 - language
 created_time: 2024-11-08 00:37
-modified_time: 2025-01-16 14:12
+modified_time: 2025-02-09 00:31
 ---
 
-# etc
+# Programming Language
+
+**설정 관리 및 구성 언어**
+- Jsonnet
+- Cue
+- Nickel

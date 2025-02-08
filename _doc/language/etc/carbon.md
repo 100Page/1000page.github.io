@@ -1,15 +1,15 @@
 ---
-order: 0.9
+order: 1
 title: language
-description: 카본 (Carbon)
+description: 프로그래밍 언어 - Carbon
 summary:
 keywords:
 - programming language
 - carbon
 tags:
 - language
-created_time: 2024-09-14 13:04
-modified_time: 2024-10-22 21:57
+created_time: 2024-10-26 04:23
+modified_time: 2025-02-09 00:12
 ---
 
 # Carbon
