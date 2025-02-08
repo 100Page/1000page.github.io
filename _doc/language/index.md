@@ -1,12 +1,16 @@
 ---
-order: 7
+order: 6
 title: language
 description: 프로그래밍 언어 (인덱스)
+summary:
+keywords:
+- programming language
+- language
 tags:
 - index
-- programming language
+- language
 created_time: 2024-09-14 13:04
-modified_time: 2024-10-05 23:24
+modified_time: 2025-02-09 00:38
 ---
 
 # Programming Language
@@ -14,31 +18,35 @@ modified_time: 2024-10-05 23:24
 
 **JVM 실행 언어**
 - Java
-- Kotlin
-- Scala
 - Groovy
+- Scala
 - Clojure
+- Kotlin
 - Ballerina
 
 **스크립트 언어**
 - Python
-- Javascript
 - Ruby
+- Javascript
 - Lua
 - Groovy
 
 **함수형 언어**
+- Erlang
 - Haskell
 - Scala
 - Clojure
-- Erlang
 - Elixir
 
-**고성능 언어**
-- Rust
-- Go
+**시스템 및 성능 최적화 언어**
+- C
+- C++
 - Nim
-- Erlang
+- Go
+- Rust
+- Zig
+- Carbon
+- Mojo
 
 **C 계열 언어**
 - C
@@ -46,20 +54,19 @@ modified_time: 2024-10-05 23:24
 - Objective-C
 - Carbon
 
-**시스템 언어**
-- C
-- C++
-- Rust
-- Assembly
-- Nim
-
 **모바일 언어**
 - Kotlin
 - Dart
+- Swift
+
+**IoT 언어**
+- C
+- Rust
+- MicroPython
 
 **데이터 과학**
-- Python
 - R
+- Python
 - Julia
 
 **유틸리티 언어**
@@ -67,4 +74,4 @@ modified_time: 2024-10-05 23:24
 - PowerShell
 
 **기타**
-- DCL (Digital Command Language)
+- DCL (Data Configuration Language)
