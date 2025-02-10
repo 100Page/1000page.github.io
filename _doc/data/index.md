@@ -1,18 +1,18 @@
 ---
-order: 4
+order: 3
 title: data
 description: 데이터 (인덱스)
 summary:
 keywords:
 - data
+- data fundamentals
+- data design
 - data processing
-- 데이터
-- 데이터 처리
 tags:
 - index
 - data
 created_time: 2024-09-28 11:43
-modified_time: 2024-12-26 22:58
+modified_time: 2025-02-10 23:12
 ---
 
 # Data
@@ -36,6 +36,8 @@ modified_time: 2024-12-26 22:58
 - [Data Architecture](./data-architecture.md)
   - [Data Modeling](./data-modeling.md)
   - [Data Governance](./data-governance.md)
+  - [Metadata](./metadata.md)
+  - [Data Quality](./data-quality.md)
   - [Data Management Framework](./data-management-framework.md)
 
 
@@ -49,19 +51,17 @@ modified_time: 2024-12-26 22:58
   - [Data Format](./data-conversion/format/index.md)
   - [Data Encoding](./data-conversion/encoding/index.md)
 - [Data Preprocessing](./data-preprocessing/index.md)
+  - [Data Cleaning](./data-preprocessing/data-cleaning.md)
   - [Data Transformation](./data-preprocessing/data-transformation.md)
   - [Data Integration](./data-preprocessing/data-integration.md)
 - [Data Storage](./data-storage/index.md)
-  - [File](./data-storage/file.md)
   - [Database](./data-storage/database/index.md)
-  - [Database Management System](./data-storage/dbms/index.md)
-  - [Query Language](./query-language/index.md)
-    - [SQL](./query-language/sql/index.md)
+    - [Database Management System](../dbms/index.md)
+    - [Query Language](../dbms/query-language/index.md)
+  - [Data Warehouse](./data-storage/data-warehouse.md)
 - [Data Processing](./data-processing/index.md)
   - [Search Engine](./data-processing/search-engine.md)
 - [Data Analysis](./data-analysis/index.md)
+  - [Statistical Analysis](./data-analysis/statistical/index.md)
+  - [Data Mining](./data-analysis/mining/index.md)
   - [Data Visualization](./data-analysis/visualization/index.md)
-
-
-**데이터 보안**
-- [Data Protection](../security/security-feature/data-protection.md)
