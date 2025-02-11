@@ -1,18 +1,17 @@
 ---
-order: 0.1
+order: 1
 title: foundation
 description: 클라우드 네이티브 재단 (CNCF)
 summary:
 keywords:
 - foundation
 - linux foundation
-- cncf
 - cloud native
-- 클라우드 네이티브 재단
+- cncf
 tags:
 - foundation
 created_time: 2024-08-30 01:03
-modified_time: 2024-11-17 20:57
+modified_time: 2025-02-11 21:27
 ---
 
 # CNCF
@@ -30,7 +29,9 @@ https://www.cncf.io
 - [CNCF Pojects](./cncf-poject.md)
   - Kubernetes
   - Prometheus
+  - Helm
   - Argo
+  - Spinnaker
   - OpenTelemetry
   - Backstage
 
@@ -42,7 +43,7 @@ https://www.cncf.io
 : 클라우드 네이티브 기술은 온프레미스 환경에도 적용 가능함  
 
 **핵심 원칙**
-- Microservice Architecture
+- Microservices
 - Container
 - DevOps
 - CI/CD
@@ -54,13 +55,13 @@ https://www.cncf.io
 : 클라우드 기반 애플리케이션의 유연성, 확장성, 복원력을 달성하기 위한 구현 방식 제공  
 
 **주요 원칙**
-- Microservices Architecture
+- Microservices
 - Container
 - Orchestration & Scheduling
-- DevOps
-- API-Driven Communication
+- DevOps & GitOps
+- API-First Design
 - Distributed Data Management
-- Automation & Monitoring
+- Observability & Monitoring
 
 
 

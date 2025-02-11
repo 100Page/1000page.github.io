@@ -1,17 +1,15 @@
 ---
-order: 0.1
+order: 1
 title: foundation
 description: 리눅스 재단
 summary:
 keywords:
 - foundation
 - linux foundation
-- 오픈 소스 관리 재단
-- 리눅스 재단
 tags:
 - foundation
 created_time: 2024-09-09 01:27
-modified_time: 2024-11-17 19:37
+modified_time: 2025-02-11 21:17
 ---
 
 # Linux Foundation
@@ -19,20 +17,23 @@ modified_time: 2024-11-17 19:37
 : Linux 커널 발전을 위해 시작했으나 현재는 네트워크, 클라우드, 블록체인 등 다양한 범위로 확장됨  
 
 **Sub-foundations**
-- CNCF
+- [CNCF](./cncf/index.md)
+- [OpenAPI Initiative](./oai.md)
+- [OpenSSF](./openssf/index.md)
 - OpenJS Foundation
-- OpenAPI Initiative
-- OpenSSF
-- CHAOSS
+  - Node
+  - Electron
 - LF Networking
 - LF Edge
+- LF AI & Data Foundation
+- LF Public Health
+- Hyperledger Foundation
+- CHAOSS Project
 
 **Projects**
-- OCI
-- Let's Encrypt
+- [OCI](./oci.md)
 - ONAP
 - OPNFV
-- Hyperledger
 
 
 ```markdown
