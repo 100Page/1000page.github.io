@@ -1,6 +1,6 @@
 ---
 order: 2
-title: javascript
+title: JS
 description: 자바스크립트 모듈 시스템
 summary:
 keywords:
@@ -9,10 +9,9 @@ keywords:
 - commonjs
 - esm
 tags:
-- language
 - js
 created_time: 2025-01-20 14:18
-modified_time: 2025-01-23 01:50
+modified_time: 2025-02-15 00:01
 ---
 
 # JS Module System

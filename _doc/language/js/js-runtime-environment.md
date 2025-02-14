@@ -1,6 +1,6 @@
 ---
 order: 3
-title: javascript
+title: JS
 description: 자바스크립트 실행 환경
 summary:
 keywords:
@@ -9,28 +9,27 @@ keywords:
 - csjs
 - ssjs
 tags:
-- language
 - js
 created_time: 2025-01-22 18:40
-modified_time: 2025-01-22 23:24
+modified_time: 2025-02-15 00:01
 ---
 
 # JS Runtime Environment
 : 자바스크립트 프로그램이 실행되는 다양한 환경  
+: 실행 환경에 따라 런타임의 구성 요소가 다르며 제공되는 기능도 차이가 존재함  
 
 - [Client Side JavaScript](#csjs) 
 - [Server Side JavaScript](#ssjs)
 
 
 **JS Runtime**  
-: 자바스크립트 코드가 실행되는 환경  
-: 실행 환경에 따라 클라이언트 측, 서버 측, 임베디드 시스템에서 동작하며 각각 고유한 기능을 제공함  
+: 자바스크립트 코드가 실행되는 구체적인 환경
 
-실행 환경 | 런타임
----|---
-클라이언트 | 웹 브라우저, Electron
-서버 | Node, Deno, Bun
-임베디드 시스템 | Espruino, JerryScript
+실행 환경 | 런타임 | 특징
+---|---|---
+클라이언트 | 웹 브라우저, Electron | DOM 조작, Web API 호출, 브라우저 제약 존재
+서버 | Node, Deno, Bun | 파일 시스템, 네트워크, 운영체제 API 등 가능
+임베디드 시스템 | Espruino, JerryScript | 저사양 디바이스를 위한 경량 런타임
 
 
 
