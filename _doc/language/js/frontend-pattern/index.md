@@ -1,41 +1,53 @@
 ---
-order: 100
-title: javascript
+order: 10
+title: JS
 description: 프론트엔드 패턴 및 아키텍처
 summary:
 keywords:
 - js
 - js pattern
 - js architecture
-- ssr
+- virtual dom
+- routing
+- rendering
 tags:
-- language
 - js
 - architecture
 created_time: 2025-01-20 14:49
-modified_time: 2025-01-21 20:33
+modified_time: 2025-02-17 20:32
 ---
 
 # Frontend Pattern
-: 프론트엔드 애플리케이션의 설계, 구현 패턴, 아키텍처
+: 프론트엔드 애플리케이션 개발을 위한 설계, 구현 패턴, 아키텍처 집합  
 
 **개념/기술**
 - Virtual DOM
-- Hydration
 - Routing
+- Progressive Enhancement
+- Graceful Degradation
+- State Synchronization
 
 **방법론**
 - [Monorepo](./monorepo.md)
 - [Frontend for Backend](./frontend-for-backend.md)
+- [Unobtrusive JavaScript](./unobtrusive-js.md)
 
 **렌더링 패턴**
-- [클라이언트 사이드 렌더링](./csr.md)
-- [서버 사이드 렌더링](./ssr.md)
-- [정적 사이트 생성](./ssg.md)
-- [점진적 정적 재생성](./isr.md)
-- [부분 하이드레이션](./partial-hydration.md)
-- [선택적 하이드레이션](./selective-hydration.md)
-- [스트리밍 서버 사이드 렌더링](./streaming-ssr.md)
+- 기본 렌더링
+  - [클라이언트 사이드 렌더링](./csr.md)
+  - [서버 사이드 렌더링](./ssr.md)
+  - [정적 사이트 생성](./ssg.md)
+- [고급 렌더링](./advanced-rendering.md)
+  - 보편적 렌더링
+  - 사전 렌더링
+  - 증분 렌더링
+  - 점진적 정적 재생성
+  - 스트리밍 서버 사이드 렌더링
+  - 엣지 렌더링
+- [하이드레이션](./hydration.md)
+  - [부분 하이드레이션](./hydration.md#partial-hydration)
+  - [선택적 하이드레이션](./hydration.md#selective-hydration)
+  - [점진적 하이드레이션](./hydration.md#progressive-hydration)
 
 **상태 관리 패턴**
 - [Flux](./flux.md)
