@@ -12,7 +12,7 @@ keywords:
 tags:
 - js
 created_time: 2025-02-20 02:32
-modified_time: 2025-02-20 22:01
+modified_time: 2025-02-20 22:06
 ---
 
 # JS Array
@@ -76,7 +76,7 @@ length | 배열의 길이를 반환하거나 지정
 - [Array.prototype.unshift()](#arrayprototypeunshift)
 - [Array.prototype.values()](#arrayprototypevalues)
 - [Array.prototype.with()](#arrayprototypewith)
-- [Array.prototype[@@iterator]()](#arrayprototypeiterator)
+- [Array.prototype/[@@iterator]()](#arrayprototypeiterator)
 
 
 기능 | 메소드
@@ -297,7 +297,7 @@ var result = arr.findLast(item => item.key === 3);
 
 
 ## Array.prototype.findLastIndex()
-: 요소를 역순으로 순회하며 주어진 콜백 함수를 적용하고 이를 만족하는 첫 번째 요소의 인덱스를 반환
+: 요소를 역순으로 순회하며 주어진 콜백 함수를 적용하고 이를 만족하는 첫 번째 요소의 인덱스를 반환  
 : 만족하는 요소가 없는 경우 -1을 반환함  
 
 
